@@ -1,0 +1,22 @@
+{
+  "name": "dharma-decision",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Dharma Decision — an AI-based ethical decision-making simulator inspired by strategic lessons from the Mahabharata",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "@fontsource/eczar": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

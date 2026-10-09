@@ -1,0 +1,139 @@
+{
+  "version": "1.0.0",
+  "name": "Dharma Decision Media Asset Manifest",
+  "description": "Records all cinematic visual, video, dialogue audio, and ambient sound assets mapped to Mahabharata and Modern Dilemma scenes.",
+  "assets": [
+    {
+      "filename": "/assets/scenes/kurukshetra-dawn.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_opening_1",
+      "title": "Kurukshetra at Dawn",
+      "status": "final",
+      "exists": true,
+      "description": "Panoramic view of Kurukshetra plain at dawn with assembled Pandava and Kaurava armies, golden chariot in distance."
+    },
+    {
+      "filename": "/assets/scenes/chariot-between-armies.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_opening_2",
+      "title": "The Chariot Between the Two Hosts",
+      "status": "final",
+      "exists": true,
+      "description": "Lord Krishna steering the four white horses of the golden chariot into the no-man's land between the two armies."
+    },
+    {
+      "filename": "/assets/scenes/arjuna-seeing-elders.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_opening_3",
+      "title": "Arjuna Seeing Bhishma and Drona",
+      "status": "final",
+      "exists": true,
+      "description": "Arjuna looking across the lines at revered patriarch Bhishma in white armor and master teacher Drona."
+    },
+    {
+      "filename": "/assets/scenes/arjuna-sorrow-despair.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_opening_4",
+      "title": "Arjuna Lowers the Gandiva Bow",
+      "status": "final",
+      "exists": true,
+      "description": "Arjuna sinking to the chariot floor in moral agony, dropping his divine bow Gandiva before battle."
+    },
+    {
+      "filename": "/assets/scenes/krishna-counsel.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_1_intro",
+      "title": "Krishna's Divine Counsel (Gitopadesha)",
+      "status": "final",
+      "exists": true,
+      "description": "Lord Krishna turning to impart transcendent wisdom and ethical clarity to the conflicted warrior."
+    },
+    {
+      "filename": "/assets/scenes/arjuna-resolve.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_1_conseq_A",
+      "title": "Arjuna's Resolute Stand",
+      "status": "final",
+      "exists": true,
+      "description": "Arjuna rising with Gandiva drawn, accepting his kshatriya duty with unwavering moral focus."
+    },
+    {
+      "filename": "/assets/scenes/war-council-tent.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_3",
+      "title": "The War Council of the Pandavas",
+      "status": "final",
+      "exists": true,
+      "description": "Pandava brothers and Krishna strategizing around a tactical map table illuminated by brass oil lamps at night."
+    },
+    {
+      "filename": "/assets/scenes/hastinapura-court.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_2c",
+      "title": "The Assembly Hall of Hastinapura",
+      "status": "final",
+      "exists": true,
+      "description": "Carved stone columns and grand marble throne of Hastinapura where diplomatic peace envoys are received."
+    },
+    {
+      "filename": "/assets/scenes/bhishma-arrow-bed.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_4",
+      "title": "Bhishma on the Bed of Arrows",
+      "status": "final",
+      "exists": true,
+      "description": "The tenth sunset of Kurukshetra where Grandfather Bhishma rests upon the bed of arrows as heroes pay homage."
+    },
+    {
+      "filename": "/assets/scenes/battlefield-aftermath.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "arj_end",
+      "title": "The Sacred Aftermath at Sunset",
+      "status": "final",
+      "exists": true,
+      "description": "A scarlet and indigo sunset over the quiet battlefield with broken chariot wheels and a solitary chariot in silhouette."
+    },
+    {
+      "filename": "/assets/scenes/modern-college-ragging.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "mod_3",
+      "title": "College Corridor Ragging Dilemma",
+      "status": "final",
+      "exists": true,
+      "description": "College campus hallway with senior students confronting a vulnerable freshman near lockers."
+    },
+    {
+      "filename": "/assets/scenes/modern-group-project.jpg",
+      "type": "image",
+      "category": "scene",
+      "sceneId": "mod_1",
+      "title": "Late Night Group Project Crisis",
+      "status": "final",
+      "exists": true,
+      "description": "University study room at 11:45 PM with student teammates, laptops, deadline whiteboard, and an empty chair."
+    }
+  ],
+  "audio": {
+    "engine": "WebAudio Layered Synthesizer + SpeechSynthesis Voice Fallback",
+    "ambienceLayers": [
+      "wind", "wind_soft", "distant_army", "horses", "chariot_wheels",
+      "fire_crackle", "temple_bells", "night_crickets", "flute_drone",
+      "court_murmur", "street_traffic", "keyboard_soft", "clock_tick"
+    ],
+    "soundEffects": [
+      "conch", "drum", "page", "select", "confirm", "insight", "counsel",
+      "achieve", "bow_raise", "bow_lower", "arrow_fly", "armor_move"
+    ]
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "version": 1,
+  "mode": "epic",
+  "chapters": [
+    {
+      "id": "arjuna",
+      "order": 1,
+      "character": "Arjuna",
+      "epithet": "Savyasachi — the archer who could draw with either hand",
+      "title": "The Archer's Dharma",
+      "theme": "Duty vs personal attachment",
+      "status": "playable",
+      "ambience": "battle",
+      "decisionsRequired": 4,
+      "card": {
+        "line": "The greatest archer of his age lowers his bow at the very moment of war.",
+        "quote": "\u201cWhat should I do?\u201d — Kurukshetra, Day One"
+      },
+      "startNode": "arj_1_story",
+      "nodes": {
+        "arj_1_story": {
+          "type": "story",
+          "title": "Arjuna's Dilemma",
+          "subtitle": "Kurukshetra \u00b7 Day One \u00b7 before the first conch",
+          "narrative": [
+            "Two great armies stand arrayed across the plain of Kurukshetra. Banners crack in the morning wind. A hundred thousand conches wait silent in a hundred thousand hands.",
+            "Arjuna asks his charioteer to draw the chariot between the two hosts. He looks across the battlefield \u2014 and sees teachers, relatives, friends and warriors standing on both sides. Grandfather Bhishma. His teacher Drona. Cousins, uncles, the boys he grew up with.",
+            "His duty demands one path.",
+            "His emotions demand another.",
+            "\u201cWhat should I do?\u201d \u2014 the one question a warrior is never trained to ask."
+          ],
+          "next": "arj_1"
+        },
+        "arj_1": {
+          "type": "decision",
+          "title": "The First Arrow",
+          "subtitle": "Between the two hosts",
+          "narrative": [
+            "The chariot stands still. Behind Arjuna, seven divisions wait for their general. Ahead of him, everything he loves and everything he owes is arranged in battle formation.",
+            "Whatever happens in the next breath will decide what kind of man fights this war."
+          ],
+          "prompt": "What should Arjuna prioritize when duty and personal attachment conflict?",
+          "freeText": { "enabled": true, "prompt": "What would you do if you stood where Arjuna stands?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Stand and fight. A kshatriya's duty does not bend to grief.",
+              "tag": "Duty first",
+              "effects": { "responsibility": 10, "integrity": 8, "strategy": 5, "compassion": -3, "awareness": 2 },
+              "consequence": "Arjuna lifts the Gandiva. His hands are steady; his heart is not. The war will be fought \u2014 and every beloved face across that field will be there when the arrows fly.",
+              "insight": {
+                "reflection": "The epic presents Arjuna's collapse not as cowardice but as a crisis of competing responsibilities \u2014 to kin, to teachers, and to the order that keeps a kingdom from chaos. The counsel he receives never pretends the cost of war is small; it asks him to see his role clearly and act without paralysis.",
+                "principle": "Decision-making under conflicting responsibilities.",
+                "source": "Bhagavad Gita, opening chapter \u2014 Vishada Yoga, the yoga of sorrow"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Refuse to fight. No throne is worth the blood of my teachers and my kin.",
+              "tag": "Compassion first",
+              "effects": { "compassion": 10, "integrity": 6, "fairness": 3, "responsibility": -6, "strategy": -4, "awareness": 2 },
+              "consequence": "The Gandiva slips from Arjuna's fingers. The army watches its greatest archer sit down in sorrow \u2014 and for one long moment, no one on the Pandava side knows what holds the line.",
+              "insight": {
+                "reflection": "The Mahabharata takes refusal seriously: it devotes eighteen chapters to answering it. Grief for kin is honored as real moral information \u2014 but the epic also counts what refusal would cost the thousands who did not choose this war and must live inside its outcome.",
+                "principle": "Loyalty to persons can collide with obligation to the many \u2014 both are real; only one can steer.",
+                "source": "The Gita does not dismiss Arjuna's compassion \u2014 it asks him to widen it"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Lower the bow \u2014 but do not desert. Seek another way before the first arrow flies.",
+              "tag": "The third path",
+              "effects": { "compassion": 8, "fairness": 8, "awareness": 8, "integrity": 4, "strategy": 2, "responsibility": -4 },
+              "consequence": "Arjuna keeps his seat on the chariot but not his grip on war. A thin space opens between surrender and slaughter. Someone must find what fills it \u2014 and the armies will not wait long.",
+              "insight": {
+                "reflection": "The Mahabharata itself tries peace first: the Pandavas ask for five villages, and Krishna is sent as a final envoy. In the epic's own logic, war is its tragedy \u2014 never its ideal \u2014 and the failure of negotiation is used to fix moral responsibility on the side that chose the war.",
+                "principle": "Before choosing between two bad options, ask who can widen the options.",
+                "source": "Krishna's peace embassy to Hastinapura, Udyoga Parva"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Set down my own judgment. Ask Krishna for counsel \u2014 and follow what I am shown.",
+              "tag": "Seek counsel",
+              "effects": { "strategy": 8, "awareness": 8, "responsibility": 6, "compassion": 2, "fairness": 2, "integrity": -2 },
+              "consequence": "Arjuna turns from the field to his charioteer: \u201cMy limbs fail me, Krishna. My mouth is dry. Teach me what is right.\u201d It is the wisest thing a proud man can say \u2014 and the hardest.",
+              "insight": {
+                "reflection": "The Bhagavad Gita begins exactly here \u2014 with a question asked at maximum pressure. Arjuna becomes a student at the moment he most wants to be anywhere else. The epic treats asking well as itself a skill of war.",
+                "principle": "Under pressure, the ability to ask well outranks the need to answer fast.",
+                "source": "Arjuna surrenders as disciple \u2014 Gita 2.7"
+              }
+            }
+          ],
+          "next": "arj_2a",
+          "nextByChoice": { "A": "arj_2a", "B": "arj_2b", "C": "arj_2c", "D": "arj_2b" }
+        },
+        "arj_2a": {
+          "type": "decision",
+          "title": "The Weight of the Conch",
+          "subtitle": "The battle road \u00b7 Kurukshetra, the early days",
+          "introVariants": {
+            "A": "The Devadatta conch sounds across Kurukshetra, and the Pandava line holds at dusk. Arjuna fights the first days like falling weather \u2014 and every evening he sees, across the broken formations, the one commander he has not yet faced.",
+            "D": "The counsel beneath the banner ends before dawn. Arjuna rises, wipes his face, and takes up the Gandiva himself \u2014 not sent, but chosen. He fights the first days like falling weather. And every evening he sees, across the field, the teacher who made him."
+          },
+          "narrative": [
+            "Three days into the war, Drona's battle-square grinds forward like a millstone. Wherever it turns, Pandava companies fold. Dhrishtadyumna \u2014 born, it is said, for the single purpose of ending Drona \u2014 sends word to the command tent: let me engage your teacher.",
+            "That night Arjuna remembers a small boy's hands being guided onto a bow string, again and again, until the hands forgot everything else. Everything he is, someone across the field made."
+          ],
+          "prompt": "How will you face the teacher who made you an archer?",
+          "freeText": { "enabled": true, "prompt": "You are Arjuna at dusk, looking across at your teacher's banner. What do you do?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Meet Drona in open combat \u2014 honor him with the whole of my skill.",
+              "tag": "Honor in combat",
+              "effects": { "integrity": 8, "responsibility": 8, "fairness": 6, "strategy": 2, "compassion": -2 },
+              "consequence": "Bow answers bow in a duel that stops both armies to watch. Drona smiles even as he presses his student \u2014 the boy has become an archer worth killing. The battle around them does not pause for respect.",
+              "insight": {
+                "reflection": "The epic holds the teacher-student bond as sacred \u2014 and still places both men on the field. Honor, in the Mahabharata's grammar, is paid in the manner of the fighting, not in the refusal to fight.",
+                "principle": "A relationship you cannot change what it requires can still change how you do it.",
+                "source": "Arjuna and Drona duel across the war's middle days"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Fight to disarm, not to kill. Break his formations \u2014 spare the man.",
+              "tag": "Mercy by design",
+              "effects": { "compassion": 10, "fairness": 6, "integrity": 6, "awareness": 4, "strategy": -4, "responsibility": 2 },
+              "consequence": "Arjuna's arrows take wheels and bows, never throats. Drona withdraws each evening intact \u2014 and returns each morning. The war grows longer, and the longer war develops an appetite of its own.",
+              "insight": {
+                "reflection": "Arjuna again and again searches for non-lethal answers \u2014 disarming rather than slaying. The epic lets mercy work, and equally lets it cost: a war extended is a war multiplied.",
+                "principle": "Mercy has a cost curve. Pay it knowingly, or not at all.",
+                "source": "The war's long middle \u2014 where every kindness is audited"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Avoid my teacher entirely. Strike supply, cavalry, command \u2014 the war, not the man.",
+              "tag": "Sidestep the bond",
+              "effects": { "strategy": 9, "awareness": 5, "compassion": 3, "responsibility": -3, "fairness": -2 },
+              "consequence": "Arjuna becomes a storm that never meets Drona's chariot. The army quietly notices what its finest archer will not look at. Dhrishtadyumna notices too \u2014 and files it away.",
+              "insight": {
+                "reflection": "The Mahabharata is honest about avoidance: it protects feelings in the short term while outsourcing the hardest task to someone else. Dhrishtadyumna's eagerness is the shadow of Arjuna's reluctance.",
+                "principle": "What you refuse to face does not disappear \u2014 it is simply handed to another.",
+                "source": "Dhrishtadyumna waits at the edge of every council"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Parley under a white banner \u2014 ask my teacher why he serves a throne he knows is unjust.",
+              "tag": "Question the loyal",
+              "effects": { "fairness": 6, "awareness": 8, "integrity": 5, "strategy": 3, "responsibility": -2 },
+              "consequence": "Drona receives his student with courtesy and answers with a shrug of grief: \u201cI serve because I was fed when I was starving. A man's honor is chained to the table that fed him.\u201d Nothing changes on the field. Something is understood.",
+              "insight": {
+                "reflection": "Drona's loyalty is presented as a bind, not a virtue \u2014 gratitude weaponized by a patron. The epic treats understanding an opponent's chain as genuine strategic knowledge.",
+                "principle": "Every loyalty has a reason. Map the reason and you map the man.",
+                "source": "Drona's answer to why he fights for Hastinapura"
+              }
+            }
+          ],
+          "next": "arj_3"
+        },
+        "arj_2b": {
+          "type": "decision",
+          "title": "The Counsel Beneath the Banner",
+          "subtitle": "The counsel road \u00b7 one night, eighteen chapters long",
+          "introVariants": {
+            "B": "Arjuna's fingers will not close on the bow. \u201cI will not fight, Krishna \u2014 not for a kingdom, not against these men.\u201d His charioteer does not condemn him. He asks only: \u201cAnd the thousands who never chose this war \u2014 who holds their line?\u201d",
+            "D": "Krishna listens to the whole question \u2014 the grief, the doubt, the fear of a victory bought with a teacher's blood. Then he says: \u201cYou have asked well. Now ask once more \u2014 and ask what you are willing to see.\u201d"
+          },
+          "narrative": [
+            "Beneath the banner of Hanuman, away from the armies' roar, the counsel unfolds through the watches of the night. Krishna does not command. He lays Arjuna's bindings on the chariot floor one by one \u2014 fear, grief, pride, the hunger to be thought good \u2014 and asks which of them should be allowed to steer.",
+            "By the last watch, one question remains. It cannot be answered by counsel, by scripture, or by a charioteer. It is Arjuna's alone."
+          ],
+          "prompt": "When your heart and your duty disagree, what should make the final call?",
+          "freeText": { "enabled": true, "prompt": "It is the last watch of the night. What is your answer?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Duty. Feelings are weather; obligation is the road.",
+              "tag": "Duty decides",
+              "effects": { "responsibility": 10, "integrity": 6, "strategy": 4, "compassion": -4 },
+              "consequence": "Arjuna rises before dawn and takes up the Gandiva with steady hands. Something in him stays bent over its grief \u2014 but the army gets its archer back, and the road goes where roads go.",
+              "insight": {
+                "reflection": "\u201cDo your duty\u201d is the summary everyone remembers \u2014 but the teaching is addressed to a man weeping, and it spends its first chapters honoring the weeping before it speaks a word about action.",
+                "principle": "A role freely accepted binds you \u2014 especially on the days it hurts.",
+                "source": "Swadharma \u2014 one's own duty, though imperfect, Gita 3.35"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Compassion. If duty demands cruelty, the duty is wrong.",
+              "tag": "Compassion decides",
+              "effects": { "compassion": 10, "fairness": 6, "awareness": 4, "responsibility": -5 },
+              "consequence": "Arjuna chooses to see every man on that field as somebody's son. He will fight from now on the way a surgeon cuts \u2014 as little, as precisely, as possible. The war will test that vow without mercy.",
+              "insight": {
+                "reflection": "The epic never mocks compassion \u2014 but it is honest about its weight. A general who feels every loss must still order the line forward. Feeling the cost is not weakness; refusing to calculate it is.",
+                "principle": "Feel the cost of the decision \u2014 then still be able to make it.",
+                "source": "Arjuna's vow of minimal slaughter, tested daily"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Consequence. Choose the answer whose ruins I can live inside \u2014 then live inside them.",
+              "tag": "Weigh the burden",
+              "effects": { "awareness": 9, "integrity": 5, "strategy": 4, "responsibility": 3, "fairness": 2, "compassion": -2 },
+              "consequence": "Arjuna stops asking which choice is clean and starts asking which price he is willing to pay in full. He fights the war \u2014 and on the last day, when the account is read out, nothing on it is a surprise to him.",
+              "insight": {
+                "reflection": "The Gita's deepest instruction may be exactly this: you are entitled to the act, never to its fruit. The Mahabharata grades its heroes by what their choices harvest \u2014 it is a poem obsessed with consequence.",
+                "principle": "Rank options by the futures they create, not the comfort they give.",
+                "source": "Gita 2.47 \u2014 the right to action, never to its fruits"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Neither. Not under pressure. I withdraw until the mind is clear.",
+              "tag": "Refuse the hour",
+              "effects": { "integrity": 7, "awareness": 4, "compassion": 2, "responsibility": -8, "strategy": -3 },
+              "consequence": "Arjuna asks for one more night. The counsel continues. But armies do not pause for clarity \u2014 at dawn, others make the choices he deferred, and he must live inside their judgment.",
+              "insight": {
+                "reflection": "The epic is generous to deliberation \u2014 the Gita itself is eighteen chapters of it. But its councils always end, and the field waits for no one. Refusing to decide is also a move other people must respond to.",
+                "principle": "Deliberation is a phase, not an address. Know when it must conclude.",
+                "source": "The councils of the Udyoga Parva always adjourn"
+              }
+            }
+          ],
+          "next": "arj_3"
+        },
+        "arj_2c": {
+          "type": "decision",
+          "title": "The Envoy's Last Word",
+          "subtitle": "The peace road \u00b7 the marble court of Hastinapura",
+          "narrative": [
+            "Arjuna does not sound his conch. Under a white banner his chariot crosses the empty plain to Hastinapura \u2014 and the marble court goes silent as the greatest archer of the Pandavas walks in unarmed, asking for peace.",
+            "Duryodhana receives him with a smile and a golden chair. Bhishma sits rigid with grief. Drona will not meet his favorite student's eye. Karna watches from the seat of the sun, saying nothing.",
+            "Duryodhana's answer comes before any argument can form: \u201cNot one village. Not land the size of a needle's point.\u201d But his voice cracks on the word needle \u2014 and in that crack lives the only question that matters."
+          ],
+          "prompt": "You have one audience with the enemy court. What is the wisest use of it?",
+          "freeText": { "enabled": true, "prompt": "You stand unarmed before the throne. Speak \u2014 what do you say?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "State terms plainly: restore our land, or face us at Kurukshetra. No theater.",
+              "tag": "Plain terms",
+              "effects": { "responsibility": 8, "integrity": 8, "fairness": 4, "strategy": -2, "compassion": -2 },
+              "consequence": "No speeches, no wrath \u2014 just terms, set down like arrows on a rack. The court respects it. Duryodhana refuses it. And when war comes, no one can say the Pandavas hid their intent.",
+              "insight": {
+                "reflection": "The epic's great peace effort is played completely straight \u2014 Krishna's embassy is sincere, not theater \u2014 and its failure is used with surgical care to fix moral responsibility on the side that chose war.",
+                "principle": "A clear ultimatum is an act of respect: it gives the other side a true choice.",
+                "source": "Krishna's embassy, Udyoga Parva \u2014 the last door before war"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Accept five villages. Take the imperfect peace \u2014 five villages can grow.",
+              "tag": "Peace on any terms",
+              "effects": { "compassion": 10, "fairness": 8, "awareness": 6, "strategy": -5, "responsibility": -4, "integrity": -2 },
+              "consequence": "Gasps run around the hall. Bhishma closes his eyes as if in prayer. It is Duryodhana who refuses \u2014 he will not let the Pandavas have the moral field along with the villages. The offer Arjuna could make, Duryodhana cannot accept twice.",
+              "insight": {
+                "reflection": "The epic asks whether a peace purchased by swallowing injustice is peace \u2014 Draupadi's unanswered humiliation stands in that hall too. But it does not mock the reach for mercy; it dares the other side to refuse it.",
+                "principle": "Test a compromise against its second year, not its first day.",
+                "source": "The offer of five villages \u2014 and the needle's point of land"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Address the elders, not the king \u2014 ask Bhishma and Drona to withdraw their support.",
+              "tag": "Split the court",
+              "effects": { "strategy": 8, "awareness": 8, "fairness": 2, "responsibility": -3 },
+              "consequence": "Arjuna speaks past the throne to the men who hold it up. Bhishma, bound by his vow to Hastinapura, shakes his head in sorrow. Drona studies the floor. No elder moves \u2014 but the court dissolves early that day, arguing, and the seeds of doubt are watered.",
+              "insight": {
+                "reflection": "The Kaurava court is a coalition of reluctant loyalists \u2014 Bhishma bound by vow, Drona by debt, Karna by gratitude. The epic repeatedly shows power leaking through the cracks between allies.",
+                "principle": "When you cannot beat a wall, negotiate with its bricks.",
+                "source": "The reluctant pillars of Hastinapura"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Use the hour to read the enemy \u2014 their rifts, their fears, their strength \u2014 for the war that now looks certain.",
+              "tag": "Eyes open",
+              "effects": { "strategy": 10, "awareness": 8, "integrity": -4, "fairness": -2, "compassion": -2 },
+              "consequence": "While others perform honor, Arjuna watches: which brother Duryodhana consults first, where Karna's eyes go, how thin the royal stables look. He walks out knowing exactly what this war will cost both sides. Knowledge is heavier than it looks.",
+              "insight": {
+                "reflection": "Scouting under a flag of parley sits in a gray zone the epic knows well \u2014 Krishna's own diplomacy mixes perfect truth with perfect maneuver. The text rarely splits intelligence from intent; it grades the whole act.",
+                "principle": "Information gathered honestly can still be spent on hard ends. Own the whole act.",
+                "source": "Krishna's statecraft \u2014 truth as an instrument"
+              }
+            }
+          ],
+          "next": "arj_3"
+        },
+        "arj_3": {
+          "type": "decision",
+          "title": "The War Council",
+          "subtitle": "The ninth night \u00b7 where all roads converge",
+          "narrative": [
+            "The ninth night of the war. The Pandava camp is torch-lit and quiet with grief \u2014 Drona's rotating battle-wheels have taken a terrible toll this week, and every council now begins the same way: someone must stop that old man.",
+            "Dhrishtadyumna spreads the map. \u201cDrona cannot be beaten while he fights like a man without fear. But he has one anchor \u2014 his son, Ashwatthama. If Drona believes that son is dead, he will drop his bow where he stands.\u201d",
+            "Bhima grins: \u201cAn elephant named Ashwatthama stands in our lines. One axe-stroke \u2014 and the name becomes negotiable. Yudhishthira will speak the words. He can weigh what is said.\u201d All eyes turn. Yudhishthira's face is stone. \u201cIt will work,\u201d says Dhrishtadyumna. \u201cAnd it will be remembered,\u201d says Yudhishthira, quietly.",
+            "They ask for Arjuna's voice."
+          ],
+          "prompt": "Will you consent to the stratagem \u2014 a half-truth to unmake the enemy's greatest commander?",
+          "freeText": { "enabled": true, "prompt": "The council waits on your word. What do you say?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Consent. One deception to stop a man who has cost thousands of lives is arithmetic, not sin.",
+              "tag": "Cold arithmetic",
+              "effects": { "strategy": 10, "responsibility": 8, "awareness": 6, "integrity": -12, "fairness": -4 },
+              "consequence": "The plan moves by dawn. An elephant dies under an honest-sounding name, and an old teacher hears the worst words a father can hear. It works. The histories record that it works \u2014 and record, in the same breath, exactly how.",
+              "insight": {
+                "reflection": "The epic's judgment on the Drona stratagem is famously unresolved: tactically brilliant, morally scarring. Tradition holds that Yudhishthira's chariot \u2014 which had floated above the ground since birth \u2014 finally touched the earth after his half-truth. The text makes the cost visible on purpose.",
+                "principle": "Shortcuts through truth are real: they work, and they are never free.",
+                "source": "The fall of Drona, Drona Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Refuse. We beat Drona with arrows we can account for \u2014 not with lies.",
+              "tag": "Clean steel",
+              "effects": { "integrity": 12, "fairness": 6, "compassion": 2, "strategy": -10, "responsibility": -3 },
+              "consequence": "Arjuna says no \u2014 loudly enough that the council must find another road. The war grows longer and crueler before it ends. But when the bards sing of the Pandavas, no verse will need explaining.",
+              "insight": {
+                "reflection": "Refusing the shortcut has a real, countable price here \u2014 a longer war and more dead. The epic does not pretend otherwise. It simply asks which costs you are willing to sign your name to.",
+                "principle": "Integrity is a budget. Know what refusing to spend it will cost in other coin.",
+                "source": "The alternative histories the epic makes you imagine"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Set a condition: if the ruse is used, Drona must be disarmed and spared \u2014 not slain in despair.",
+              "tag": "Guard the fall",
+              "effects": { "integrity": 6, "compassion": 6, "awareness": 6, "strategy": 4, "responsibility": 2, "fairness": -2 },
+              "consequence": "The council accepts the condition in uneasy silence. It is honored \u2014 mostly. The old teacher, disarmed by a grief and a bowman's mercy, retires from the field to die a hermit's death instead of a soldier's. Neither a clean lie nor a clean fight: a third thing, owned by everyone who built it.",
+              "insight": {
+                "reflection": "Conditions are how councils stay honest \u2014 they convert \u2018should we do this\u2019 into \u2018under what limits\u2019. The Mahabharata's war councils go wrong most often when no one sets terms in advance.",
+                "principle": "When you cannot stop an act, you can still shape its edges.",
+                "source": "Council craft across the Udyoga and Drona Parvas"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Stand aside. It is Yudhishthira's truth to spend or keep \u2014 not mine.",
+              "tag": "Another's conscience",
+              "effects": { "fairness": 4, "awareness": 5, "integrity": 1, "responsibility": -8, "strategy": -2 },
+              "consequence": "Arjuna bows out of the decision. The burden settles fully on his eldest brother \u2014 who carries it, speaks the words, and is seen carrying it for the rest of his life. The strategy proceeds. Something between the brothers does not.",
+              "insight": {
+                "reflection": "Deferring to another's moral authority is a virtue \u2014 and the epic shows its shadow too: silence in a council lets the harder men in the room decide.",
+                "principle": "Abstention is a vote with your name left off it \u2014 but it is still a vote.",
+                "source": "Yudhishthira pays for the sentence Arjuna declined to authorize"
+              }
+            }
+          ],
+          "next": "arj_4"
+        },
+        "arj_4": {
+          "type": "decision",
+          "title": "The Tenth Dawn",
+          "subtitle": "The final decision \u00b7 the grandsire's vow",
+          "narrative": [
+            "Ten nights of war. Still the Pandavas advance no further than Bhishma allows \u2014 and the grandsire allows very little. Each dawn his bow sweeps the field like a scythe. Each evening Krishna looks older. On the ninth night, even the charioteer who had vowed to raise no weapon in this war was seen gripping a chariot wheel in fury.",
+            "But the grandsire has one seam, and Shikhandi is its name. Bhishma has sworn never to raise a weapon against a woman \u2014 or against one who has ever been a woman. Shikhandi, who carries a lifetime of grievance and a warrior's training, rides at the head of the column.",
+            "The plan is simple and terrible: Shikhandi rides in front. The vow empties Bhishma's bow. And from behind that living shield, Arjuna's arrows must do what no army could.",
+            "Arjuna looks at Shikhandi \u2014 a warrior with their own long reason for this dawn \u2014 and then at the white banner of the grandfather who once held him as a child."
+          ],
+          "prompt": "At the tenth dawn, how will you bring down the grandsire?",
+          "freeText": { "enabled": true, "prompt": "The conches are sounding. What is your final order?" },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Ride behind Shikhandi exactly as planned. End this. The pain of it lands on me, not on them.",
+              "tag": "The shield plan",
+              "effects": { "strategy": 8, "responsibility": 9, "awareness": 5, "compassion": -6, "fairness": -3 },
+              "consequence": "It works exactly as designed. Bhishma's bow lowers \u2014 and Arjuna, weeping behind his own quiver, brings down the grandsire of both armies onto a bed of arrows. The war turns that day. The bards will argue about the shield for three thousand years.",
+              "insight": {
+                "reflection": "The epic lets the stratagem succeed \u2014 and lets the victory feel like grief. Using a person as an instrument is the sharpest ethical edge in the entire war, and the text never dulls it. It also remembers, carefully, that Shikhandi chose to be there.",
+                "principle": "Some plans win the day and rent the soul. Keep accounts in both currencies.",
+                "source": "The fall of Bhishma, Bhishma Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Never from behind another. Face Bhishma directly, arrow to arrow, whatever it costs.",
+              "tag": "Face to face",
+              "effects": { "integrity": 10, "responsibility": 6, "compassion": 2, "strategy": -9 },
+              "consequence": "Arjuna circles past Shikhandi into the grandsire's direct line. It is the hardest fight of the war \u2014 Bhishma breaks ranks and men by the hour, and Arjuna is wounded twice before dusk. But the old man nods once, almost proudly, before the final shafts fly.",
+              "insight": {
+                "reflection": "The epic honors those who refuse borrowed victories \u2014 and records, without flinching, what the refusal costs in other people's blood. Honor is real in the Mahabharata. So is its invoice.",
+                "principle": "A clean method can still buy an expensive outcome. Choose it with open eyes.",
+                "source": "Arjuna's direct duels across the war"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Ask Shikhandi first. Stand beside them, not behind them \u2014 one cause, two archers.",
+              "tag": "Beside, not behind",
+              "effects": { "fairness": 10, "integrity": 7, "awareness": 5, "compassion": 4, "strategy": -3 },
+              "consequence": "Shikhandi's answer is a lifetime old: \u201cThis arrow is mine to loose.\u201d They ride abreast \u2014 the grandsire's vow and Arjuna's bow meeting as partners, not as shield and hand. The plan works. And no one in it was used.",
+              "insight": {
+                "reflection": "The epic gives Shikhandi agency, training, and a lifetime of grievance honored. Reading Shikhandi as an ally with their own claim \u2014 not a device \u2014 is the version of the plan in which everyone's dignity survives.",
+                "principle": "Turn instruments into allies, and the ethics of the plan changes shape.",
+                "source": "Shikhandi's story, told in the Udyoga and Bhishma Parvas"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Lower the bow. Call to the grandsire to choose his own dharma and lay it down himself.",
+              "tag": "Open the gate",
+              "effects": { "compassion": 8, "fairness": 6, "awareness": 7, "strategy": -7, "responsibility": -2 },
+              "consequence": "Arjuna stands in the arrow-storm and calls across the field: end it yourself, grandsire. Lay down the bow you swore by. The old man's answer comes through tears: \u201cI am tied to the throne's fate, child. Loose your arrows.\u201d He chooses his chain. Arjuna finally shoots.",
+              "insight": {
+                "reflection": "The Mahabharata is full of men who know better and stay bound \u2014 Bhishma chief among them, bound by vow and gratitude to a flawed throne. Offering another person their choice is respect; it does not force the outcome you need.",
+                "principle": "You can hand someone their choice. You cannot make it for them.",
+                "source": "Bhishma \u2014 the epic's great study of the kept vow"
+              }
+            }
+          ],
+          "next": "arj_end"
+        },
+        "arj_end": {
+          "type": "ending",
+          "title": "The Decision Profile",
+          "subtitle": "Kurukshetra \u00b7 after the tenth dawn",
+          "chapterInsight": {
+            "reflection": "Arjuna's chapter is the Mahabharata's opening argument: that the hardest choices are rarely good against evil \u2014 they are duty against duty. The counsel he receives on the field is not a rule but a discipline: see the competing responsibilities clearly, act with steady hands, and carry the fruit \u2014 or the cost \u2014 without pretending it was never picked.",
+            "principle": "Name the competing duties. Choose. Carry the cost knowingly.",
+            "source": "Gita 2.47 \u2014 \u201cYou have a right to your actions, but never to the fruits of your actions.\u201d"
+          },
+          "endings": [
+            {
+              "id": "dharma_archer",
+              "name": "THE DHARMA ARCHER",
+              "line": "Balanced judgment under impossible weight.",
+              "conditions": { "allAtLeast": 55, "minScore": 62 },
+              "epilogue": [
+                "The war ends at dusk on the eighteenth day. Arjuna wins the kingdom \u2014 and something rarer: a conscience that can still look in the mirror. Not because his choices were painless, but because he made each one with open eyes and paid each price without pretending it wasn't paid.",
+                "The bards will argue about Kurukshetra for three thousand years. Tonight, for one night, the archer sleeps."
+              ]
+            },
+            {
+              "id": "iron_kshatriya",
+              "name": "THE IRON KSHATRIYA",
+              "line": "Swift, decisive \u2014 and carrying the full invoice.",
+              "conditions": { "minTrait": { "strategy": 58 }, "maxTrait": { "compassion": 52 } },
+              "epilogue": [
+                "Victory comes swiftly and completely. The councils marvel at his decisiveness; the armies speak his name like a weapon; the kingdom is safe within a season.",
+                "But arithmetic is patient. At night the faces return \u2014 each one a consequence he chose with open eyes. He rules well. He does not sleep easily."
+              ]
+            },
+            {
+              "id": "compassionate_bow",
+              "name": "THE COMPASSIONATE BOW",
+              "line": "Mercy chosen with open eyes, at mercy's price.",
+              "conditions": { "topTrait": "compassion" },
+              "epilogue": [
+                "His war is longer than it had to be \u2014 mercy always extends the road. But when the drums finally fall silent, fewer widows curse his name, and more soldiers on both sides live to go home.",
+                "The gentler war. The heavier war. The one his heart can carry."
+              ]
+            },
+            {
+              "id": "truth_keeper",
+              "name": "THE TRUTH-KEEPER",
+              "line": "A clean war is possible \u2014 and it is never cheap.",
+              "conditions": { "topTrait": "integrity" },
+              "epilogue": [
+                "No verse of his war needs explaining. He fought without ruse and won without trickery \u2014 and the cost of that cleanliness is written plainly in the ledgers of the dead.",
+                "The epics sing louder for clever victories. But mothers on both sides know exactly whom to thank for the ones who came home."
+              ]
+            },
+            {
+              "id": "way_seeker",
+              "name": "THE WAY-SEEKER",
+              "line": "Second-order sight, first-order results.",
+              "conditions": { "topTrait": "awareness" },
+              "epilogue": [
+                "He fought the way a physician reads: symptoms first, causes second, blade last. His arrows were the final sentence of long arguments no one else bothered to have.",
+                "Years later, when kings come for counsel, they ask first for the archer who saw three moves ahead \u2014 and one move inward."
+              ]
+            },
+            {
+              "id": "seeker",
+              "name": "THE SEEKER",
+              "line": "A path still forming \u2014 like everyone's.",
+              "conditions": {},
+              "epilogue": [
+                "The war ends. The questions don't. He carries Kurukshetra the way all its veterans do \u2014 as a set of roads taken and roads refused, each with its own weight.",
+                "The journey continues. Every choice he has not yet made is still his."
+              ]
+            }
+          ],
+          "next": null
+        }
+      }
+    },
+    {
+      "id": "karna",
+      "order": 2,
+      "character": "Karna",
+      "epithet": "Son of the Sun, raised by a charioteer",
+      "title": "The Sun's Oath",
+      "theme": "Loyalty vs conflicting obligations",
+      "status": "locked",
+      "ambience": "court",
+      "card": {
+        "line": "The finest archer of the age owes everything to the one man who publicly shamed him.",
+        "quote": "\u201cYour birth is a riddle \u2014 your loyalty is not.\u201d"
+      },
+      "teaser": "Born to a queen, raised by a charioteer, crowned king by the enemy of his own blood. Every obligation Karna has was given to him by someone who wanted something. Chapter II is being written."
+    },
+    {
+      "id": "krishna",
+      "order": 3,
+      "character": "Krishna",
+      "epithet": "The charioteer who vowed not to lift a weapon",
+      "title": "The Counselor's Gambit",
+      "theme": "Strategy, negotiation and leadership",
+      "status": "locked",
+      "ambience": "court",
+      "card": {
+        "line": "He won a war without raising one \u2014 and never told a lie doing it.",
+        "quote": "\u201cI promised not to fight. I promised nothing about the truth.\u201d"
+      },
+      "teaser": "Diplomacy under a dying dynasty: a peace embassy designed to be refused, an oath bent but never broken. Chapter III is being written."
+    },
+    {
+      "id": "yudhishthira",
+      "order": 4,
+      "character": "Yudhishthira",
+      "epithet": "The king who never lied",
+      "title": "The Weight of a Word",
+      "theme": "Truth, responsibility and difficult choices",
+      "status": "locked",
+      "ambience": "court",
+      "card": {
+        "line": "The most truthful man alive is asked to spend his truth like coin.",
+        "quote": "\u201cAshwatthama is dead \u2014 elephant or man, I did not say.\u201d"
+      },
+      "teaser": "A dice game lost on a technicality, a kingdom wagered on pride, and one sentence that cost a chariot its place in the sky. Chapter IV is being written."
+    },
+    {
+      "id": "abhimanyu",
+      "order": 5,
+      "character": "Abhimanyu",
+      "epithet": "He heard the way in, never the way out",
+      "title": "The Broken Circle",
+      "theme": "Decision-making with incomplete information",
+      "status": "locked",
+      "ambience": "battle",
+      "card": {
+        "line": "Sixteen years old, one incomplete map, and a formation no one alive can crack from inside.",
+        "quote": "\u201cI know how to enter the chakravyuha. Enter \u2014 yes. But out?\u201d"
+      },
+      "teaser": "A teenage prodigy, a labyrinth of soldiers, and six exits he was never taught. What do you decide when the information was cut off on purpose? Chapter V is being written."
+    }
+  ]
+}
