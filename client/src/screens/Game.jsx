@@ -12,7 +12,7 @@ import {
   getModernSceneId,
   getScene,
 } from '../game/sceneData'
-import { setAmbience, stopAll as stopAmbience } from '../game/ambientAudio'
+import { setAmbience, stopAmbienceOnly as stopAmbience } from '../game/ambientAudio'
 import { CinematicRenderer } from '../components/CinematicRenderer'
 import { CharacterPortrait } from '../components/CharacterPortrait'
 import { SceneBackdrop } from '../components/SceneBackdrop'
