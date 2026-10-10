@@ -14,20 +14,20 @@
       "decisionsRequired": 4,
       "card": {
         "line": "The greatest archer of his age lowers his bow at the very moment of war.",
-        "quote": "\u201cWhat should I do?\u201d — Kurukshetra, Day One"
+        "quote": "“What should I do?” — Kurukshetra, Day One"
       },
       "startNode": "arj_1_story",
       "nodes": {
         "arj_1_story": {
           "type": "story",
           "title": "Arjuna's Dilemma",
-          "subtitle": "Kurukshetra \u00b7 Day One \u00b7 before the first conch",
+          "subtitle": "Kurukshetra · Day One · before the first conch",
           "narrative": [
             "Two great armies stand arrayed across the plain of Kurukshetra. Banners crack in the morning wind. A hundred thousand conches wait silent in a hundred thousand hands.",
-            "Arjuna asks his charioteer to draw the chariot between the two hosts. He looks across the battlefield \u2014 and sees teachers, relatives, friends and warriors standing on both sides. Grandfather Bhishma. His teacher Drona. Cousins, uncles, the boys he grew up with.",
+            "Arjuna asks his charioteer to draw the chariot between the two hosts. He looks across the battlefield — and sees teachers, relatives, friends and warriors standing on both sides. Grandfather Bhishma. His teacher Drona. Cousins, uncles, the boys he grew up with.",
             "His duty demands one path.",
             "His emotions demand another.",
-            "\u201cWhat should I do?\u201d \u2014 the one question a warrior is never trained to ask."
+            "“What should I do?” — the one question a warrior is never trained to ask."
           ],
           "next": "arj_1"
         },
@@ -40,119 +40,182 @@
             "Whatever happens in the next breath will decide what kind of man fights this war."
           ],
           "prompt": "What should Arjuna prioritize when duty and personal attachment conflict?",
-          "freeText": { "enabled": true, "prompt": "What would you do if you stood where Arjuna stands?" },
+          "freeText": {
+            "enabled": true,
+            "prompt": "What would you do if you stood where Arjuna stands?"
+          },
           "choices": [
             {
               "id": "A",
               "label": "Stand and fight. A kshatriya's duty does not bend to grief.",
               "tag": "Duty first",
-              "effects": { "responsibility": 10, "integrity": 8, "strategy": 5, "compassion": -3, "awareness": 2 },
-              "consequence": "Arjuna lifts the Gandiva. His hands are steady; his heart is not. The war will be fought \u2014 and every beloved face across that field will be there when the arrows fly.",
+              "effects": {
+                "responsibility": 10,
+                "integrity": 8,
+                "strategy": 5,
+                "compassion": -3,
+                "awareness": 2
+              },
+              "consequence": "Arjuna lifts the Gandiva. His hands are steady; his heart is not. The war will be fought — and every beloved face across that field will be there when the arrows fly.",
               "insight": {
-                "reflection": "The epic presents Arjuna's collapse not as cowardice but as a crisis of competing responsibilities \u2014 to kin, to teachers, and to the order that keeps a kingdom from chaos. The counsel he receives never pretends the cost of war is small; it asks him to see his role clearly and act without paralysis.",
+                "reflection": "The epic presents Arjuna's collapse not as cowardice but as a crisis of competing responsibilities — to kin, to teachers, and to the order that keeps a kingdom from chaos. The counsel he receives never pretends the cost of war is small; it asks him to see his role clearly and act without paralysis.",
                 "principle": "Decision-making under conflicting responsibilities.",
-                "source": "Bhagavad Gita, opening chapter \u2014 Vishada Yoga, the yoga of sorrow"
+                "source": "Bhagavad Gita, opening chapter — Vishada Yoga, the yoga of sorrow"
               }
             },
             {
               "id": "B",
               "label": "Refuse to fight. No throne is worth the blood of my teachers and my kin.",
               "tag": "Compassion first",
-              "effects": { "compassion": 10, "integrity": 6, "fairness": 3, "responsibility": -6, "strategy": -4, "awareness": 2 },
-              "consequence": "The Gandiva slips from Arjuna's fingers. The army watches its greatest archer sit down in sorrow \u2014 and for one long moment, no one on the Pandava side knows what holds the line.",
+              "effects": {
+                "compassion": 10,
+                "integrity": 6,
+                "fairness": 3,
+                "responsibility": -6,
+                "strategy": -4,
+                "awareness": 2
+              },
+              "consequence": "The Gandiva slips from Arjuna's fingers. The army watches its greatest archer sit down in sorrow — and for one long moment, no one on the Pandava side knows what holds the line.",
               "insight": {
-                "reflection": "The Mahabharata takes refusal seriously: it devotes eighteen chapters to answering it. Grief for kin is honored as real moral information \u2014 but the epic also counts what refusal would cost the thousands who did not choose this war and must live inside its outcome.",
-                "principle": "Loyalty to persons can collide with obligation to the many \u2014 both are real; only one can steer.",
-                "source": "The Gita does not dismiss Arjuna's compassion \u2014 it asks him to widen it"
+                "reflection": "The Mahabharata takes refusal seriously: it devotes eighteen chapters to answering it. Grief for kin is honored as real moral information — but the epic also counts what refusal would cost the thousands who did not choose this war and must live inside its outcome.",
+                "principle": "Loyalty to persons can collide with obligation to the many — both are real; only one can steer.",
+                "source": "The Gita does not dismiss Arjuna's compassion — it asks him to widen it"
               }
             },
             {
               "id": "C",
-              "label": "Lower the bow \u2014 but do not desert. Seek another way before the first arrow flies.",
+              "label": "Lower the bow — but do not desert. Seek another way before the first arrow flies.",
               "tag": "The third path",
-              "effects": { "compassion": 8, "fairness": 8, "awareness": 8, "integrity": 4, "strategy": 2, "responsibility": -4 },
-              "consequence": "Arjuna keeps his seat on the chariot but not his grip on war. A thin space opens between surrender and slaughter. Someone must find what fills it \u2014 and the armies will not wait long.",
+              "effects": {
+                "compassion": 8,
+                "fairness": 8,
+                "awareness": 8,
+                "integrity": 4,
+                "strategy": 2,
+                "responsibility": -4
+              },
+              "consequence": "Arjuna keeps his seat on the chariot but not his grip on war. A thin space opens between surrender and slaughter. Someone must find what fills it — and the armies will not wait long.",
               "insight": {
-                "reflection": "The Mahabharata itself tries peace first: the Pandavas ask for five villages, and Krishna is sent as a final envoy. In the epic's own logic, war is its tragedy \u2014 never its ideal \u2014 and the failure of negotiation is used to fix moral responsibility on the side that chose the war.",
+                "reflection": "The Mahabharata itself tries peace first: the Pandavas ask for five villages, and Krishna is sent as a final envoy. In the epic's own logic, war is its tragedy — never its ideal — and the failure of negotiation is used to fix moral responsibility on the side that chose the war.",
                 "principle": "Before choosing between two bad options, ask who can widen the options.",
                 "source": "Krishna's peace embassy to Hastinapura, Udyoga Parva"
               }
             },
             {
               "id": "D",
-              "label": "Set down my own judgment. Ask Krishna for counsel \u2014 and follow what I am shown.",
+              "label": "Set down my own judgment. Ask Krishna for counsel — and follow what I am shown.",
               "tag": "Seek counsel",
-              "effects": { "strategy": 8, "awareness": 8, "responsibility": 6, "compassion": 2, "fairness": 2, "integrity": -2 },
-              "consequence": "Arjuna turns from the field to his charioteer: \u201cMy limbs fail me, Krishna. My mouth is dry. Teach me what is right.\u201d It is the wisest thing a proud man can say \u2014 and the hardest.",
+              "effects": {
+                "strategy": 8,
+                "awareness": 8,
+                "responsibility": 6,
+                "compassion": 2,
+                "fairness": 2,
+                "integrity": -2
+              },
+              "consequence": "Arjuna turns from the field to his charioteer: “My limbs fail me, Krishna. My mouth is dry. Teach me what is right.” It is the wisest thing a proud man can say — and the hardest.",
               "insight": {
-                "reflection": "The Bhagavad Gita begins exactly here \u2014 with a question asked at maximum pressure. Arjuna becomes a student at the moment he most wants to be anywhere else. The epic treats asking well as itself a skill of war.",
+                "reflection": "The Bhagavad Gita begins exactly here — with a question asked at maximum pressure. Arjuna becomes a student at the moment he most wants to be anywhere else. The epic treats asking well as itself a skill of war.",
                 "principle": "Under pressure, the ability to ask well outranks the need to answer fast.",
-                "source": "Arjuna surrenders as disciple \u2014 Gita 2.7"
+                "source": "Arjuna surrenders as disciple — Gita 2.7"
               }
             }
           ],
           "next": "arj_2a",
-          "nextByChoice": { "A": "arj_2a", "B": "arj_2b", "C": "arj_2c", "D": "arj_2b" }
+          "nextByChoice": {
+            "A": "arj_2a",
+            "B": "arj_2b",
+            "C": "arj_2c",
+            "D": "arj_2b"
+          }
         },
         "arj_2a": {
           "type": "decision",
           "title": "The Weight of the Conch",
-          "subtitle": "The battle road \u00b7 Kurukshetra, the early days",
+          "subtitle": "The battle road · Kurukshetra, the early days",
           "introVariants": {
-            "A": "The Devadatta conch sounds across Kurukshetra, and the Pandava line holds at dusk. Arjuna fights the first days like falling weather \u2014 and every evening he sees, across the broken formations, the one commander he has not yet faced.",
-            "D": "The counsel beneath the banner ends before dawn. Arjuna rises, wipes his face, and takes up the Gandiva himself \u2014 not sent, but chosen. He fights the first days like falling weather. And every evening he sees, across the field, the teacher who made him."
+            "A": "The Devadatta conch sounds across Kurukshetra, and the Pandava line holds at dusk. Arjuna fights the first days like falling weather — and every evening he sees, across the broken formations, the one commander he has not yet faced.",
+            "D": "The counsel beneath the banner ends before dawn. Arjuna rises, wipes his face, and takes up the Gandiva himself — not sent, but chosen. He fights the first days like falling weather. And every evening he sees, across the field, the teacher who made him."
           },
           "narrative": [
-            "Three days into the war, Drona's battle-square grinds forward like a millstone. Wherever it turns, Pandava companies fold. Dhrishtadyumna \u2014 born, it is said, for the single purpose of ending Drona \u2014 sends word to the command tent: let me engage your teacher.",
+            "Three days into the war, Drona's battle-square grinds forward like a millstone. Wherever it turns, Pandava companies fold. Dhrishtadyumna — born, it is said, for the single purpose of ending Drona — sends word to the command tent: let me engage your teacher.",
             "That night Arjuna remembers a small boy's hands being guided onto a bow string, again and again, until the hands forgot everything else. Everything he is, someone across the field made."
           ],
           "prompt": "How will you face the teacher who made you an archer?",
-          "freeText": { "enabled": true, "prompt": "You are Arjuna at dusk, looking across at your teacher's banner. What do you do?" },
+          "freeText": {
+            "enabled": true,
+            "prompt": "You are Arjuna at dusk, looking across at your teacher's banner. What do you do?"
+          },
           "choices": [
             {
               "id": "A",
-              "label": "Meet Drona in open combat \u2014 honor him with the whole of my skill.",
+              "label": "Meet Drona in open combat — honor him with the whole of my skill.",
               "tag": "Honor in combat",
-              "effects": { "integrity": 8, "responsibility": 8, "fairness": 6, "strategy": 2, "compassion": -2 },
-              "consequence": "Bow answers bow in a duel that stops both armies to watch. Drona smiles even as he presses his student \u2014 the boy has become an archer worth killing. The battle around them does not pause for respect.",
+              "effects": {
+                "integrity": 8,
+                "responsibility": 8,
+                "fairness": 6,
+                "strategy": 2,
+                "compassion": -2
+              },
+              "consequence": "Bow answers bow in a duel that stops both armies to watch. Drona smiles even as he presses his student — the boy has become an archer worth killing. The battle around them does not pause for respect.",
               "insight": {
-                "reflection": "The epic holds the teacher-student bond as sacred \u2014 and still places both men on the field. Honor, in the Mahabharata's grammar, is paid in the manner of the fighting, not in the refusal to fight.",
+                "reflection": "The epic holds the teacher-student bond as sacred — and still places both men on the field. Honor, in the Mahabharata's grammar, is paid in the manner of the fighting, not in the refusal to fight.",
                 "principle": "A relationship you cannot change what it requires can still change how you do it.",
                 "source": "Arjuna and Drona duel across the war's middle days"
               }
             },
             {
               "id": "B",
-              "label": "Fight to disarm, not to kill. Break his formations \u2014 spare the man.",
+              "label": "Fight to disarm, not to kill. Break his formations — spare the man.",
               "tag": "Mercy by design",
-              "effects": { "compassion": 10, "fairness": 6, "integrity": 6, "awareness": 4, "strategy": -4, "responsibility": 2 },
-              "consequence": "Arjuna's arrows take wheels and bows, never throats. Drona withdraws each evening intact \u2014 and returns each morning. The war grows longer, and the longer war develops an appetite of its own.",
+              "effects": {
+                "compassion": 10,
+                "fairness": 6,
+                "integrity": 6,
+                "awareness": 4,
+                "strategy": -4,
+                "responsibility": 2
+              },
+              "consequence": "Arjuna's arrows take wheels and bows, never throats. Drona withdraws each evening intact — and returns each morning. The war grows longer, and the longer war develops an appetite of its own.",
               "insight": {
-                "reflection": "Arjuna again and again searches for non-lethal answers \u2014 disarming rather than slaying. The epic lets mercy work, and equally lets it cost: a war extended is a war multiplied.",
+                "reflection": "Arjuna again and again searches for non-lethal answers — disarming rather than slaying. The epic lets mercy work, and equally lets it cost: a war extended is a war multiplied.",
                 "principle": "Mercy has a cost curve. Pay it knowingly, or not at all.",
-                "source": "The war's long middle \u2014 where every kindness is audited"
+                "source": "The war's long middle — where every kindness is audited"
               }
             },
             {
               "id": "C",
-              "label": "Avoid my teacher entirely. Strike supply, cavalry, command \u2014 the war, not the man.",
+              "label": "Avoid my teacher entirely. Strike supply, cavalry, command — the war, not the man.",
               "tag": "Sidestep the bond",
-              "effects": { "strategy": 9, "awareness": 5, "compassion": 3, "responsibility": -3, "fairness": -2 },
-              "consequence": "Arjuna becomes a storm that never meets Drona's chariot. The army quietly notices what its finest archer will not look at. Dhrishtadyumna notices too \u2014 and files it away.",
+              "effects": {
+                "strategy": 9,
+                "awareness": 5,
+                "compassion": 3,
+                "responsibility": -3,
+                "fairness": -2
+              },
+              "consequence": "Arjuna becomes a storm that never meets Drona's chariot. The army quietly notices what its finest archer will not look at. Dhrishtadyumna notices too — and files it away.",
               "insight": {
                 "reflection": "The Mahabharata is honest about avoidance: it protects feelings in the short term while outsourcing the hardest task to someone else. Dhrishtadyumna's eagerness is the shadow of Arjuna's reluctance.",
-                "principle": "What you refuse to face does not disappear \u2014 it is simply handed to another.",
+                "principle": "What you refuse to face does not disappear — it is simply handed to another.",
                 "source": "Dhrishtadyumna waits at the edge of every council"
               }
             },
             {
               "id": "D",
-              "label": "Parley under a white banner \u2014 ask my teacher why he serves a throne he knows is unjust.",
+              "label": "Parley under a white banner — ask my teacher why he serves a throne he knows is unjust.",
               "tag": "Question the loyal",
-              "effects": { "fairness": 6, "awareness": 8, "integrity": 5, "strategy": 3, "responsibility": -2 },
-              "consequence": "Drona receives his student with courtesy and answers with a shrug of grief: \u201cI serve because I was fed when I was starving. A man's honor is chained to the table that fed him.\u201d Nothing changes on the field. Something is understood.",
+              "effects": {
+                "fairness": 6,
+                "awareness": 8,
+                "integrity": 5,
+                "strategy": 3,
+                "responsibility": -2
+              },
+              "consequence": "Drona receives his student with courtesy and answers with a shrug of grief: “I serve because I was fed when I was starving. A man's honor is chained to the table that fed him.” Nothing changes on the field. Something is understood.",
               "insight": {
-                "reflection": "Drona's loyalty is presented as a bind, not a virtue \u2014 gratitude weaponized by a patron. The epic treats understanding an opponent's chain as genuine strategic knowledge.",
+                "reflection": "Drona's loyalty is presented as a bind, not a virtue — gratitude weaponized by a patron. The epic treats understanding an opponent's chain as genuine strategic knowledge.",
                 "principle": "Every loyalty has a reason. Map the reason and you map the man.",
                 "source": "Drona's answer to why he fights for Hastinapura"
               }
@@ -163,62 +226,88 @@
         "arj_2b": {
           "type": "decision",
           "title": "The Counsel Beneath the Banner",
-          "subtitle": "The counsel road \u00b7 one night, eighteen chapters long",
+          "subtitle": "The counsel road · one night, eighteen chapters long",
           "introVariants": {
-            "B": "Arjuna's fingers will not close on the bow. \u201cI will not fight, Krishna \u2014 not for a kingdom, not against these men.\u201d His charioteer does not condemn him. He asks only: \u201cAnd the thousands who never chose this war \u2014 who holds their line?\u201d",
-            "D": "Krishna listens to the whole question \u2014 the grief, the doubt, the fear of a victory bought with a teacher's blood. Then he says: \u201cYou have asked well. Now ask once more \u2014 and ask what you are willing to see.\u201d"
+            "B": "Arjuna's fingers will not close on the bow. “I will not fight, Krishna — not for a kingdom, not against these men.” His charioteer does not condemn him. He asks only: “And the thousands who never chose this war — who holds their line?”",
+            "D": "Krishna listens to the whole question — the grief, the doubt, the fear of a victory bought with a teacher's blood. Then he says: “You have asked well. Now ask once more — and ask what you are willing to see.”"
           },
           "narrative": [
-            "Beneath the banner of Hanuman, away from the armies' roar, the counsel unfolds through the watches of the night. Krishna does not command. He lays Arjuna's bindings on the chariot floor one by one \u2014 fear, grief, pride, the hunger to be thought good \u2014 and asks which of them should be allowed to steer.",
+            "Beneath the banner of Hanuman, away from the armies' roar, the counsel unfolds through the watches of the night. Krishna does not command. He lays Arjuna's bindings on the chariot floor one by one — fear, grief, pride, the hunger to be thought good — and asks which of them should be allowed to steer.",
             "By the last watch, one question remains. It cannot be answered by counsel, by scripture, or by a charioteer. It is Arjuna's alone."
           ],
           "prompt": "When your heart and your duty disagree, what should make the final call?",
-          "freeText": { "enabled": true, "prompt": "It is the last watch of the night. What is your answer?" },
+          "freeText": {
+            "enabled": true,
+            "prompt": "It is the last watch of the night. What is your answer?"
+          },
           "choices": [
             {
               "id": "A",
               "label": "Duty. Feelings are weather; obligation is the road.",
               "tag": "Duty decides",
-              "effects": { "responsibility": 10, "integrity": 6, "strategy": 4, "compassion": -4 },
-              "consequence": "Arjuna rises before dawn and takes up the Gandiva with steady hands. Something in him stays bent over its grief \u2014 but the army gets its archer back, and the road goes where roads go.",
+              "effects": {
+                "responsibility": 10,
+                "integrity": 6,
+                "strategy": 4,
+                "compassion": -4
+              },
+              "consequence": "Arjuna rises before dawn and takes up the Gandiva with steady hands. Something in him stays bent over its grief — but the army gets its archer back, and the road goes where roads go.",
               "insight": {
-                "reflection": "\u201cDo your duty\u201d is the summary everyone remembers \u2014 but the teaching is addressed to a man weeping, and it spends its first chapters honoring the weeping before it speaks a word about action.",
-                "principle": "A role freely accepted binds you \u2014 especially on the days it hurts.",
-                "source": "Swadharma \u2014 one's own duty, though imperfect, Gita 3.35"
+                "reflection": "“Do your duty” is the summary everyone remembers — but the teaching is addressed to a man weeping, and it spends its first chapters honoring the weeping before it speaks a word about action.",
+                "principle": "A role freely accepted binds you — especially on the days it hurts.",
+                "source": "Swadharma — one's own duty, though imperfect, Gita 3.35"
               }
             },
             {
               "id": "B",
               "label": "Compassion. If duty demands cruelty, the duty is wrong.",
               "tag": "Compassion decides",
-              "effects": { "compassion": 10, "fairness": 6, "awareness": 4, "responsibility": -5 },
-              "consequence": "Arjuna chooses to see every man on that field as somebody's son. He will fight from now on the way a surgeon cuts \u2014 as little, as precisely, as possible. The war will test that vow without mercy.",
+              "effects": {
+                "compassion": 10,
+                "fairness": 6,
+                "awareness": 4,
+                "responsibility": -5
+              },
+              "consequence": "Arjuna chooses to see every man on that field as somebody's son. He will fight from now on the way a surgeon cuts — as little, as precisely, as possible. The war will test that vow without mercy.",
               "insight": {
-                "reflection": "The epic never mocks compassion \u2014 but it is honest about its weight. A general who feels every loss must still order the line forward. Feeling the cost is not weakness; refusing to calculate it is.",
-                "principle": "Feel the cost of the decision \u2014 then still be able to make it.",
+                "reflection": "The epic never mocks compassion — but it is honest about its weight. A general who feels every loss must still order the line forward. Feeling the cost is not weakness; refusing to calculate it is.",
+                "principle": "Feel the cost of the decision — then still be able to make it.",
                 "source": "Arjuna's vow of minimal slaughter, tested daily"
               }
             },
             {
               "id": "C",
-              "label": "Consequence. Choose the answer whose ruins I can live inside \u2014 then live inside them.",
+              "label": "Consequence. Choose the answer whose ruins I can live inside — then live inside them.",
               "tag": "Weigh the burden",
-              "effects": { "awareness": 9, "integrity": 5, "strategy": 4, "responsibility": 3, "fairness": 2, "compassion": -2 },
-              "consequence": "Arjuna stops asking which choice is clean and starts asking which price he is willing to pay in full. He fights the war \u2014 and on the last day, when the account is read out, nothing on it is a surprise to him.",
+              "effects": {
+                "awareness": 9,
+                "integrity": 5,
+                "strategy": 4,
+                "responsibility": 3,
+                "fairness": 2,
+                "compassion": -2
+              },
+              "consequence": "Arjuna stops asking which choice is clean and starts asking which price he is willing to pay in full. He fights the war — and on the last day, when the account is read out, nothing on it is a surprise to him.",
               "insight": {
-                "reflection": "The Gita's deepest instruction may be exactly this: you are entitled to the act, never to its fruit. The Mahabharata grades its heroes by what their choices harvest \u2014 it is a poem obsessed with consequence.",
+                "reflection": "The Gita's deepest instruction may be exactly this: you are entitled to the act, never to its fruit. The Mahabharata grades its heroes by what their choices harvest — it is a poem obsessed with consequence.",
                 "principle": "Rank options by the futures they create, not the comfort they give.",
-                "source": "Gita 2.47 \u2014 the right to action, never to its fruits"
+                "source": "Gita 2.47 — the right to action, never to its fruits"
               }
             },
             {
               "id": "D",
               "label": "Neither. Not under pressure. I withdraw until the mind is clear.",
               "tag": "Refuse the hour",
-              "effects": { "integrity": 7, "awareness": 4, "compassion": 2, "responsibility": -8, "strategy": -3 },
-              "consequence": "Arjuna asks for one more night. The counsel continues. But armies do not pause for clarity \u2014 at dawn, others make the choices he deferred, and he must live inside their judgment.",
+              "effects": {
+                "integrity": 7,
+                "awareness": 4,
+                "compassion": 2,
+                "responsibility": -8,
+                "strategy": -3
+              },
+              "consequence": "Arjuna asks for one more night. The counsel continues. But armies do not pause for clarity — at dawn, others make the choices he deferred, and he must live inside their judgment.",
               "insight": {
-                "reflection": "The epic is generous to deliberation \u2014 the Gita itself is eighteen chapters of it. But its councils always end, and the field waits for no one. Refusing to decide is also a move other people must respond to.",
+                "reflection": "The epic is generous to deliberation — the Gita itself is eighteen chapters of it. But its councils always end, and the field waits for no one. Refusing to decide is also a move other people must respond to.",
                 "principle": "Deliberation is a phase, not an address. Know when it must conclude.",
                 "source": "The councils of the Udyoga Parva always adjourn"
               }
@@ -229,61 +318,88 @@
         "arj_2c": {
           "type": "decision",
           "title": "The Envoy's Last Word",
-          "subtitle": "The peace road \u00b7 the marble court of Hastinapura",
+          "subtitle": "The peace road · the marble court of Hastinapura",
           "narrative": [
-            "Arjuna does not sound his conch. Under a white banner his chariot crosses the empty plain to Hastinapura \u2014 and the marble court goes silent as the greatest archer of the Pandavas walks in unarmed, asking for peace.",
+            "Arjuna does not sound his conch. Under a white banner his chariot crosses the empty plain to Hastinapura — and the marble court goes silent as the greatest archer of the Pandavas walks in unarmed, asking for peace.",
             "Duryodhana receives him with a smile and a golden chair. Bhishma sits rigid with grief. Drona will not meet his favorite student's eye. Karna watches from the seat of the sun, saying nothing.",
-            "Duryodhana's answer comes before any argument can form: \u201cNot one village. Not land the size of a needle's point.\u201d But his voice cracks on the word needle \u2014 and in that crack lives the only question that matters."
+            "Duryodhana's answer comes before any argument can form: “Not one village. Not land the size of a needle's point.” But his voice cracks on the word needle — and in that crack lives the only question that matters."
           ],
           "prompt": "You have one audience with the enemy court. What is the wisest use of it?",
-          "freeText": { "enabled": true, "prompt": "You stand unarmed before the throne. Speak \u2014 what do you say?" },
+          "freeText": {
+            "enabled": true,
+            "prompt": "You stand unarmed before the throne. Speak — what do you say?"
+          },
           "choices": [
             {
               "id": "A",
               "label": "State terms plainly: restore our land, or face us at Kurukshetra. No theater.",
               "tag": "Plain terms",
-              "effects": { "responsibility": 8, "integrity": 8, "fairness": 4, "strategy": -2, "compassion": -2 },
-              "consequence": "No speeches, no wrath \u2014 just terms, set down like arrows on a rack. The court respects it. Duryodhana refuses it. And when war comes, no one can say the Pandavas hid their intent.",
+              "effects": {
+                "responsibility": 8,
+                "integrity": 8,
+                "fairness": 4,
+                "strategy": -2,
+                "compassion": -2
+              },
+              "consequence": "No speeches, no wrath — just terms, set down like arrows on a rack. The court respects it. Duryodhana refuses it. And when war comes, no one can say the Pandavas hid their intent.",
               "insight": {
-                "reflection": "The epic's great peace effort is played completely straight \u2014 Krishna's embassy is sincere, not theater \u2014 and its failure is used with surgical care to fix moral responsibility on the side that chose war.",
+                "reflection": "The epic's great peace effort is played completely straight — Krishna's embassy is sincere, not theater — and its failure is used with surgical care to fix moral responsibility on the side that chose war.",
                 "principle": "A clear ultimatum is an act of respect: it gives the other side a true choice.",
-                "source": "Krishna's embassy, Udyoga Parva \u2014 the last door before war"
+                "source": "Krishna's embassy, Udyoga Parva — the last door before war"
               }
             },
             {
               "id": "B",
-              "label": "Accept five villages. Take the imperfect peace \u2014 five villages can grow.",
+              "label": "Accept five villages. Take the imperfect peace — five villages can grow.",
               "tag": "Peace on any terms",
-              "effects": { "compassion": 10, "fairness": 8, "awareness": 6, "strategy": -5, "responsibility": -4, "integrity": -2 },
-              "consequence": "Gasps run around the hall. Bhishma closes his eyes as if in prayer. It is Duryodhana who refuses \u2014 he will not let the Pandavas have the moral field along with the villages. The offer Arjuna could make, Duryodhana cannot accept twice.",
+              "effects": {
+                "compassion": 10,
+                "fairness": 8,
+                "awareness": 6,
+                "strategy": -5,
+                "responsibility": -4,
+                "integrity": -2
+              },
+              "consequence": "Gasps run around the hall. Bhishma closes his eyes as if in prayer. It is Duryodhana who refuses — he will not let the Pandavas have the moral field along with the villages. The offer Arjuna could make, Duryodhana cannot accept twice.",
               "insight": {
-                "reflection": "The epic asks whether a peace purchased by swallowing injustice is peace \u2014 Draupadi's unanswered humiliation stands in that hall too. But it does not mock the reach for mercy; it dares the other side to refuse it.",
+                "reflection": "The epic asks whether a peace purchased by swallowing injustice is peace — Draupadi's unanswered humiliation stands in that hall too. But it does not mock the reach for mercy; it dares the other side to refuse it.",
                 "principle": "Test a compromise against its second year, not its first day.",
-                "source": "The offer of five villages \u2014 and the needle's point of land"
+                "source": "The offer of five villages — and the needle's point of land"
               }
             },
             {
               "id": "C",
-              "label": "Address the elders, not the king \u2014 ask Bhishma and Drona to withdraw their support.",
+              "label": "Address the elders, not the king — ask Bhishma and Drona to withdraw their support.",
               "tag": "Split the court",
-              "effects": { "strategy": 8, "awareness": 8, "fairness": 2, "responsibility": -3 },
-              "consequence": "Arjuna speaks past the throne to the men who hold it up. Bhishma, bound by his vow to Hastinapura, shakes his head in sorrow. Drona studies the floor. No elder moves \u2014 but the court dissolves early that day, arguing, and the seeds of doubt are watered.",
+              "effects": {
+                "strategy": 8,
+                "awareness": 8,
+                "fairness": 2,
+                "responsibility": -3
+              },
+              "consequence": "Arjuna speaks past the throne to the men who hold it up. Bhishma, bound by his vow to Hastinapura, shakes his head in sorrow. Drona studies the floor. No elder moves — but the court dissolves early that day, arguing, and the seeds of doubt are watered.",
               "insight": {
-                "reflection": "The Kaurava court is a coalition of reluctant loyalists \u2014 Bhishma bound by vow, Drona by debt, Karna by gratitude. The epic repeatedly shows power leaking through the cracks between allies.",
+                "reflection": "The Kaurava court is a coalition of reluctant loyalists — Bhishma bound by vow, Drona by debt, Karna by gratitude. The epic repeatedly shows power leaking through the cracks between allies.",
                 "principle": "When you cannot beat a wall, negotiate with its bricks.",
                 "source": "The reluctant pillars of Hastinapura"
               }
             },
             {
               "id": "D",
-              "label": "Use the hour to read the enemy \u2014 their rifts, their fears, their strength \u2014 for the war that now looks certain.",
+              "label": "Use the hour to read the enemy — their rifts, their fears, their strength — for the war that now looks certain.",
               "tag": "Eyes open",
-              "effects": { "strategy": 10, "awareness": 8, "integrity": -4, "fairness": -2, "compassion": -2 },
+              "effects": {
+                "strategy": 10,
+                "awareness": 8,
+                "integrity": -4,
+                "fairness": -2,
+                "compassion": -2
+              },
               "consequence": "While others perform honor, Arjuna watches: which brother Duryodhana consults first, where Karna's eyes go, how thin the royal stables look. He walks out knowing exactly what this war will cost both sides. Knowledge is heavier than it looks.",
               "insight": {
-                "reflection": "Scouting under a flag of parley sits in a gray zone the epic knows well \u2014 Krishna's own diplomacy mixes perfect truth with perfect maneuver. The text rarely splits intelligence from intent; it grades the whole act.",
+                "reflection": "Scouting under a flag of parley sits in a gray zone the epic knows well — Krishna's own diplomacy mixes perfect truth with perfect maneuver. The text rarely splits intelligence from intent; it grades the whole act.",
                 "principle": "Information gathered honestly can still be spent on hard ends. Own the whole act.",
-                "source": "Krishna's statecraft \u2014 truth as an instrument"
+                "source": "Krishna's statecraft — truth as an instrument"
               }
             }
           ],
@@ -292,61 +408,89 @@
         "arj_3": {
           "type": "decision",
           "title": "The War Council",
-          "subtitle": "The ninth night \u00b7 where all roads converge",
+          "subtitle": "The ninth night · where all roads converge",
           "narrative": [
-            "The ninth night of the war. The Pandava camp is torch-lit and quiet with grief \u2014 Drona's rotating battle-wheels have taken a terrible toll this week, and every council now begins the same way: someone must stop that old man.",
-            "Dhrishtadyumna spreads the map. \u201cDrona cannot be beaten while he fights like a man without fear. But he has one anchor \u2014 his son, Ashwatthama. If Drona believes that son is dead, he will drop his bow where he stands.\u201d",
-            "Bhima grins: \u201cAn elephant named Ashwatthama stands in our lines. One axe-stroke \u2014 and the name becomes negotiable. Yudhishthira will speak the words. He can weigh what is said.\u201d All eyes turn. Yudhishthira's face is stone. \u201cIt will work,\u201d says Dhrishtadyumna. \u201cAnd it will be remembered,\u201d says Yudhishthira, quietly.",
+            "The ninth night of the war. The Pandava camp is torch-lit and quiet with grief — Drona's rotating battle-wheels have taken a terrible toll this week, and every council now begins the same way: someone must stop that old man.",
+            "Dhrishtadyumna spreads the map. “Drona cannot be beaten while he fights like a man without fear. But he has one anchor — his son, Ashwatthama. If Drona believes that son is dead, he will drop his bow where he stands.”",
+            "Bhima grins: “An elephant named Ashwatthama stands in our lines. One axe-stroke — and the name becomes negotiable. Yudhishthira will speak the words. He can weigh what is said.” All eyes turn. Yudhishthira's face is stone. “It will work,” says Dhrishtadyumna. “And it will be remembered,” says Yudhishthira, quietly.",
             "They ask for Arjuna's voice."
           ],
-          "prompt": "Will you consent to the stratagem \u2014 a half-truth to unmake the enemy's greatest commander?",
-          "freeText": { "enabled": true, "prompt": "The council waits on your word. What do you say?" },
+          "prompt": "Will you consent to the stratagem — a half-truth to unmake the enemy's greatest commander?",
+          "freeText": {
+            "enabled": true,
+            "prompt": "The council waits on your word. What do you say?"
+          },
           "choices": [
             {
               "id": "A",
               "label": "Consent. One deception to stop a man who has cost thousands of lives is arithmetic, not sin.",
               "tag": "Cold arithmetic",
-              "effects": { "strategy": 10, "responsibility": 8, "awareness": 6, "integrity": -12, "fairness": -4 },
-              "consequence": "The plan moves by dawn. An elephant dies under an honest-sounding name, and an old teacher hears the worst words a father can hear. It works. The histories record that it works \u2014 and record, in the same breath, exactly how.",
+              "effects": {
+                "strategy": 10,
+                "responsibility": 8,
+                "awareness": 6,
+                "integrity": -12,
+                "fairness": -4
+              },
+              "consequence": "The plan moves by dawn. An elephant dies under an honest-sounding name, and an old teacher hears the worst words a father can hear. It works. The histories record that it works — and record, in the same breath, exactly how.",
               "insight": {
-                "reflection": "The epic's judgment on the Drona stratagem is famously unresolved: tactically brilliant, morally scarring. Tradition holds that Yudhishthira's chariot \u2014 which had floated above the ground since birth \u2014 finally touched the earth after his half-truth. The text makes the cost visible on purpose.",
+                "reflection": "The epic's judgment on the Drona stratagem is famously unresolved: tactically brilliant, morally scarring. Tradition holds that Yudhishthira's chariot — which had floated above the ground since birth — finally touched the earth after his half-truth. The text makes the cost visible on purpose.",
                 "principle": "Shortcuts through truth are real: they work, and they are never free.",
                 "source": "The fall of Drona, Drona Parva"
               }
             },
             {
               "id": "B",
-              "label": "Refuse. We beat Drona with arrows we can account for \u2014 not with lies.",
+              "label": "Refuse. We beat Drona with arrows we can account for — not with lies.",
               "tag": "Clean steel",
-              "effects": { "integrity": 12, "fairness": 6, "compassion": 2, "strategy": -10, "responsibility": -3 },
-              "consequence": "Arjuna says no \u2014 loudly enough that the council must find another road. The war grows longer and crueler before it ends. But when the bards sing of the Pandavas, no verse will need explaining.",
+              "effects": {
+                "integrity": 12,
+                "fairness": 6,
+                "compassion": 2,
+                "strategy": -10,
+                "responsibility": -3
+              },
+              "consequence": "Arjuna says no — loudly enough that the council must find another road. The war grows longer and crueler before it ends. But when the bards sing of the Pandavas, no verse will need explaining.",
               "insight": {
-                "reflection": "Refusing the shortcut has a real, countable price here \u2014 a longer war and more dead. The epic does not pretend otherwise. It simply asks which costs you are willing to sign your name to.",
+                "reflection": "Refusing the shortcut has a real, countable price here — a longer war and more dead. The epic does not pretend otherwise. It simply asks which costs you are willing to sign your name to.",
                 "principle": "Integrity is a budget. Know what refusing to spend it will cost in other coin.",
                 "source": "The alternative histories the epic makes you imagine"
               }
             },
             {
               "id": "C",
-              "label": "Set a condition: if the ruse is used, Drona must be disarmed and spared \u2014 not slain in despair.",
+              "label": "Set a condition: if the ruse is used, Drona must be disarmed and spared — not slain in despair.",
               "tag": "Guard the fall",
-              "effects": { "integrity": 6, "compassion": 6, "awareness": 6, "strategy": 4, "responsibility": 2, "fairness": -2 },
-              "consequence": "The council accepts the condition in uneasy silence. It is honored \u2014 mostly. The old teacher, disarmed by a grief and a bowman's mercy, retires from the field to die a hermit's death instead of a soldier's. Neither a clean lie nor a clean fight: a third thing, owned by everyone who built it.",
+              "effects": {
+                "integrity": 6,
+                "compassion": 6,
+                "awareness": 6,
+                "strategy": 4,
+                "responsibility": 2,
+                "fairness": -2
+              },
+              "consequence": "The council accepts the condition in uneasy silence. It is honored — mostly. The old teacher, disarmed by a grief and a bowman's mercy, retires from the field to die a hermit's death instead of a soldier's. Neither a clean lie nor a clean fight: a third thing, owned by everyone who built it.",
               "insight": {
-                "reflection": "Conditions are how councils stay honest \u2014 they convert \u2018should we do this\u2019 into \u2018under what limits\u2019. The Mahabharata's war councils go wrong most often when no one sets terms in advance.",
+                "reflection": "Conditions are how councils stay honest — they convert ‘should we do this’ into ‘under what limits’. The Mahabharata's war councils go wrong most often when no one sets terms in advance.",
                 "principle": "When you cannot stop an act, you can still shape its edges.",
                 "source": "Council craft across the Udyoga and Drona Parvas"
               }
             },
             {
               "id": "D",
-              "label": "Stand aside. It is Yudhishthira's truth to spend or keep \u2014 not mine.",
+              "label": "Stand aside. It is Yudhishthira's truth to spend or keep — not mine.",
               "tag": "Another's conscience",
-              "effects": { "fairness": 4, "awareness": 5, "integrity": 1, "responsibility": -8, "strategy": -2 },
-              "consequence": "Arjuna bows out of the decision. The burden settles fully on his eldest brother \u2014 who carries it, speaks the words, and is seen carrying it for the rest of his life. The strategy proceeds. Something between the brothers does not.",
+              "effects": {
+                "fairness": 4,
+                "awareness": 5,
+                "integrity": 1,
+                "responsibility": -8,
+                "strategy": -2
+              },
+              "consequence": "Arjuna bows out of the decision. The burden settles fully on his eldest brother — who carries it, speaks the words, and is seen carrying it for the rest of his life. The strategy proceeds. Something between the brothers does not.",
               "insight": {
-                "reflection": "Deferring to another's moral authority is a virtue \u2014 and the epic shows its shadow too: silence in a council lets the harder men in the room decide.",
-                "principle": "Abstention is a vote with your name left off it \u2014 but it is still a vote.",
+                "reflection": "Deferring to another's moral authority is a virtue — and the epic shows its shadow too: silence in a council lets the harder men in the room decide.",
+                "principle": "Abstention is a vote with your name left off it — but it is still a vote.",
                 "source": "Yudhishthira pays for the sentence Arjuna declined to authorize"
               }
             }
@@ -356,24 +500,33 @@
         "arj_4": {
           "type": "decision",
           "title": "The Tenth Dawn",
-          "subtitle": "The final decision \u00b7 the grandsire's vow",
+          "subtitle": "The final decision · the grandsire's vow",
           "narrative": [
-            "Ten nights of war. Still the Pandavas advance no further than Bhishma allows \u2014 and the grandsire allows very little. Each dawn his bow sweeps the field like a scythe. Each evening Krishna looks older. On the ninth night, even the charioteer who had vowed to raise no weapon in this war was seen gripping a chariot wheel in fury.",
-            "But the grandsire has one seam, and Shikhandi is its name. Bhishma has sworn never to raise a weapon against a woman \u2014 or against one who has ever been a woman. Shikhandi, who carries a lifetime of grievance and a warrior's training, rides at the head of the column.",
+            "Ten nights of war. Still the Pandavas advance no further than Bhishma allows — and the grandsire allows very little. Each dawn his bow sweeps the field like a scythe. Each evening Krishna looks older. On the ninth night, even the charioteer who had vowed to raise no weapon in this war was seen gripping a chariot wheel in fury.",
+            "But the grandsire has one seam, and Shikhandi is its name. Bhishma has sworn never to raise a weapon against a woman — or against one who has ever been a woman. Shikhandi, who carries a lifetime of grievance and a warrior's training, rides at the head of the column.",
             "The plan is simple and terrible: Shikhandi rides in front. The vow empties Bhishma's bow. And from behind that living shield, Arjuna's arrows must do what no army could.",
-            "Arjuna looks at Shikhandi \u2014 a warrior with their own long reason for this dawn \u2014 and then at the white banner of the grandfather who once held him as a child."
+            "Arjuna looks at Shikhandi — a warrior with their own long reason for this dawn — and then at the white banner of the grandfather who once held him as a child."
           ],
           "prompt": "At the tenth dawn, how will you bring down the grandsire?",
-          "freeText": { "enabled": true, "prompt": "The conches are sounding. What is your final order?" },
+          "freeText": {
+            "enabled": true,
+            "prompt": "The conches are sounding. What is your final order?"
+          },
           "choices": [
             {
               "id": "A",
               "label": "Ride behind Shikhandi exactly as planned. End this. The pain of it lands on me, not on them.",
               "tag": "The shield plan",
-              "effects": { "strategy": 8, "responsibility": 9, "awareness": 5, "compassion": -6, "fairness": -3 },
-              "consequence": "It works exactly as designed. Bhishma's bow lowers \u2014 and Arjuna, weeping behind his own quiver, brings down the grandsire of both armies onto a bed of arrows. The war turns that day. The bards will argue about the shield for three thousand years.",
+              "effects": {
+                "strategy": 8,
+                "responsibility": 9,
+                "awareness": 5,
+                "compassion": -6,
+                "fairness": -3
+              },
+              "consequence": "It works exactly as designed. Bhishma's bow lowers — and Arjuna, weeping behind his own quiver, brings down the grandsire of both armies onto a bed of arrows. The war turns that day. The bards will argue about the shield for three thousand years.",
               "insight": {
-                "reflection": "The epic lets the stratagem succeed \u2014 and lets the victory feel like grief. Using a person as an instrument is the sharpest ethical edge in the entire war, and the text never dulls it. It also remembers, carefully, that Shikhandi chose to be there.",
+                "reflection": "The epic lets the stratagem succeed — and lets the victory feel like grief. Using a person as an instrument is the sharpest ethical edge in the entire war, and the text never dulls it. It also remembers, carefully, that Shikhandi chose to be there.",
                 "principle": "Some plans win the day and rent the soul. Keep accounts in both currencies.",
                 "source": "The fall of Bhishma, Bhishma Parva"
               }
@@ -382,22 +535,33 @@
               "id": "B",
               "label": "Never from behind another. Face Bhishma directly, arrow to arrow, whatever it costs.",
               "tag": "Face to face",
-              "effects": { "integrity": 10, "responsibility": 6, "compassion": 2, "strategy": -9 },
-              "consequence": "Arjuna circles past Shikhandi into the grandsire's direct line. It is the hardest fight of the war \u2014 Bhishma breaks ranks and men by the hour, and Arjuna is wounded twice before dusk. But the old man nods once, almost proudly, before the final shafts fly.",
+              "effects": {
+                "integrity": 10,
+                "responsibility": 6,
+                "compassion": 2,
+                "strategy": -9
+              },
+              "consequence": "Arjuna circles past Shikhandi into the grandsire's direct line. It is the hardest fight of the war — Bhishma breaks ranks and men by the hour, and Arjuna is wounded twice before dusk. But the old man nods once, almost proudly, before the final shafts fly.",
               "insight": {
-                "reflection": "The epic honors those who refuse borrowed victories \u2014 and records, without flinching, what the refusal costs in other people's blood. Honor is real in the Mahabharata. So is its invoice.",
+                "reflection": "The epic honors those who refuse borrowed victories — and records, without flinching, what the refusal costs in other people's blood. Honor is real in the Mahabharata. So is its invoice.",
                 "principle": "A clean method can still buy an expensive outcome. Choose it with open eyes.",
                 "source": "Arjuna's direct duels across the war"
               }
             },
             {
               "id": "C",
-              "label": "Ask Shikhandi first. Stand beside them, not behind them \u2014 one cause, two archers.",
+              "label": "Ask Shikhandi first. Stand beside them, not behind them — one cause, two archers.",
               "tag": "Beside, not behind",
-              "effects": { "fairness": 10, "integrity": 7, "awareness": 5, "compassion": 4, "strategy": -3 },
-              "consequence": "Shikhandi's answer is a lifetime old: \u201cThis arrow is mine to loose.\u201d They ride abreast \u2014 the grandsire's vow and Arjuna's bow meeting as partners, not as shield and hand. The plan works. And no one in it was used.",
+              "effects": {
+                "fairness": 10,
+                "integrity": 7,
+                "awareness": 5,
+                "compassion": 4,
+                "strategy": -3
+              },
+              "consequence": "Shikhandi's answer is a lifetime old: “This arrow is mine to loose.” They ride abreast — the grandsire's vow and Arjuna's bow meeting as partners, not as shield and hand. The plan works. And no one in it was used.",
               "insight": {
-                "reflection": "The epic gives Shikhandi agency, training, and a lifetime of grievance honored. Reading Shikhandi as an ally with their own claim \u2014 not a device \u2014 is the version of the plan in which everyone's dignity survives.",
+                "reflection": "The epic gives Shikhandi agency, training, and a lifetime of grievance honored. Reading Shikhandi as an ally with their own claim — not a device — is the version of the plan in which everyone's dignity survives.",
                 "principle": "Turn instruments into allies, and the ethics of the plan changes shape.",
                 "source": "Shikhandi's story, told in the Udyoga and Bhishma Parvas"
               }
@@ -406,12 +570,18 @@
               "id": "D",
               "label": "Lower the bow. Call to the grandsire to choose his own dharma and lay it down himself.",
               "tag": "Open the gate",
-              "effects": { "compassion": 8, "fairness": 6, "awareness": 7, "strategy": -7, "responsibility": -2 },
-              "consequence": "Arjuna stands in the arrow-storm and calls across the field: end it yourself, grandsire. Lay down the bow you swore by. The old man's answer comes through tears: \u201cI am tied to the throne's fate, child. Loose your arrows.\u201d He chooses his chain. Arjuna finally shoots.",
+              "effects": {
+                "compassion": 8,
+                "fairness": 6,
+                "awareness": 7,
+                "strategy": -7,
+                "responsibility": -2
+              },
+              "consequence": "Arjuna stands in the arrow-storm and calls across the field: end it yourself, grandsire. Lay down the bow you swore by. The old man's answer comes through tears: “I am tied to the throne's fate, child. Loose your arrows.” He chooses his chain. Arjuna finally shoots.",
               "insight": {
-                "reflection": "The Mahabharata is full of men who know better and stay bound \u2014 Bhishma chief among them, bound by vow and gratitude to a flawed throne. Offering another person their choice is respect; it does not force the outcome you need.",
+                "reflection": "The Mahabharata is full of men who know better and stay bound — Bhishma chief among them, bound by vow and gratitude to a flawed throne. Offering another person their choice is respect; it does not force the outcome you need.",
                 "principle": "You can hand someone their choice. You cannot make it for them.",
-                "source": "Bhishma \u2014 the epic's great study of the kept vow"
+                "source": "Bhishma — the epic's great study of the kept vow"
               }
             }
           ],
@@ -420,50 +590,64 @@
         "arj_end": {
           "type": "ending",
           "title": "The Decision Profile",
-          "subtitle": "Kurukshetra \u00b7 after the tenth dawn",
+          "subtitle": "Kurukshetra · after the tenth dawn",
           "chapterInsight": {
-            "reflection": "Arjuna's chapter is the Mahabharata's opening argument: that the hardest choices are rarely good against evil \u2014 they are duty against duty. The counsel he receives on the field is not a rule but a discipline: see the competing responsibilities clearly, act with steady hands, and carry the fruit \u2014 or the cost \u2014 without pretending it was never picked.",
+            "reflection": "Arjuna's chapter is the Mahabharata's opening argument: that the hardest choices are rarely good against evil — they are duty against duty. The counsel he receives on the field is not a rule but a discipline: see the competing responsibilities clearly, act with steady hands, and carry the fruit — or the cost — without pretending it was never picked.",
             "principle": "Name the competing duties. Choose. Carry the cost knowingly.",
-            "source": "Gita 2.47 \u2014 \u201cYou have a right to your actions, but never to the fruits of your actions.\u201d"
+            "source": "Gita 2.47 — “You have a right to your actions, but never to the fruits of your actions.”"
           },
           "endings": [
             {
               "id": "dharma_archer",
               "name": "THE DHARMA ARCHER",
               "line": "Balanced judgment under impossible weight.",
-              "conditions": { "allAtLeast": 55, "minScore": 62 },
+              "conditions": {
+                "allAtLeast": 55,
+                "minScore": 62
+              },
               "epilogue": [
-                "The war ends at dusk on the eighteenth day. Arjuna wins the kingdom \u2014 and something rarer: a conscience that can still look in the mirror. Not because his choices were painless, but because he made each one with open eyes and paid each price without pretending it wasn't paid.",
+                "The war ends at dusk on the eighteenth day. Arjuna wins the kingdom — and something rarer: a conscience that can still look in the mirror. Not because his choices were painless, but because he made each one with open eyes and paid each price without pretending it wasn't paid.",
                 "The bards will argue about Kurukshetra for three thousand years. Tonight, for one night, the archer sleeps."
               ]
             },
             {
               "id": "iron_kshatriya",
               "name": "THE IRON KSHATRIYA",
-              "line": "Swift, decisive \u2014 and carrying the full invoice.",
-              "conditions": { "minTrait": { "strategy": 58 }, "maxTrait": { "compassion": 52 } },
+              "line": "Swift, decisive — and carrying the full invoice.",
+              "conditions": {
+                "minTrait": {
+                  "strategy": 58
+                },
+                "maxTrait": {
+                  "compassion": 52
+                }
+              },
               "epilogue": [
                 "Victory comes swiftly and completely. The councils marvel at his decisiveness; the armies speak his name like a weapon; the kingdom is safe within a season.",
-                "But arithmetic is patient. At night the faces return \u2014 each one a consequence he chose with open eyes. He rules well. He does not sleep easily."
+                "But arithmetic is patient. At night the faces return — each one a consequence he chose with open eyes. He rules well. He does not sleep easily."
               ]
             },
             {
               "id": "compassionate_bow",
               "name": "THE COMPASSIONATE BOW",
               "line": "Mercy chosen with open eyes, at mercy's price.",
-              "conditions": { "topTrait": "compassion" },
+              "conditions": {
+                "topTrait": "compassion"
+              },
               "epilogue": [
-                "His war is longer than it had to be \u2014 mercy always extends the road. But when the drums finally fall silent, fewer widows curse his name, and more soldiers on both sides live to go home.",
+                "His war is longer than it had to be — mercy always extends the road. But when the drums finally fall silent, fewer widows curse his name, and more soldiers on both sides live to go home.",
                 "The gentler war. The heavier war. The one his heart can carry."
               ]
             },
             {
               "id": "truth_keeper",
               "name": "THE TRUTH-KEEPER",
-              "line": "A clean war is possible \u2014 and it is never cheap.",
-              "conditions": { "topTrait": "integrity" },
+              "line": "A clean war is possible — and it is never cheap.",
+              "conditions": {
+                "topTrait": "integrity"
+              },
               "epilogue": [
-                "No verse of his war needs explaining. He fought without ruse and won without trickery \u2014 and the cost of that cleanliness is written plainly in the ledgers of the dead.",
+                "No verse of his war needs explaining. He fought without ruse and won without trickery — and the cost of that cleanliness is written plainly in the ledgers of the dead.",
                 "The epics sing louder for clever victories. But mothers on both sides know exactly whom to thank for the ones who came home."
               ]
             },
@@ -471,19 +655,21 @@
               "id": "way_seeker",
               "name": "THE WAY-SEEKER",
               "line": "Second-order sight, first-order results.",
-              "conditions": { "topTrait": "awareness" },
+              "conditions": {
+                "topTrait": "awareness"
+              },
               "epilogue": [
                 "He fought the way a physician reads: symptoms first, causes second, blade last. His arrows were the final sentence of long arguments no one else bothered to have.",
-                "Years later, when kings come for counsel, they ask first for the archer who saw three moves ahead \u2014 and one move inward."
+                "Years later, when kings come for counsel, they ask first for the archer who saw three moves ahead — and one move inward."
               ]
             },
             {
               "id": "seeker",
               "name": "THE SEEKER",
-              "line": "A path still forming \u2014 like everyone's.",
+              "line": "A path still forming — like everyone's.",
               "conditions": {},
               "epilogue": [
-                "The war ends. The questions don't. He carries Kurukshetra the way all its veterans do \u2014 as a set of roads taken and roads refused, each with its own weight.",
+                "The war ends. The questions don't. He carries Kurukshetra the way all its veterans do — as a set of roads taken and roads refused, each with its own weight.",
                 "The journey continues. Every choice he has not yet made is still his."
               ]
             }
@@ -496,61 +682,1573 @@
       "id": "karna",
       "order": 2,
       "character": "Karna",
-      "epithet": "Son of the Sun, raised by a charioteer",
+      "epithet": "Son of Surya · King of Anga · Dana-Vira",
       "title": "The Sun's Oath",
-      "theme": "Loyalty vs conflicting obligations",
-      "status": "locked",
+      "theme": "Loyalty vs Conflicting Obligations",
+      "status": "playable",
       "ambience": "court",
+      "decisionsRequired": 4,
       "card": {
-        "line": "The finest archer of the age owes everything to the one man who publicly shamed him.",
-        "quote": "\u201cYour birth is a riddle \u2014 your loyalty is not.\u201d"
+        "line": "The finest archer of the age owes everything to the friend who stood by him when society cast him down.",
+        "quote": "“My loyalty was not bought with land; it was sealed with honor.”"
       },
-      "teaser": "Born to a queen, raised by a charioteer, crowned king by the enemy of his own blood. Every obligation Karna has was given to him by someone who wanted something. Chapter II is being written."
+      "startNode": "karna_1_story",
+      "nodes": {
+        "karna_1_story": {
+          "type": "story",
+          "title": "The Riverbank Revelation",
+          "subtitle": "Night on the Yamuna · Days before Kurukshetra",
+          "narrative": [
+            "The river runs dark beneath the stars. Krishna invites Karna onto his chariot and drives far from the camps.",
+            "There, the counselor speaks the truth hidden since birth: “You are Kunti’s firstborn. You are the elder brother of Yudhishthira, Bhima, and Arjuna.”",
+            "“Come with me tonight. The Pandavas will fall at your feet. Draupadi will crown you emperor of all Aryavarta.”",
+            "The greatest archer of the age looks out over the water. A lifetime of humiliation, rejection, and bitter pride hangs in the silence."
+          ],
+          "next": "karna_1"
+        },
+        "karna_1": {
+          "type": "decision",
+          "title": "The Midnight Offer",
+          "subtitle": "On the banks of the Yamuna",
+          "narrative": [
+            "The crown of the entire realm is offered with a single word. On one side lies royal blood, divine brotherhood, and unquestioned glory.",
+            "On the other stands Duryodhana, the friend who crowned him King of Anga when the world called him a charioteer's son."
+          ],
+          "prompt": "How should Karna respond to Krishna's revelation of his true lineage?",
+          "freeText": {
+            "enabled": true,
+            "prompt": "What would you choose if loyalty and destiny pulled you in opposite directions?"
+          },
+          "choices": [
+            {
+              "id": "A",
+              "label": "Reject the crown. Stand firmly with Duryodhana who gave me honor when all spurned me.",
+              "tag": "Unshakable Loyalty",
+              "effects": {
+                "integrity": 12,
+                "responsibility": 10,
+                "strategy": -4,
+                "fairness": 2
+              },
+              "consequence": "Karna bows his head to Krishna: “Duryodhana placed his trust in me for thirteen years. To desert him now on the eve of war would be the act of a coward. I choose honor over a stolen throne.”",
+              "insight": {
+                "reflection": "Karna's refusal of the imperial crown is among the most profound moral choices in the epic. It shows that personal loyalty and gratitude can weigh heavier than birthright, status, or self-preservation.",
+                "principle": "Loyalty forged in vulnerability cannot be traded for opportunistic glory.",
+                "source": "Udyoga Parva, Krishna-Karna Samvada"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Keep the secret, but pledge that no Pandava brother except Arjuna shall fall by my bow.",
+              "tag": "Pledged Mercy",
+              "effects": {
+                "compassion": 10,
+                "integrity": 8,
+                "strategy": 4,
+                "responsibility": 6
+              },
+              "consequence": "Karna looks into the darkness: “Tell no one of my birth, Keshav. But know this: I shall not take the life of Yudhishthira, Bhima, Nakula, or Sahadeva. The duel remains between Arjuna and me.”",
+              "insight": {
+                "reflection": "Karna balances his inescapable duty to his friend with mercy toward the brothers who never knew his identity, bounding his lethal power with self-imposed ethical constraint.",
+                "principle": "Even in total war, self-imposed ethical boundaries preserve humanity.",
+                "source": "Karna's vow to Krishna and Kunti"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Confront the hypocrisy of dynastic legitimacy; assert that character outranks birth.",
+              "tag": "Dignity of Merit",
+              "effects": {
+                "awareness": 10,
+                "fairness": 10,
+                "integrity": 6,
+                "strategy": 4
+              },
+              "consequence": "“If I take the crown because of Kunti’s womb, I validate the very caste arrogance that condemned my youth. Let the world know Karna by his bow and his word, not by royal blood.”",
+              "insight": {
+                "reflection": "Karna's tragic life is a relentless critique of birth-based hierarchy. By rejecting the Pandava throne, he refuses to seek validation from the social order that degraded him.",
+                "principle": "Moral worth is defined by conduct and conscience, never by pedigree.",
+                "source": "Mahabharata, Karna Parva"
+              }
+            },
+            {
+              "id": "D",
+              "label": "Warn Krishna that if Yudhishthira knows the truth, he will yield the throne to Duryodhana through me.",
+              "tag": "Strategic foresight",
+              "effects": {
+                "strategy": 10,
+                "awareness": 10,
+                "responsibility": 8,
+                "integrity": 6
+              },
+              "consequence": "“If Dharmaraja Yudhishthira learns I am his elder, he will renounce the crown to me at once. And out of duty, I would give that crown to Duryodhana. To keep Dharma alive, this secret must die with me.”",
+              "insight": {
+                "reflection": "Karna demonstrates startling ethical insight: knowing Yudhishthira's uncompromising righteousness, Karna protects the Pandava cause by hiding his own seniority.",
+                "principle": "True greatness sometimes requires concealing one's virtue for the greater good.",
+                "source": "Udyoga Parva, chapter 143"
+              }
+            }
+          ],
+          "next": "karna_2a",
+          "nextByChoice": {
+            "A": "karna_2a",
+            "B": "karna_2b",
+            "C": "karna_2c",
+            "D": "karna_2a"
+          }
+        },
+        "karna_2a": {
+          "type": "decision",
+          "title": "The Dawn Promise to Kunti",
+          "subtitle": "Ganges riverbank at sunrise",
+          "narrative": [
+            "Karna finishes his morning prayers to Surya in the sacred river. Turning back, he sees Queen Kunti waiting on the sands, weeping in the cold mist.",
+            "She confesses her abandonment and begs him to embrace his brothers and save the family from fratricide."
+          ],
+          "prompt": "How should Karna answer his mother's plea at the eleventh hour?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Grant her the sacred boon: 'You will still have five sons alive after this war, Mother.'",
+              "tag": "Supreme Generosity",
+              "effects": {
+                "compassion": 12,
+                "integrity": 10,
+                "responsibility": 8,
+                "strategy": -2
+              },
+              "consequence": "Kunti weeps with relief and heartbreak. Karna promises to spare four brothers, ensuring the duel of destiny between himself and Arjuna will settle the feud.",
+              "insight": {
+                "reflection": "Karna honors the mother who abandoned him, gifting her peace of mind at the cost of limiting his own battlefield freedom.",
+                "principle": "Generosity towards those who wronged us is the highest form of strength.",
+                "source": "Udyoga Parva, Kunti-Karna dialogue"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Remind her gently of the past: maternal love cannot be claimed only when danger arrives.",
+              "tag": "Truthful Reckoning",
+              "effects": {
+                "integrity": 10,
+                "fairness": 10,
+                "awareness": 8,
+                "compassion": 2
+              },
+              "consequence": "Karna speaks without rage, but with unyielding clarity. Kunti realizes that the consequences of her past cannot be erased on the eve of battle.",
+              "insight": {
+                "reflection": "Moral accountability requires facing the ripples of past neglect without hiding behind belated sentiment.",
+                "principle": "Actions plant seeds whose harvest cannot be refused when the storm arrives.",
+                "source": "Karna's address to Kunti"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Agree to withhold celestial weapons from the four younger brothers and fight honorably.",
+              "tag": "Martial Restraint",
+              "effects": {
+                "strategy": 8,
+                "responsibility": 10,
+                "integrity": 8,
+                "fairness": 6
+              },
+              "consequence": "Karna promises to engage the younger Pandavas only to subdue them, preserving their lives while defending his camp.",
+              "insight": {
+                "reflection": "Restraint on the battlefield is the hallmark of the true Maharathi.",
+                "principle": "Strength is proved not by what one destroys, but by what one spares.",
+                "source": "Karna Parva"
+              }
+            }
+          ],
+          "next": "karna_3a",
+          "nextByChoice": {
+            "A": "karna_3a",
+            "B": "karna_3a",
+            "C": "karna_3b"
+          }
+        },
+        "karna_2b": {
+          "type": "decision",
+          "title": "The Gift of Armor to Indra",
+          "subtitle": "The disguised Brahmin at noon",
+          "narrative": [
+            "Lord Indra, father of Arjuna, approaches Karna disguised as a mendicant Brahmin at the hour of charity, asking for his divine armor (Kavacha) and earrings (Kundala).",
+            "Surya had warned Karna in a dream that without his armor, he is mortal. Yet Karna's vow is never to turn away a beggar."
+          ],
+          "prompt": "How should Karna respond when asked to sacrifice his only invulnerability?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Slice the armor from his skin with a dagger and gift it with a joyful smile.",
+              "tag": "The Peerless Dana-Vira",
+              "effects": {
+                "integrity": 14,
+                "compassion": 10,
+                "strategy": -6,
+                "awareness": 6
+              },
+              "consequence": "Blood runs on the golden sands as Karna cuts away his birthright. Even the heavens shower flowers upon the warrior whose generosity knows no survival instinct.",
+              "insight": {
+                "reflection": "Karna's sacrifice of his armor is the ultimate testament to Dana (generosity) over self-preservation.",
+                "principle": "A vow kept at the cost of one's life shines brighter than victory.",
+                "source": "Vana Parva, Kundala-harana"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Acknowledge Indra's disguise and ask for the single-use Vasavi Shakti dart in exchange.",
+              "tag": "Strategic Reciprocity",
+              "effects": {
+                "strategy": 10,
+                "awareness": 10,
+                "responsibility": 8,
+                "integrity": 6
+              },
+              "consequence": "Indra, shamed by Karna's discernment and grace, grants him the infallible Vasavi Shakti, capable of slaying any one foe.",
+              "insight": {
+                "reflection": "Karna balances unconditional generosity with pragmatic defense of his comrades.",
+                "principle": "Generosity need not be blind; it can be allied with wisdom.",
+                "source": "Mahabharata, Vana Parva"
+              }
+            }
+          ],
+          "next": "karna_3b",
+          "nextByChoice": {
+            "A": "karna_3a",
+            "B": "karna_3b"
+          }
+        },
+        "karna_2c": {
+          "type": "decision",
+          "title": "The Command of the 16th Day",
+          "subtitle": "The Kaurava war tent",
+          "narrative": [
+            "After the fall of Bhishma and Drona, Duryodhana appoints Karna supreme commander of the Kaurava army.",
+            "King Salya of Madra is appointed as his charioteer, but Salya constantly belittles Karna's birth and praises Arjuna to demoralize him."
+          ],
+          "prompt": "How should Karna manage Salya's insults while leading a desperate army?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Endure Salya's taunts in dignified silence; focus entirely on the soldiers' morale.",
+              "tag": "Stoic Leadership",
+              "effects": {
+                "responsibility": 10,
+                "integrity": 10,
+                "strategy": 8,
+                "compassion": 4
+              },
+              "consequence": "Karna refuses to be provoked. His composure under psychological sabotage rallies the faltering Kaurava ranks.",
+              "insight": {
+                "reflection": "True commanders absorb negativity without allowing it to infect their judgment or demoralize their followers.",
+                "principle": "A leader master of his emotions is master of the field.",
+                "source": "Karna Parva, Salya-vadha section"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Confront Salya with sharp wit and demand absolute obedience to royal military command.",
+              "tag": "Decisive Authority",
+              "effects": {
+                "strategy": 10,
+                "responsibility": 8,
+                "fairness": 8,
+                "integrity": 6
+              },
+              "consequence": "Karna reminds Salya of his solemn oath to Duryodhana, compelling the proud king to steer the chariot with precision.",
+              "insight": {
+                "reflection": "Leadership in crisis requires setting clear boundaries against internal dissent.",
+                "principle": "Discipline in leadership prevents chaos in the ranks.",
+                "source": "Karna Parva"
+              }
+            }
+          ],
+          "next": "karna_3a",
+          "nextByChoice": {
+            "A": "karna_3a",
+            "B": "karna_3b"
+          }
+        },
+        "karna_3a": {
+          "type": "decision",
+          "title": "The Wheel in the Earth",
+          "subtitle": "The 17th Day · The Final Duel",
+          "narrative": [
+            "The earth gives way beneath the left wheel of Karna's chariot, fulfilling the ancient curse of the earth-goddess.",
+            "Karna leaps down to lift the massive wooden wheel from the rut. As he strains, Arjuna notches the celestial Anjalika arrow.",
+            "Karna shouts across the dust: 'Wait, Partha! The ancient laws of war forbid striking a warrior while he dismounts to free his chariot!'"
+          ],
+          "prompt": "How does Karna face his final moments when the rules of war hang in the balance?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Appeal to Dharma and the sacred code of kshatriya chivalry.",
+              "tag": "Appeal to Righteousness",
+              "effects": {
+                "fairness": 12,
+                "integrity": 10,
+                "awareness": 8,
+                "strategy": 2
+              },
+              "consequence": "Karna demands that the rules of war be honored. Krishna reminds the field of Draupadi's court and Abhimanyu's fall, confronting both sides with the unraveling of rules in war.",
+              "insight": {
+                "reflection": "The tragedy of the 17th day exposes how adharma corrupts both sides until even the noble must confront the collapse of chivalry.",
+                "principle": "When one side breaks the rules, both sides inevitably pay the price.",
+                "source": "Karna Parva, Fall of Karna"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Fight from the ground with hands and pure will; refuse to plead for mercy.",
+              "tag": "Unyielding Pride",
+              "effects": {
+                "integrity": 12,
+                "responsibility": 10,
+                "compassion": 2,
+                "strategy": 4
+              },
+              "consequence": "Karna lifts his bow from the earth and fires a barrage of counter-arrows while standing in the dust, defiant to his very last breath.",
+              "insight": {
+                "reflection": "Karna’s refusal to surrender or beg immortalizes him as the warrior whose courage never wavered.",
+                "principle": "Defeat is external; dignity is self-authored.",
+                "source": "Mahabharata, Karna Parva"
+              }
+            }
+          ],
+          "next": "karna_4a",
+          "nextByChoice": {
+            "A": "karna_4a",
+            "B": "karna_4a"
+          }
+        },
+        "karna_3b": {
+          "type": "decision",
+          "title": "The Night of Ghatotkacha",
+          "subtitle": "14th Night of Kurukshetra",
+          "narrative": [
+            "Under the cover of pitch darkness, Ghatotkacha's illusion magic is destroying the entire Kaurava army. Soldiers flee in terror.",
+            "Duryodhana begs Karna on his knees to loose the one-time celestial Vasavi Shakti dart to save the army, even though it is Karna's only weapon against Arjuna."
+          ],
+          "prompt": "Should Karna use his only guarantee against Arjuna to save his friend's soldiers?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Loose the Vasavi Shakti to save the fleeing army, sacrificing his advantage over Arjuna.",
+              "tag": "Sacrificial Duty",
+              "effects": {
+                "responsibility": 12,
+                "compassion": 10,
+                "integrity": 8,
+                "strategy": -4
+              },
+              "consequence": "The blazing spear illuminates the night sky and strikes Ghatotkacha. The Kaurava army is saved, but Karna stands weaponless against Arjuna's divine arsenal.",
+              "insight": {
+                "reflection": "Karna chooses the immediate rescue of his soldiers over his own long-term survival, embodying self-sacrificing leadership.",
+                "principle": "A true guardian protects those under his care, even at the expense of his own destiny.",
+                "source": "Drona Parva, Ghatotkacha-vadha"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Hold the divine spear for the destined duel with Arjuna, relying on normal archery.",
+              "tag": "Disciplined Strategy",
+              "effects": {
+                "strategy": 10,
+                "awareness": 8,
+                "responsibility": 6,
+                "compassion": -4
+              },
+              "consequence": "Karna fights through the night with conventional weapons, maintaining his strategic trump card for the duel of destiny.",
+              "insight": {
+                "reflection": "Strategic discipline requires enduring acute pressure without prematurely expending vital reserves.",
+                "principle": "Strategic victory requires enduring temporary hardship without breaking resolve.",
+                "source": "Drona Parva"
+              }
+            }
+          ],
+          "next": "karna_4a",
+          "nextByChoice": {
+            "A": "karna_4a",
+            "B": "karna_4a"
+          }
+        },
+        "karna_4a": {
+          "type": "decision",
+          "title": "The Sun's Final Gift",
+          "subtitle": "Kurukshetra at sunset · The 17th Day",
+          "narrative": [
+            "Lying mortally wounded as the sun sets behind the crimson clouds, Lord Dharma appears disguised as a destitute Brahmin, asking if the dying king has anything left to give.",
+            "Karna has no wealth, no weapons, no kingdom. He picks up a stone, breaks his own gold-plated tooth, and offers it with his dying breath."
+          ],
+          "prompt": "What is Karna's final legacy to the world?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Wash the tooth in rainwater and gift it: 'Even in death, no seeker leaves Karna with empty hands.'",
+              "tag": "Eternal Dana",
+              "effects": {
+                "integrity": 14,
+                "compassion": 12,
+                "awareness": 10,
+                "fairness": 8
+              },
+              "consequence": "The Brahmin reveals his divine form as Dharma itself, blessing Karna with eternal renown that outshines every mortal crown.",
+              "insight": {
+                "reflection": "Karna’s life closes on the highest ethical note of the entire epic: unconditional generosity beyond the threshold of mortality.",
+                "principle": "What is surrendered in selfless giving becomes eternal.",
+                "source": "Karna Parva, The Final Charity"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Forgive all who wronged him — Kunti, the Pandavas, Drona, and fate itself.",
+              "tag": "Transcendent Forgiveness",
+              "effects": {
+                "compassion": 14,
+                "awareness": 12,
+                "integrity": 10,
+                "fairness": 10
+              },
+              "consequence": "Karna releases all resentment, ascending to the solar realm of his father Surya as a beacon of pure nobility.",
+              "insight": {
+                "reflection": "Forgiveness at the moment of passing cleanses all historic bitterness, transforming personal tragedy into universal peace.",
+                "principle": "Forgiveness is the ultimate victory of the noble spirit.",
+                "source": "Shanti Parva"
+              }
+            }
+          ],
+          "next": "karna_ending",
+          "nextByChoice": {
+            "A": "karna_ending",
+            "B": "karna_ending"
+          }
+        },
+        "karna_ending": {
+          "type": "ending",
+          "title": "The Sun Sets on Angaraja",
+          "subtitle": "The 17th Dusk · Kurukshetra",
+          "endings": [
+            {
+              "id": "karna_immortal_giver",
+              "name": "THE IMMORTAL GIVER (DANA-VIRA)",
+              "line": "Whose generosity eclipsed the gods and whose loyalty outshone the crown.",
+              "conditions": {
+                "topTrait": "compassion"
+              },
+              "epilogue": [
+                "When the war is over, Yudhishthira performs the funeral rites for Karna with tears that never dry. The Pandavas learn that the greatest among them was the brother they slew in the dust.",
+                "Across millennia, songs are sung not for the kings who sat on thrones, but for the son of the sun who gave away his armor and died with clean hands."
+              ]
+            },
+            {
+              "id": "karna_unyielding_honor",
+              "name": "THE UNYIELDING KNIGHT",
+              "line": "He chose loyalty to the friend who gave him dignity over the throne of the world.",
+              "conditions": {
+                "topTrait": "integrity"
+              },
+              "epilogue": [
+                "Karna proved that nobility is not a birthright inherited in palaces, but a character forged in hardship and sealed with loyalty.",
+                "His name remains the universal standard of friendship: one who never deserted his friend when the sky fell."
+              ]
+            },
+            {
+              "id": "karna_transcendent_sun",
+              "name": "THE TRANSCENDENT SUN",
+              "line": "Rising above rejection to illuminate the moral conscience of an age.",
+              "conditions": {},
+              "epilogue": [
+                "The setting sun bathes Kurukshetra in deep amber. Karna returns to the light of Surya, free from the shackles of caste, debt, and destiny.",
+                "The epic records his life as its greatest tragedy and its highest testament to human dignity."
+              ]
+            }
+          ],
+          "next": null
+        }
+      }
     },
     {
       "id": "krishna",
       "order": 3,
       "character": "Krishna",
-      "epithet": "The charioteer who vowed not to lift a weapon",
+      "epithet": "The Divine Charioteer · Yogeshwara · Vasudeva",
       "title": "The Counselor's Gambit",
-      "theme": "Strategy, negotiation and leadership",
-      "status": "locked",
+      "theme": "Strategy, Truth, and Leadership Under Constraint",
+      "status": "playable",
       "ambience": "court",
+      "decisionsRequired": 4,
       "card": {
-        "line": "He won a war without raising one \u2014 and never told a lie doing it.",
-        "quote": "\u201cI promised not to fight. I promised nothing about the truth.\u201d"
+        "line": "He entered the war without raising a single weapon — and reshaped the moral order of an age.",
+        "quote": "“I promised not to fight. I promised nothing about the truth.”"
       },
-      "teaser": "Diplomacy under a dying dynasty: a peace embassy designed to be refused, an oath bent but never broken. Chapter III is being written."
+      "startNode": "krishna_1_story",
+      "nodes": {
+        "krishna_1_story": {
+          "type": "story",
+          "title": "The Court of Hastinapura",
+          "subtitle": "The Peace Embassy · Udyoga Parva",
+          "narrative": [
+            "The great assembly hall of Hastinapura is filled with tension. King Dhritarashtra sits on the throne; Duryodhana watches with cold disdain.",
+            "Krishna enters unarmed as the peace envoy of the Pandavas. The elders Bhishma, Drona, and Vidura rise in reverence.",
+            "The decision made in this hall will either preserve the peace of Aryavarta or ignite a conflagration that consumes four million warriors.",
+            "The Divine Counselor steps forward to speak."
+          ],
+          "next": "krishna_1"
+        },
+        "krishna_1": {
+          "type": "decision",
+          "title": "The Embassy of Five Villages",
+          "subtitle": "In the Royal Court of the Kurus",
+          "narrative": [
+            "Duryodhana declares: 'I will not yield land even equal to the point of a needle to the Pandavas.'",
+            "Krishna must present the final proposal that fixes moral responsibility for the impending crisis."
+          ],
+          "prompt": "How should Krishna structure the peace proposal to the Kuru court?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Ask for only five small villages — one for each brother — proving the Pandavas' desire for peace.",
+              "tag": "Exhausting Peaceful Means",
+              "effects": {
+                "strategy": 10,
+                "fairness": 10,
+                "awareness": 8,
+                "responsibility": 6
+              },
+              "consequence": "The court gasps at the modesty of the demand. When Duryodhana refuses even this, the entire moral justification for war shifts irrevocably against the Kauravas.",
+              "insight": {
+                "reflection": "Krishna's five-village proposal is a masterclass in moral diplomacy. By asking for the barest minimum, he strips the aggressor of any claim to justifiable grievance.",
+                "principle": "Before resorting to conflict, establish beyond doubt that every avenue of peace was offered.",
+                "source": "Udyoga Parva, Krishna Duta Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Warn the assembly of the catastrophic cosmic and human cost of impending war.",
+              "tag": "Prophetic Warning",
+              "effects": {
+                "awareness": 12,
+                "integrity": 10,
+                "compassion": 8,
+                "strategy": 4
+              },
+              "consequence": "Krishna describes the burning fields and orphaned generations. The elders weep, but Duryodhana remains hardened in obstinacy.",
+              "insight": {
+                "reflection": "Truthful leadership must articulate the real human cost of pride before passions make conflict inevitable.",
+                "principle": "A true counselor speaks truth to power even when listeners are unwilling to hear.",
+                "source": "Mahabharata, Udyoga Parva"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Reveal the Vishwaroopa cosmic form when Duryodhana attempts to arrest the peace envoy.",
+              "tag": "Cosmic Revelation",
+              "effects": {
+                "awareness": 14,
+                "strategy": 8,
+                "integrity": 8,
+                "compassion": 2
+              },
+              "consequence": "Duryodhana brings chains, but Krishna laughs and blazes with the light of a thousand suns. The warriors fall back in awe and terror.",
+              "insight": {
+                "reflection": "When arrogance seeks to bind the messenger of truth, righteousness reveals its uncontainable majesty.",
+                "principle": "Truth cannot be imprisoned by mortal power.",
+                "source": "Udyoga Parva, Revelation of Cosmic Form"
+              }
+            }
+          ],
+          "next": "krishna_2a",
+          "nextByChoice": {
+            "A": "krishna_2a",
+            "B": "krishna_2a",
+            "C": "krishna_2b"
+          }
+        },
+        "krishna_2a": {
+          "type": "decision",
+          "title": "The Oath on Day Three",
+          "subtitle": "Kurukshetra · The Third Dawn",
+          "narrative": [
+            "Bhishma's arrows are decimating the Pandava lines like fire through dry timber. Arjuna hesitates, unwilling to pierce his grandfather's heart with full lethal force.",
+            "Krishna drops the reins, jumps down from the chariot, and seizes a fallen chariot wheel, charging Bhishma like the god of death."
+          ],
+          "prompt": "How does Krishna awaken Arjuna to the reality of the war?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Charge Bhishma yourself with the wheel, breaking your own vow to force Arjuna to act.",
+              "tag": "Shock Intervention",
+              "effects": {
+                "strategy": 12,
+                "responsibility": 10,
+                "integrity": -4,
+                "awareness": 8
+              },
+              "consequence": "Arjuna drops his bow, runs after Krishna, and clings to his feet: 'Stop, Keshav! I swear I will do my duty without hesitation!'",
+              "insight": {
+                "reflection": "Krishna demonstrates that when the leader's student is paralyzed, the teacher must demonstrate the total urgency of the crisis.",
+                "principle": "A great guide shocks disciples out of complacency by embodying absolute resolve.",
+                "source": "Bhishma Parva, Day Three"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Return to the chariot seat and demand that Arjuna fulfill his solemn kshatriya oath.",
+              "tag": "Counsel & Discipline",
+              "effects": {
+                "integrity": 10,
+                "responsibility": 10,
+                "strategy": 8,
+                "awareness": 6
+              },
+              "consequence": "Krishna looks into Arjuna's eyes: 'If you will not protect those who trusted you, why did you lead them to this field?' Arjuna takes up the Gandiva.",
+              "insight": {
+                "reflection": "Reminding leaders of their accountability to their followers cuts through personal emotional paralysis.",
+                "principle": "Responsibility to the many outweighs the emotional comfort of the one.",
+                "source": "Bhagavad Gita"
+              }
+            }
+          ],
+          "next": "krishna_3a",
+          "nextByChoice": {
+            "A": "krishna_3a",
+            "B": "krishna_3b"
+          }
+        },
+        "krishna_2b": {
+          "type": "decision",
+          "title": "The Sunset at Jayadratha",
+          "subtitle": "14th Day of Kurukshetra",
+          "narrative": [
+            "Arjuna has taken an irrevocable oath: kill Jayadratha before sunset or immolate himself on the pyre. The Kauravas form a deep three-tier wall to hide Jayadratha until dusk.",
+            "The sun sinks toward the western horizon. Time has run out."
+          ],
+          "prompt": "How does the Supreme Strategist intervene to save Arjuna?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Use the Sudarshana Chakra to veil the sun, creating the illusion of premature dusk.",
+              "tag": "Strategic Maya",
+              "effects": {
+                "strategy": 12,
+                "awareness": 10,
+                "integrity": -2,
+                "responsibility": 8
+              },
+              "consequence": "The Kauravas celebrate and Jayadratha steps out to mock Arjuna. Krishna lifts the disk; the sun still blazes, and Arjuna's arrow strikes like lightning.",
+              "insight": {
+                "reflection": "Strategy leverages the opponent's premature arrogance to turn certainty into vulnerability.",
+                "principle": "Skillful means under extreme constraint protect the core mission.",
+                "source": "Drona Parva, Jayadratha-vadha"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Guide Arjuna's celestial Pasupata and Aindra weapons to shatter the defensive wall directly.",
+              "tag": "Direct Martial Prowess",
+              "effects": {
+                "integrity": 10,
+                "strategy": 10,
+                "responsibility": 8,
+                "awareness": 6
+              },
+              "consequence": "Arjuna drives straight through the defensive line, striking Jayadratha with pure archery before the final rays vanish.",
+              "insight": {
+                "reflection": "Supreme competence under pressure overcomes impossible obstacles without subterfuge.",
+                "principle": "Mastery executing under pressure achieves the impossible.",
+                "source": "Drona Parva"
+              }
+            }
+          ],
+          "next": "krishna_3a",
+          "nextByChoice": {
+            "A": "krishna_3a",
+            "B": "krishna_3b"
+          }
+        },
+        "krishna_3a": {
+          "type": "decision",
+          "title": "The Fall of Drona",
+          "subtitle": "15th Day · The Crisis of Acharya",
+          "narrative": [
+            "Drona's celestial weapons are exterminating the Pandava army. He is invincible in arms; only the grief of his son Ashwatthama's death will make him lay down his bow.",
+            "An elephant named Ashwatthama has fallen. Krishna turns to King Yudhishthira, whose word no man has ever doubted."
+          ],
+          "prompt": "How does Krishna counsel Yudhishthira during the crisis of Drona?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Counsel Yudhishthira that preserving the innocent justifies speaking the ambiguous truth.",
+              "tag": "The Higher Duty (Apad-Dharma)",
+              "effects": {
+                "strategy": 12,
+                "responsibility": 10,
+                "awareness": 8,
+                "integrity": -4
+              },
+              "consequence": "Yudhishthira speaks: 'Ashwatthama is dead — elephant or man.' Drona drops his bow and enters deep meditation, ending the slaughter.",
+              "insight": {
+                "reflection": "The epic explores Apad-Dharma (duty in catastrophe): when absolute adherence to rigid rules would result in annihilation, higher responsibility takes precedence.",
+                "principle": "Rigid letter of the law must not destroy the living spirit of justice.",
+                "source": "Drona Parva, Ashwatthama Hatah"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Encourage the Pandavas to face Drona's celestial arrows directly through united sacrifice.",
+              "tag": "Strict Truthfulness",
+              "effects": {
+                "integrity": 14,
+                "fairness": 10,
+                "strategy": -8,
+                "compassion": 2
+              },
+              "consequence": "The Pandavas refuse all deception. The cost in warrior lives is staggering, but the moral purity of Yudhishthira's throne remains spotless.",
+              "insight": {
+                "reflection": "Uncompromising integrity demands accepting maximum suffering rather than compromising core values.",
+                "principle": "Truth preserves its sanctity when paid for in full.",
+                "source": "Mahabharata ethics commentary"
+              }
+            }
+          ],
+          "next": "krishna_4a",
+          "nextByChoice": {
+            "A": "krishna_4a",
+            "B": "krishna_4a"
+          }
+        },
+        "krishna_3b": {
+          "type": "decision",
+          "title": "The Duel of the Iron Maces",
+          "subtitle": "18th Day · Samantapanchaka Lake",
+          "narrative": [
+            "Duryodhana and Bhima duel with heavy maces. Duryodhana's body has been turned to iron by Gandhari's gaze, invulnerable from the head to the waist.",
+            "Bhima is tiring. Years of injustice and the vow of the dice hall hang on this final duel."
+          ],
+          "prompt": "How does Krishna guide Bhima in the final combat?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Slap your own thigh in Bhima's sight, reminding him of his sacred vow to break Duryodhana's thighs.",
+              "tag": "Fulfilling the Vow",
+              "effects": {
+                "strategy": 10,
+                "responsibility": 8,
+                "fairness": -2,
+                "awareness": 8
+              },
+              "consequence": "Bhima sees the gesture, strikes Duryodhana's thighs with his mace, and fells the Kuru king, ending the eighteen-day war.",
+              "insight": {
+                "reflection": "Krishna ensures that the long arc of justice is fulfilled, closing the account opened at Draupadi's humiliation.",
+                "principle": "Justice delayed must eventually be completed to restore moral equilibrium.",
+                "source": "Salyarva, Gada-Yuddha"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Let the warriors fight without signs, allowing fate and physical endurance to decide.",
+              "tag": "Detached Witness",
+              "effects": {
+                "fairness": 10,
+                "integrity": 10,
+                "strategy": -2,
+                "awareness": 8
+              },
+              "consequence": "The duel rages until Bhima's sheer endurance outlasts Duryodhana's defense in a clean, agonizing contest.",
+              "insight": {
+                "reflection": "Allowing conflicts to resolve by their own organic weight preserves absolute neutrality.",
+                "principle": "Patience and endurance are the twin pillars of righteous victory.",
+                "source": "Mahabharata"
+              }
+            }
+          ],
+          "next": "krishna_4a",
+          "nextByChoice": {
+            "A": "krishna_4a",
+            "B": "krishna_4a"
+          }
+        },
+        "krishna_4a": {
+          "type": "decision",
+          "title": "The Curse of Queen Gandhari",
+          "subtitle": "The Battlefield of the Dead · Stri Parva",
+          "narrative": [
+            "Queen Mother Gandhari walks among the bodies of her hundred sons. Turning to Krishna with blazing tears beneath her blindfold, she curses his lineage to destroy itself in thirty-six years.",
+            "Krishna stands before the grieving mother of his enemies with hands folded in deep compassion."
+          ],
+          "prompt": "How does Krishna receive the curse of the grieving queen?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Accept the curse with serene grace, bearing the moral cost of the era's transformation.",
+              "tag": "Sacred Acceptance",
+              "effects": {
+                "compassion": 14,
+                "awareness": 14,
+                "responsibility": 12,
+                "integrity": 10
+              },
+              "consequence": "Krishna smiles gently: 'Mother, I accept your curse. He who guides an age must also drink its sorrow. May your grief find peace.'",
+              "insight": {
+                "reflection": "The divine leader does not evade the tragic cost of leadership; he absorbs the pain of all victims into his own being.",
+                "principle": "True leadership accepts the sorrow and blame of history without bitterness.",
+                "source": "Stri Parva, Gandhari's Lament"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Remind Gandhari that unaddressed injustice creates its own inescapable fruit.",
+              "tag": "Dharmic Truth",
+              "effects": {
+                "integrity": 12,
+                "fairness": 12,
+                "awareness": 10,
+                "compassion": 4
+              },
+              "consequence": "Krishna speaks with gentle sorrow: 'When Duryodhana laughed in the dice hall, the seeds of this harvest were sown. Weep for them, mother, but know that Dharma cannot be bent without breaking.'",
+              "insight": {
+                "reflection": "Compassion is allied with truth: moral laws operate with the certainty of cause and effect.",
+                "principle": "Actions carry inevitable moral weight that no grief can undo.",
+                "source": "Mahabharata, Stri Parva"
+              }
+            }
+          ],
+          "next": "krishna_ending",
+          "nextByChoice": {
+            "A": "krishna_ending",
+            "B": "krishna_ending"
+          }
+        },
+        "krishna_ending": {
+          "type": "ending",
+          "title": "The Cosmic Charioteer",
+          "subtitle": "After the War · Shanti Parva",
+          "endings": [
+            {
+              "id": "krishna_divine_counselor",
+              "name": "THE MASTER COUNSELOR (YOGESHWARA)",
+              "line": "He won the war without raising a weapon, and bore the tragedy of history on his shoulders.",
+              "conditions": {
+                "topTrait": "strategy"
+              },
+              "epilogue": [
+                "The golden chariot of Arjuna rests on the field. Krishna seats Yudhishthira on the throne of Hastinapura, having guided humanity through its darkest moral labyrinth.",
+                "His flute will sound again in Vrindavan, but his wisdom on Kurukshetra remains the eternal compass for every soul in doubt."
+              ]
+            },
+            {
+              "id": "krishna_compassionate_guide",
+              "name": "THE COMPASSIONATE GUIDE",
+              "line": "He walked beside struggling mortals, healing hearts while restoring justice.",
+              "conditions": {
+                "topTrait": "compassion"
+              },
+              "epilogue": [
+                "Beyond all strategy and statecraft, Krishna’s greatest gift was friendship — to Arjuna, to Draupadi, to the sorrowing world.",
+                "He showed that divine power is expressed most purely not in destruction, but in walking beside those who suffer."
+              ]
+            },
+            {
+              "id": "krishna_unbound_witness",
+              "name": "THE ETERNAL WITNESS",
+              "line": "Transcending victory and defeat to reveal the timeless dance of Dharma.",
+              "conditions": {},
+              "epilogue": [
+                "The armies disperse into history. The lessons of Kurukshetra echo across generations.",
+                "Where there is Dharma, there is victory — not of weapons, but of truth."
+              ]
+            }
+          ],
+          "next": null
+        }
+      }
     },
     {
       "id": "yudhishthira",
       "order": 4,
       "character": "Yudhishthira",
-      "epithet": "The king who never lied",
+      "epithet": "Dharmaraja · King of Justice · Ajatashatru",
       "title": "The Weight of a Word",
-      "theme": "Truth, responsibility and difficult choices",
-      "status": "locked",
+      "theme": "Truth, Responsibility and Difficult Choices",
+      "status": "playable",
       "ambience": "court",
+      "decisionsRequired": 4,
       "card": {
-        "line": "The most truthful man alive is asked to spend his truth like coin.",
-        "quote": "\u201cAshwatthama is dead \u2014 elephant or man, I did not say.\u201d"
+        "line": "The most truthful man alive is asked to spend his sacred word like coin.",
+        "quote": "“Ashwatthama is dead — elephant or man, I did not say.”"
       },
-      "teaser": "A dice game lost on a technicality, a kingdom wagered on pride, and one sentence that cost a chariot its place in the sky. Chapter IV is being written."
+      "startNode": "yud_1_story",
+      "nodes": {
+        "yud_1_story": {
+          "type": "story",
+          "title": "The Enchanted Lake",
+          "subtitle": "Dwaita Forest · Years of Exile",
+          "narrative": [
+            "Deep in the forest of Dwaita, four Pandava brothers lie dead on the grassy banks of a crystal pool, having drunk its water without answering the guardian's questions.",
+            "Yudhishthira arrives, parched with thirst, and finds his mighty brothers lifeless. A disembodied voice booms from the waters: 'I am the Yaksha. Answer my questions first, or join your brothers in death.'",
+            "The King of Dharma folds his hands and prepares to test his wisdom against death itself."
+          ],
+          "next": "yud_1"
+        },
+        "yud_1": {
+          "type": "decision",
+          "title": "The Yaksha's Boon",
+          "subtitle": "At the edge of the Enchanted Pool",
+          "narrative": [
+            "Yudhishthira answers every riddle on grief, time, courage, and virtue to the Yaksha's delight.",
+            "The Yaksha says: 'I am pleased, King. I will restore only one of your four brothers to life. Choose which one shall walk again.'"
+          ],
+          "prompt": "Which brother should Yudhishthira choose to bring back to life?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Choose Nakula, so that both mothers — Kunti and Madri — have one living son.",
+              "tag": "Impartial Justice",
+              "effects": {
+                "fairness": 14,
+                "compassion": 12,
+                "integrity": 10,
+                "strategy": 2
+              },
+              "consequence": "The Yaksha is astounded by Yudhishthira's sublime fairness: 'Because you value justice above affection, I restore all four brothers to life!'",
+              "insight": {
+                "reflection": "Yudhishthira's choice of Nakula over his own blood brothers Bhima and Arjuna is the foundational proof of his title Dharmaraja (Lord of Justice).",
+                "principle": "True fairness gives equal weight to all stakeholders, especially those without voice.",
+                "source": "Vana Parva, Yaksha Prashna"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Choose Bhima, whose superhuman strength is essential to protect the family and win the kingdom.",
+              "tag": "Pragmatic Protection",
+              "effects": {
+                "strategy": 8,
+                "responsibility": 8,
+                "fairness": -4,
+                "compassion": 4
+              },
+              "consequence": "The Yaksha revives Bhima, but gently questions why a King of Dharma favored strength over maternal equality.",
+              "insight": {
+                "reflection": "Choosing tactical strength over moral impartiality provides security at the expense of ethical transcendence.",
+                "principle": "Pragmatism solves immediate danger but tests moral authority.",
+                "source": "Mahabharata"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Choose Arjuna, the supreme archer and sole hope against the Kaurava armies.",
+              "tag": "Strategic Priority",
+              "effects": {
+                "strategy": 10,
+                "responsibility": 8,
+                "fairness": -4,
+                "awareness": 4
+              },
+              "consequence": "Arjuna awakens. The army will have its champion, but Yudhishthira's heart aches for his stepmother Madri.",
+              "insight": {
+                "reflection": "Focusing purely on victory risks compromising the moral foundation for which the victory is sought.",
+                "principle": "The means of preservation must not undermine the purpose of existence.",
+                "source": "Vana Parva"
+              }
+            }
+          ],
+          "next": "yud_2a",
+          "nextByChoice": {
+            "A": "yud_2a",
+            "B": "yud_2a",
+            "C": "yud_2b"
+          }
+        },
+        "yud_2a": {
+          "type": "decision",
+          "title": "The Fifteenth Day: The Half-Truth",
+          "subtitle": "Kurukshetra · Day Fifteen",
+          "narrative": [
+            "Drona is unstoppable. Bhima has slain an elephant named Ashwatthama. Krishna asks Yudhishthira, whose chariot has always floated four inches above the earth, to tell Drona his son has fallen.",
+            "Drona stands before Yudhishthira: 'O King who never lied, tell me: is my son Ashwatthama dead?'"
+          ],
+          "prompt": "How shall the King of Truth answer his revered teacher?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Speak: 'Ashwatthama is dead — whether elephant or man.'",
+              "tag": "The Agonizing Compromise",
+              "effects": {
+                "strategy": 12,
+                "responsibility": 10,
+                "integrity": -8,
+                "awareness": 6
+              },
+              "consequence": "As the word 'elephant' is drowned out by conches, Yudhishthira's chariot sinks into the earth with a heavy thud. Drona lays down his weapons.",
+              "insight": {
+                "reflection": "Yudhishthira pays for military salvation with the descent of his chariot to mortal dust, learning that leadership in catastrophe exacts a permanent personal toll.",
+                "principle": "When compromise is made for the collective good, the leader must bear the moral consequence alone.",
+                "source": "Drona Parva, Drona-vadha"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Refuse to speak any ambiguous word; truth must not be bartered for victory.",
+              "tag": "Absolute Unyielding Truth",
+              "effects": {
+                "integrity": 16,
+                "fairness": 10,
+                "strategy": -10,
+                "responsibility": -4
+              },
+              "consequence": "Yudhishthira tells Drona: 'Your son lives; it was only an elephant that died.' The chariot stays aloft, but Pandava divisions suffer devastating losses.",
+              "insight": {
+                "reflection": "Absolute honesty preserves the soul's purity, but demands the courage to endure the devastating earthly consequences.",
+                "principle": "Unconditional truth costs everything and compromises nothing.",
+                "source": "Shanti Parva ethics discussion"
+              }
+            }
+          ],
+          "next": "yud_3a",
+          "nextByChoice": {
+            "A": "yud_3a",
+            "B": "yud_3a"
+          }
+        },
+        "yud_2b": {
+          "type": "decision",
+          "title": "The Thirteenth Year in Matsya",
+          "subtitle": "Court of King Virata · The Year of Disguise",
+          "narrative": [
+            "Living in disguise as Kanka the dice-player, Queen Sudeshna's brother Kichaka assaults Draupadi in the open court.",
+            "Yudhishthira must prevent Bhima and Arjuna from exposing their identities before the 13th year expires, which would force another 12 years of exile."
+          ],
+          "prompt": "How does Yudhishthira navigate public humiliation to protect the long-term mission?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Restrain Bhima with code words, enduring the agony of temporary silence to fulfill the oath.",
+              "tag": "Patience of the Sovereign",
+              "effects": {
+                "responsibility": 12,
+                "integrity": 10,
+                "strategy": 8,
+                "compassion": -2
+              },
+              "consequence": "The vow is preserved. Bhima eliminates Kichaka secretly in the wrestling arena at midnight without breaking concealment.",
+              "insight": {
+                "reflection": "Strategic patience requires enduring severe emotional pain in the short term to ensure justice in the long term.",
+                "principle": "Discipline under insult is the armor of the righteous.",
+                "source": "Virata Parva, Kichaka-vadha"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Command Bhima to strike openly in defense of Draupadi, accepting whatever exile follows.",
+              "tag": "Immediate Justice",
+              "effects": {
+                "integrity": 10,
+                "compassion": 12,
+                "strategy": -6,
+                "responsibility": 4
+              },
+              "consequence": "Draupadi's honor is defended in the court, demonstrating that human dignity cannot be subordinated to formal contracts.",
+              "insight": {
+                "reflection": "There are moments where the immediate defense of dignity outweighs all calculated agreements.",
+                "principle": "Dignity in the present cannot be sacrificed for safety in the future.",
+                "source": "Virata Parva"
+              }
+            }
+          ],
+          "next": "yud_3a",
+          "nextByChoice": {
+            "A": "yud_3a",
+            "B": "yud_3a"
+          }
+        },
+        "yud_3a": {
+          "type": "decision",
+          "title": "The Duel with King Salya",
+          "subtitle": "18th Day of War",
+          "narrative": [
+            "On the final morning of the war, Yudhishthira himself steps onto the battlefield with a spear to face Salya, the supreme commander of the remaining Kaurava forces.",
+            "He must fight the warrior who was uncle to his brothers Nakula and Sahadeva."
+          ],
+          "prompt": "How does Yudhishthira conduct his final duel?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Fight with sorrowful focus, dedicating the victory to the restoration of righteous peace.",
+              "tag": "Solemn Kshatriya Duty",
+              "effects": {
+                "responsibility": 12,
+                "strategy": 10,
+                "integrity": 8,
+                "compassion": 4
+              },
+              "consequence": "Yudhishthira casts his golden spear with focused aim. Salya falls, and the Kaurava army surrenders its final general.",
+              "insight": {
+                "reflection": "The King of Dharma proves that a lover of peace can take up arms with deadly competence when duty demands.",
+                "principle": "Gentleness is not weakness; it is strength held in restraint.",
+                "source": "Salya Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Offer Salya honorable surrender and safe passage before crossing weapons.",
+              "tag": "Merciful Overture",
+              "effects": {
+                "compassion": 12,
+                "fairness": 12,
+                "integrity": 10,
+                "strategy": -2
+              },
+              "consequence": "Salya acknowledges the king's unmatched nobility before engaging in an honorable single combat.",
+              "insight": {
+                "reflection": "Even at the very end of war, treating adversaries with chivalric respect honors our common humanity.",
+                "principle": "Honor given to enemies ennobles the victor.",
+                "source": "Salya Parva"
+              }
+            }
+          ],
+          "next": "yud_4a",
+          "nextByChoice": {
+            "A": "yud_4a",
+            "B": "yud_4a"
+          }
+        },
+        "yud_4a": {
+          "type": "decision",
+          "title": "The Dog at the Gates of Heaven",
+          "subtitle": "Mount Meru · Mahaprasthanika Parva",
+          "narrative": [
+            "At the end of their long lives, the Pandavas walk into the Himalayas. One by one, his brothers and Draupadi fall. Only a lone stray dog remains faithful to Yudhishthira.",
+            "Lord Indra arrives in his celestial chariot: 'Ascend to Swarga in your mortal body, King! But leave this stray dog behind; heaven has no room for animals.'"
+          ],
+          "prompt": "What does Yudhishthira do when heaven demands he abandon his companion?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Refuse Heaven: 'To abandon a devoted creature that sought my protection is the greatest sin. I will stay with the dog.'",
+              "tag": "Universal Compassion",
+              "effects": {
+                "compassion": 16,
+                "integrity": 16,
+                "fairness": 14,
+                "awareness": 12
+              },
+              "consequence": "The dog transforms into Lord Dharma himself: 'There is no king like you in the three worlds. Your compassion extends to all living beings!'",
+              "insight": {
+                "reflection": "The ultimate test of Yudhishthira's life is not whether he won an empire, but whether he would abandon a helpless dog for celestial bliss.",
+                "principle": "True righteousness is measured by how we treat the most vulnerable creature in our care.",
+                "source": "Mahaprasthanika Parva, The Heavenly Test"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Argue with Indra, using logic and scriptures to prove that loyalty ennobles all souls.",
+              "tag": "Philosophical Advocacy",
+              "effects": {
+                "awareness": 14,
+                "integrity": 12,
+                "fairness": 12,
+                "strategy": 8
+              },
+              "consequence": "Indra smiles as the dog reveals its divine identity, celebrating the king who defended justice to the threshold of eternity.",
+              "insight": {
+                "reflection": "Advocating for the voiceless through reasoned moral philosophy sanctifies both ruler and ruled.",
+                "principle": "Justice articulated with reason dissolves prejudice.",
+                "source": "Svargarohana Parva"
+              }
+            }
+          ],
+          "next": "yud_ending",
+          "nextByChoice": {
+            "A": "yud_ending",
+            "B": "yud_ending"
+          }
+        },
+        "yud_ending": {
+          "type": "ending",
+          "title": "The Ascent of Dharmaraja",
+          "subtitle": "The Gates of Swarga",
+          "endings": [
+            {
+              "id": "yud_true_dharmaraja",
+              "name": "THE TRUE DHARMARAJA",
+              "line": "Whose universal compassion for the voiceless opened the gates of highest truth.",
+              "conditions": {
+                "topTrait": "compassion"
+              },
+              "epilogue": [
+                "Yudhishthira enters the eternal realm not as a conqueror of land, but as a conqueror of selfishness. His refusal to abandon a stray dog becomes the crowning jewel of the epic.",
+                "He rules forever in the memory of humanity as the king who proved that power is only legitimate when it serves justice and mercy."
+              ]
+            },
+            {
+              "id": "yud_sovereign_burden",
+              "name": "THE SAGE SOVEREIGN",
+              "line": "He bore the heavy crown of truth through catastrophe and war.",
+              "conditions": {
+                "topTrait": "integrity"
+              },
+              "epilogue": [
+                "Hastinapura flourished under his unbending justice for thirty-six peaceful years. Widows were sheltered, fields were nourished, and the law protected the weak.",
+                "He proved that a good man can rule a scarred world with clean conscience."
+              ]
+            },
+            {
+              "id": "yud_ascetic_seeker",
+              "name": "THE TRANSCENDENT PILGRIM",
+              "line": "Walking beyond the illusions of power into eternal light.",
+              "conditions": {},
+              "epilogue": [
+                "The snows of the Himalayas receive the king who gave away everything he owned. The journey is complete; Dharma endures."
+              ]
+            }
+          ],
+          "next": null
+        }
+      }
     },
     {
       "id": "abhimanyu",
       "order": 5,
       "character": "Abhimanyu",
-      "epithet": "He heard the way in, never the way out",
+      "epithet": "The Lion's Cub · Heir to Gandiva",
       "title": "The Broken Circle",
-      "theme": "Decision-making with incomplete information",
-      "status": "locked",
+      "theme": "Decision-Making Under Incomplete Information",
+      "status": "playable",
       "ambience": "battle",
+      "decisionsRequired": 4,
       "card": {
-        "line": "Sixteen years old, one incomplete map, and a formation no one alive can crack from inside.",
-        "quote": "\u201cI know how to enter the chakravyuha. Enter \u2014 yes. But out?\u201d"
+        "line": "Sixteen years old, one incomplete map, and a labyrinth no warrior alive could crack from inside.",
+        "quote": "“I know how to enter the Chakravyuha. Enter — yes. But out?”"
       },
-      "teaser": "A teenage prodigy, a labyrinth of soldiers, and six exits he was never taught. What do you decide when the information was cut off on purpose? Chapter V is being written."
+      "startNode": "abhi_1_story",
+      "nodes": {
+        "abhi_1_story": {
+          "type": "story",
+          "title": "The Wheel of Drona",
+          "subtitle": "13th Day of Kurukshetra · Morning",
+          "narrative": [
+            "Acharya Drona has formed the Chakravyuha — the spinning wheel formation composed of millions of interlocking soldiers and seven revolving concentric rings.",
+            "Arjuna has been lured miles away to the southern horizon by the suicide squads (Samsaptakas).",
+            "Yudhishthira turns in desperation to sixteen-year-old Abhimanyu: 'Son, only your father, Krishna, Pradyumna, and you know how to breach this formation. Save us.'",
+            "Abhimanyu looks at the spinning wall of bronze and spears: 'Uncle, my father taught me how to break into the Chakravyuha. But if I am trapped inside... I was never taught how to emerge.'"
+          ],
+          "next": "abhi_1"
+        },
+        "abhi_1": {
+          "type": "decision",
+          "title": "The Breach of the Apex",
+          "subtitle": "Before the spinning gates",
+          "narrative": [
+            "The Pandava army cannot advance. If the Chakravyuha is not breached, Yudhishthira will be captured before noon.",
+            "Bhima, Dhrishtadyumna, and the elders swear: 'Break the outer gate, young lion! We will follow directly in your chariot's tracks and protect your rear.'"
+          ],
+          "prompt": "How should Abhimanyu initiate the assault on the impossible labyrinth?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Charge the revolving apex directly; courage must create the opening for the army behind.",
+              "tag": "Heroic Initiative",
+              "effects": {
+                "responsibility": 12,
+                "integrity": 10,
+                "strategy": 4,
+                "awareness": 4
+              },
+              "consequence": "Abhimanyu's golden chariot plunges into the wall of shields like an eagle through clouds. The outer perimeter shatters before his torrential arrows.",
+              "insight": {
+                "reflection": "In moments of systemic deadlock, decisive leadership demands stepping into uncertainty to forge a path for others.",
+                "principle": "Courage in ambiguity creates opportunity where none existed.",
+                "source": "Drona Parva, Abhimanyu-vadha Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Instruct charioteer Sumitra to target Drona's command chariot, disorienting the formation from within.",
+              "tag": "Tactical Disruption",
+              "effects": {
+                "strategy": 12,
+                "awareness": 10,
+                "responsibility": 6,
+                "compassion": -2
+              },
+              "consequence": "Abhimanyu ignores peripheral skirmishers and strikes directly at the teacher Drona, shattering the coordination of the entire first circle.",
+              "insight": {
+                "reflection": "Targeting the organizing hub of a complex system creates disproportionate advantage for smaller forces.",
+                "principle": "Precision against key nodes neutralizes numerical superiority.",
+                "source": "Drona Parva"
+              }
+            },
+            {
+              "id": "C",
+              "label": "Establish an emergency rally signal with Bhima before breaching the second tier.",
+              "tag": "Contingency Planning",
+              "effects": {
+                "awareness": 12,
+                "strategy": 10,
+                "responsibility": 8,
+                "integrity": 6
+              },
+              "consequence": "Abhimanyu plants a distinct pennant at the breach point, signaling the Pandava divisions to maintain a tight escort corridor.",
+              "insight": {
+                "reflection": "Even when operating with incomplete operational knowledge, creating communication anchors mitigates risk.",
+                "principle": "Prepare communication channels before entering high-risk environments.",
+                "source": "Mahabharata tactical analysis"
+              }
+            }
+          ],
+          "next": "abhi_2a",
+          "nextByChoice": {
+            "A": "abhi_2a",
+            "B": "abhi_2a",
+            "C": "abhi_2b"
+          }
+        },
+        "abhi_2a": {
+          "type": "decision",
+          "title": "The Trap Closes: Jayadratha's Wall",
+          "subtitle": "Inside the 5th tier of the Chakravyuha",
+          "narrative": [
+            "King Jayadratha, armed with Shiva's boon to hold back the Pandavas for one day, slams the breached gate shut. Bhima and Yudhishthira are cut off outside.",
+            "Sixteen-year-old Abhimanyu stands alone inside the 6th tier, encircled by six supreme Maharathis: Drona, Karna, Kripa, Ashwatthama, Brihadbala, and Duryodhana."
+          ],
+          "prompt": "How does the lone warrior fight when surrounded on all sides?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Employ continuous 360-degree rotational archery, keeping all six commanders at bay simultaneously.",
+              "tag": "Mandala Archery",
+              "effects": {
+                "strategy": 12,
+                "responsibility": 10,
+                "integrity": 8,
+                "awareness": 6
+              },
+              "consequence": "His bow forms a continuous circle of fire. Duryodhana's armor is pierced; Prince Lakshmana falls, sending shock through the Kaurava command.",
+              "insight": {
+                "reflection": "Abhimanyu's radial archery inside the Chakravyuha is celebrated as the pinnacle of individual martial genius.",
+                "principle": "Fluidity and continuous awareness neutralize encirclement.",
+                "source": "Drona Parva, Day 13"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Challenge each Maharathi to single combat in accordance with the ancient kshatriya code.",
+              "tag": "Chivalric Honor",
+              "effects": {
+                "integrity": 14,
+                "fairness": 12,
+                "strategy": -6,
+                "awareness": 6
+              },
+              "consequence": "Abhimanyu calls upon their honor. Shamed, the commanders hesitate, but the desperate panic of the Kaurava camp soon overtakes their rules.",
+              "insight": {
+                "reflection": "Appealing to ethical standards exposes moral bankruptcy in opponents who have already abandoned justice.",
+                "principle": "Holding to honor when others abandon it is the ultimate mark of character.",
+                "source": "Drona Parva"
+              }
+            }
+          ],
+          "next": "abhi_3a",
+          "nextByChoice": {
+            "A": "abhi_3a",
+            "B": "abhi_3a"
+          }
+        },
+        "abhi_2b": {
+          "type": "decision",
+          "title": "The Severed Bowstring",
+          "subtitle": "The 7th Circle · Noon",
+          "narrative": [
+            "Unable to defeat the youth in fair combat, six veterans coordinate an unlawful strike: Karna slices his bow from behind, Drona fells his horses, and Kripa slays his charioteer.",
+            "Abhimanyu stands dismounted on foot, holding only his sword and shield against hundreds of mounted chariots."
+          ],
+          "prompt": "How does Abhimanyu react when his weapons are destroyed by an illegal strike?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Draw the sword and advance on foot with royal majesty, cutting down enemy weapons.",
+              "tag": "Undaunted Valor",
+              "effects": {
+                "integrity": 14,
+                "responsibility": 12,
+                "awareness": 8,
+                "strategy": 4
+              },
+              "consequence": "Drona cuts his sword; his shield is shattered by arrows. Yet the youth advances with glowing eyes that strike fear into kings.",
+              "insight": {
+                "reflection": "True nobility cannot be disarmed by broken metal; it resides in the soul's unconquerable resolve.",
+                "principle": "Courage is not the absence of weapons, but the refusal to bow.",
+                "source": "Drona Parva, The Dismounted Lion"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Seize a heavy chariot wheel from the wreckage and wield it like the discus of Vishnu.",
+              "tag": "Heroic Improvisation",
+              "effects": {
+                "strategy": 12,
+                "integrity": 10,
+                "responsibility": 10,
+                "awareness": 8
+              },
+              "consequence": "Covered in dust and blood, Abhimanyu whirls the giant chariot wheel, smashing through the ranks like Lord Vishnu himself.",
+              "insight": {
+                "reflection": "The image of Abhimanyu with the chariot wheel is one of the most iconic symbols of defiance in world literature.",
+                "principle": "When all tools fail, transform the wreckage into a weapon of honor.",
+                "source": "Drona Parva, The Wheel of Abhimanyu"
+              }
+            }
+          ],
+          "next": "abhi_3a",
+          "nextByChoice": {
+            "A": "abhi_3a",
+            "B": "abhi_3a"
+          }
+        },
+        "abhi_3a": {
+          "type": "decision",
+          "title": "The Stand Against Six Kings",
+          "subtitle": "The Heart of the Labyrinth · Afternoon",
+          "narrative": [
+            "His wheel is smashed. Dussasana's son steps forward with a heavy iron mace. The two exhausted princes close in mortal combat in the bloodstained dust.",
+            "The entire battlefield falls silent as six veteran Maharathis watch the dismounted teenager who held their combined might at bay."
+          ],
+          "prompt": "How does Abhimanyu face his final combat?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Engage in the mace duel with dignity, defending the honor of the Pandava name to the last breath.",
+              "tag": "Pure Kshatriya Dharma",
+              "effects": {
+                "integrity": 14,
+                "responsibility": 12,
+                "fairness": 10,
+                "awareness": 8
+              },
+              "consequence": "Both princes strike simultaneously and fall together upon the earth. The lion's cub closes his eyes as celestial drums sound above the clouds.",
+              "insight": {
+                "reflection": "Abhimanyu died undefeated in spirit, having exposed the moral collapse of his opponents and elevated his own soul to immortality.",
+                "principle": "A short life lived in incandescent honor outshines an eternity of compromise.",
+                "source": "Drona Parva, The Fall of Abhimanyu"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Proclaim the eternal shame of six Maharathis ganging up against one dismounted youth.",
+              "tag": "Voice of Conscience",
+              "effects": {
+                "fairness": 14,
+                "integrity": 14,
+                "awareness": 12,
+                "compassion": 6
+              },
+              "consequence": "His dying words burn into Karna and Drona's consciences, breaking their moral will for the remainder of the war.",
+              "insight": {
+                "reflection": "The moral voice of the fallen hero shatters the conscience of those who broke the law to defeat him.",
+                "principle": "Truth spoken in sacrifice dismantles the victor's pride.",
+                "source": "Mahabharata"
+              }
+            }
+          ],
+          "next": "abhi_4a",
+          "nextByChoice": {
+            "A": "abhi_4a",
+            "B": "abhi_4a"
+          }
+        },
+        "abhi_4a": {
+          "type": "decision",
+          "title": "The Legacy of the Lion",
+          "subtitle": "Dusk on the 13th Day",
+          "narrative": [
+            "The sun sets on Kurukshetra. His pregnant wife Uttara and mother Subhadra wait in the camp.",
+            "In Uttara's womb lives Parikshit, the unborn prince who will inherit the throne and carry the future of the human race."
+          ],
+          "prompt": "What blessing does Abhimanyu leave to the future world?",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Bless the unborn child Parikshit to inherit wisdom, courage, and righteous stewardship.",
+              "tag": "Gift to the Future",
+              "effects": {
+                "compassion": 16,
+                "responsibility": 14,
+                "awareness": 12,
+                "integrity": 10
+              },
+              "consequence": "His sacrifice protects the lineage. Parikshit will survive the war to rebuild the golden realm of Hastinapura.",
+              "insight": {
+                "reflection": "Abhimanyu’s sacrifice was not in vain; his bloodline became the bridge across which Dharma survived the collapse of an era.",
+                "principle": "What is given for the future lives on in generations unborn.",
+                "source": "Ashwamedhika Parva"
+              }
+            },
+            {
+              "id": "B",
+              "label": "Ascend into the solar realm with radiant joy, knowing he lived with absolute valor.",
+              "tag": "Transcendent Peace",
+              "effects": {
+                "awareness": 14,
+                "integrity": 14,
+                "compassion": 10,
+                "fairness": 10
+              },
+              "consequence": "The celestial devas welcome the incarnation of Varchas back to the heavenly realms with showering lotus blossoms.",
+              "insight": {
+                "reflection": "The soul that fulfilled its mission with complete integrity returns to peace without regret.",
+                "principle": "A life lived fully in duty is complete, regardless of its years.",
+                "source": "Svargarohana Parva"
+              }
+            }
+          ],
+          "next": "abhi_ending",
+          "nextByChoice": {
+            "A": "abhi_ending",
+            "B": "abhi_ending"
+          }
+        },
+        "abhi_ending": {
+          "type": "ending",
+          "title": "The Immortal Lion",
+          "subtitle": "Sunset of the 13th Day · Kurukshetra",
+          "endings": [
+            {
+              "id": "abhi_immortal_hero",
+              "name": "THE UNDEFEATED LION",
+              "line": "Sixteen years old, he broke the unbreakable and became the eternal beacon of courage.",
+              "conditions": {
+                "topTrait": "responsibility"
+              },
+              "epilogue": [
+                "Arjuna returns to camp and weeps bitter tears over his fallen son. But Abhimanyu’s sacrifice galvanized the Pandavas to absolute victory.",
+                "For thousands of years, his name stands as the archetype of the fearless heart that enters the labyrinth without looking back."
+              ]
+            },
+            {
+              "id": "abhi_golden_spark",
+              "name": "THE RADIANT CATALYST",
+              "line": "His sacrifice exposed the collapse of chivalry and restored the moral clarity of the war.",
+              "conditions": {
+                "topTrait": "integrity"
+              },
+              "epilogue": [
+                "By breaking their own rules to fell him, the Kaurava commanders sealed their moral defeat.",
+                "His courage lives forever in the songs of Kurukshetra, unbroken and unforgotten."
+              ]
+            },
+            {
+              "id": "abhi_celestial_light",
+              "name": "THE CELESTIAL STAR",
+              "line": "Ascending beyond the dust of battle into the eternal halls of light.",
+              "conditions": {},
+              "epilogue": [
+                "The boy who knew how to enter the circle has found the greatest exit of all — into immortality.",
+                "His story remains written in the stars of Dharma."
+              ]
+            }
+          ],
+          "next": null
+        }
+      }
     }
   ]
 }

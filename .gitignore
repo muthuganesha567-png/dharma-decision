@@ -20,4 +20,5 @@ backend/data/audio_cache/
 Thumbs.db
 .vscode/
 .idea/
+scratch/
 

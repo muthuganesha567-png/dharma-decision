@@ -27,13 +27,21 @@ export const BACKDROP_IMAGE_MAP = {
   arrow_bed_dawn: '/assets/scenes/bhishma-arrow-bed.jpg',
   battlefield_dusk: '/assets/scenes/battlefield-aftermath.jpg',
   aftermath_sunset: '/assets/scenes/battlefield-aftermath.jpg',
-  // Modern
-  campus_night: '/assets/scenes/modern-group-project.jpg',
-  library_tense: '/assets/scenes/modern-group-project.jpg',
-  college_corridor: '/assets/scenes/modern-college-ragging.jpg',
-  office_meeting: '/assets/scenes/modern-college-ragging.jpg',
-  dorm_room: '/assets/scenes/modern-group-project.jpg',
-  exam_hall: '/assets/scenes/modern-group-project.jpg',
+  // Modern Dilemmas — 8 Distinct Scenarios
+  mod_empty_seat: '/assets/scenes/modern-empty-seat.jpg',
+  mod_purchased_essay: '/assets/scenes/modern-purchased-essay.jpg',
+  mod_viral_jest: '/assets/scenes/modern-viral-jest.jpg',
+  mod_missed_milestone: '/assets/scenes/modern-missed-milestone.jpg',
+  mod_inflated_invoice: '/assets/scenes/modern-inflated-invoice.jpg',
+  mod_confession_call: '/assets/scenes/modern-confession-call.jpg',
+  mod_storm_call: '/assets/scenes/modern-storm-call.jpg',
+  mod_senior_tradition: '/assets/scenes/modern-senior-tradition.jpg',
+  campus_night: '/assets/scenes/modern-empty-seat.jpg',
+  library_tense: '/assets/scenes/modern-purchased-essay.jpg',
+  college_corridor: '/assets/scenes/modern-senior-tradition.jpg',
+  office_meeting: '/assets/scenes/modern-missed-milestone.jpg',
+  dorm_room: '/assets/scenes/modern-viral-jest.jpg',
+  exam_hall: '/assets/scenes/modern-purchased-essay.jpg',
 }
 
 // ---------- SVG LAYER RENDERERS ----------

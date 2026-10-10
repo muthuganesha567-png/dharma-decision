@@ -3,6 +3,17 @@ import { Icon, LotusDivider } from '../components/ui'
 import { MODERN } from '../data'
 import { sfx } from '../game/audio'
 
+const SCENARIO_IMAGES = {
+  mod_teamwork: '/assets/scenes/modern-empty-seat.jpg',
+  mod_integrity: '/assets/scenes/modern-purchased-essay.jpg',
+  mod_social: '/assets/scenes/modern-viral-jest.jpg',
+  mod_leadership: '/assets/scenes/modern-missed-milestone.jpg',
+  mod_workplace: '/assets/scenes/modern-inflated-invoice.jpg',
+  mod_friendship: '/assets/scenes/modern-confession-call.jpg',
+  mod_crisis: '/assets/scenes/modern-storm-call.jpg',
+  mod_college: '/assets/scenes/modern-senior-tradition.jpg',
+}
+
 export default function ModernHub({ go, params }) {
   const { state } = useGame()
   const done = state.modern.completed
@@ -91,6 +102,7 @@ export default function ModernHub({ go, params }) {
       <div className="modern-grid">
         {MODERN.map((s, i) => {
           const resolved = done.includes(s.id)
+          const imgUrl = SCENARIO_IMAGES[s.id] || '/assets/scenes/modern-empty-seat.jpg'
           return (
             <button
               key={s.id}
@@ -98,26 +110,34 @@ export default function ModernHub({ go, params }) {
               onClick={() => play(s)}
               style={{ animationDelay: `${i * 60}ms` }}
             >
-              <div className="modern-card-top">
-                <span className="cat-icon">
-                  <Icon name={s.icon || 'spark'} size={18} />
-                </span>
-                <span className="modern-cat">{s.category}</span>
+              <div className="modern-card-thumb-wrap">
+                <img src={imgUrl} alt={s.title} className="modern-card-thumb" loading="lazy" />
+                <div className="modern-card-thumb-overlay" />
+                <span className="modern-card-index">Dilemma {i + 1} of {MODERN.length}</span>
                 {resolved && (
-                  <span className="done-badge">
-                    <Icon name="check" size={11} /> Resolved
+                  <span className="done-badge-float">
+                    <Icon name="check" size={12} /> Resolved
                   </span>
                 )}
               </div>
 
-              <div className="modern-title">{s.title}</div>
-              <p className="modern-teaser">{s.situation[0]}</p>
+              <div className="modern-card-body">
+                <div className="modern-card-top">
+                  <span className="cat-icon">
+                    <Icon name={s.icon || 'spark'} size={16} />
+                  </span>
+                  <span className="modern-cat">{s.category}</span>
+                </div>
 
-              <div className="modern-card-footer">
-                <span className="modern-principle-tag">
-                  <Icon name="spark" size={12} /> Epic Principle Linked
-                </span>
-                <span className="modern-cta">{resolved ? 'Re-examine' : 'Face it'} →</span>
+                <div className="modern-title">{s.title}</div>
+                <p className="modern-teaser">{s.summary || s.situation[0]}</p>
+
+                <div className="modern-card-footer">
+                  <span className="modern-principle-tag">
+                    <Icon name="spark" size={12} /> Ethical Tension
+                  </span>
+                  <span className="modern-cta">{resolved ? 'Re-examine' : 'Face Dilemma'} →</span>
+                </div>
               </div>
             </button>
           )

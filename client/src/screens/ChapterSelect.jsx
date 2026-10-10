@@ -192,7 +192,7 @@ export default function ChapterSelect({ go }) {
               ) : (
                 <div className="modal-action-row">
                   <button className="btn gold lg" onClick={() => enter(selectedChapter)}>
-                    Enter Chapter I <Icon name="arrow" size={16} />
+                    {state.chapters[selectedChapter.id]?.path?.length ? 'Resume Chapter' : 'Begin Chapter'} {ROMAN[selectedChapter.order]} · {selectedChapter.character} <Icon name="arrow" size={16} />
                   </button>
                 </div>
               )}

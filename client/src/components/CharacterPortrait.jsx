@@ -21,14 +21,29 @@ export const CHARACTER_IMAGE_MAP = {
   drona: {
     default: '/assets/characters/drona.jpg',
   },
-  yudhishthira: {
-    default: '/assets/characters/yudhishthira.jpg',
-  },
   draupadi: {
     default: '/assets/characters/draupadi.jpg',
   },
   karna: {
     default: '/assets/characters/karna.jpg',
+    resolute: '/assets/characters/karna.jpg',
+    calm: '/assets/characters/karna.jpg',
+    defiant: '/assets/characters/karna.jpg',
+    solemn: '/assets/characters/karna.jpg',
+  },
+  yudhishthira: {
+    default: '/assets/characters/yudhishthira.jpg',
+    calm: '/assets/characters/yudhishthira.jpg',
+    resolute: '/assets/characters/yudhishthira.jpg',
+    solemn: '/assets/characters/yudhishthira.jpg',
+    anguished: '/assets/characters/yudhishthira.jpg',
+  },
+  abhimanyu: {
+    default: '/assets/characters/arjuna_resolute.jpg',
+    resolute: '/assets/characters/arjuna_resolute.jpg',
+    calm: '/assets/characters/arjuna_resolute.jpg',
+    valiant: '/assets/characters/arjuna_resolute.jpg',
+    brave: '/assets/characters/arjuna_resolute.jpg',
   },
 }
 

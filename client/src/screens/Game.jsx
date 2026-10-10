@@ -7,6 +7,10 @@ import { sfx } from '../game/audio'
 import { logDecisionRemote } from '../game/store'
 import {
   ARJUNA_OPENING_SEQUENCE,
+  KARNA_OPENING_SEQUENCE,
+  KRISHNA_OPENING_SEQUENCE,
+  YUDHISHTHIRA_OPENING_SEQUENCE,
+  ABHIMANYU_OPENING_SEQUENCE,
   getConsequenceSceneId,
   getIntroSceneId,
   getModernSceneId,
@@ -262,16 +266,22 @@ export default function Game({ route, go }) {
 
   // ---------- Scene ID resolution ----------
 
+  const getStorySequence = () => {
+    if (chapter?.id === 'karna') return KARNA_OPENING_SEQUENCE
+    if (chapter?.id === 'krishna') return KRISHNA_OPENING_SEQUENCE
+    if (chapter?.id === 'yudhishthira') return YUDHISHTHIRA_OPENING_SEQUENCE
+    if (chapter?.id === 'abhimanyu') return ABHIMANYU_OPENING_SEQUENCE
+    return ARJUNA_OPENING_SEQUENCE
+  }
+
   const getStorySceneId = () => {
-    if (nodeId === 'arj_1_story') {
-      return ARJUNA_OPENING_SEQUENCE[beatIndex] || ARJUNA_OPENING_SEQUENCE[0]
-    }
-    return null
+    const seq = getStorySequence()
+    return seq[beatIndex] || seq[0]
   }
 
   const getDecisionIntroSceneId = () => {
     if (mode === 'modern') return getModernSceneId(scen?.id)
-    return getIntroSceneId(nodeId) || 'arj_1_intro'
+    return getIntroSceneId(nodeId) || `${chapter?.id || 'arj'}_1_intro`
   }
 
   // ---------- Derived ----------
@@ -323,29 +333,19 @@ export default function Game({ route, go }) {
         )}
       </div>
 
-      {/* ====== MULTI-BEAT STORY (Arjuna opening) ====== */}
-      {stage === 'story' && nodeId === 'arj_1_story' && (
+      {/* ====== MULTI-BEAT STORY (All 5 Chapters) ====== */}
+      {stage === 'story' && (
         <CinematicRenderer
           sceneId={getStorySceneId()}
           muted={state.muted}
-          continueLabel={beatIndex < ARJUNA_OPENING_SEQUENCE.length - 1 ? 'Next Scene' : 'Approach the Dilemma'}
+          continueLabel={beatIndex < getStorySequence().length - 1 ? 'Next Scene' : 'Approach the Dilemma'}
           onComplete={() => {
-            if (beatIndex < ARJUNA_OPENING_SEQUENCE.length - 1) {
+            if (beatIndex < getStorySequence().length - 1) {
               setBeatIndex(beatIndex + 1)
             } else {
               setNodeId(node.next)
             }
           }}
-        />
-      )}
-
-      {/* ====== GENERIC STORY NODE ====== */}
-      {stage === 'story' && nodeId !== 'arj_1_story' && (
-        <CinematicRenderer
-          sceneId="arj_opening_1"
-          muted={state.muted}
-          continueLabel="Proceed to Council"
-          onComplete={() => setNodeId(node.next)}
         />
       )}
 
@@ -376,8 +376,22 @@ export default function Game({ route, go }) {
 
           {/* Choice cards overlaid */}
           <div className="choose-content-overlay">
+            {mode === 'modern' && node.narrative && node.narrative.length > 0 && (
+              <div className="modern-situation-card pop-in">
+                <div className="modern-situation-kicker">
+                  <Icon name="spark" size={13} />
+                  <span>WHAT HAPPENED</span>
+                </div>
+                <div className="modern-situation-body">
+                  {node.narrative.map((p, idx) => (
+                    <p key={idx} className="modern-situation-p">{p}</p>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="prompt-block">
-              <div className="eyebrow gold">THE CHOICE BEFORE YOU</div>
+              <div className="eyebrow gold">YOUR DILEMMA</div>
               <h2 className="prompt-heading">{node.prompt}</h2>
             </div>
 
@@ -593,12 +607,42 @@ export default function Game({ route, go }) {
           <AiPanel analysis={committed.ai} decisionLabel={committed.choice.label} />
 
           <div className="continue-row fade-up" style={{ animationDelay: '500ms' }}>
-            <button className="btn gold lg" onClick={advance}>
-              {(nextIdFor(lastChoiceRef.current) || '').endsWith('_end')
-                ? 'Behold the Outcome'
-                : 'Continue the Journey'}{' '}
-              <Icon name="arrow" size={16} />
-            </button>
+            {mode === 'modern' ? (
+              <div className="btn-row wrap">
+                {scen?.next && (
+                  <button
+                    className="btn gold lg"
+                    onClick={() => {
+                      dispatch({ type: 'completeModern', scenarioId: scen.id })
+                      go('game', { mode: 'modern', scenarioId: scen.next })
+                    }}
+                  >
+                    Proceed to Next Dilemma <Icon name="arrow" size={16} />
+                  </button>
+                )}
+                <button
+                  className="btn ghost lg"
+                  onClick={() => go('modern', { completed: scen.id })}
+                >
+                  Return to Modern Dilemmas Hub
+                </button>
+                {!scen?.next && (
+                  <button
+                    className="btn gold lg"
+                    onClick={() => go('dashboard')}
+                  >
+                    Examine Your Dharma Profile <Icon name="arrow" size={16} />
+                  </button>
+                )}
+              </div>
+            ) : (
+              <button className="btn gold lg" onClick={advance}>
+                {(nextIdFor(lastChoiceRef.current) || '').endsWith('_end')
+                  ? 'Behold the Outcome'
+                  : 'Continue the Journey'}{' '}
+                <Icon name="arrow" size={16} />
+              </button>
+            )}
           </div>
         </div>
       )}

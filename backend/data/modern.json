@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "mode": "modern",
   "scenarios": [
     {
@@ -7,46 +7,50 @@
       "category": "Teamwork",
       "title": "The Empty Seat",
       "icon": "users",
+      "summary": "Your college project is due tomorrow, but one teammate had a family emergency and could not contribute her section.",
       "situation": [
-        "The deadline is tomorrow at noon. Your four-person project is finally assembled, polished, and ready to submit \u2014 except for one thing: the teammate who was supposed to deliver the analysis section.",
-        "She messaged you an hour ago. Her father was hospitalized last night in another city; she has been on a train since dawn. She is not asking for anything. She is just telling you why she went silent.",
-        "Her name is on the cover page. Her section is not in the document."
+        "Your four-person college project is ready for submission tomorrow at noon.",
+        "One teammate had an urgent family emergency and could not contribute her analysis section.",
+        "Her name is listed on the project cover, but her assigned section remains blank."
       ],
-      "prompt": "Your teammate did not contribute to the project because of a family emergency. The deadline is tomorrow. How do you handle the credit?",
-      "freeText": { "enabled": true, "prompt": "What would you actually do \u2014 and why?" },
+      "prompt": "How should your team handle project credit for the teammate who could not contribute?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Explain your decision in your own words:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Remove her name. Grades and credit should reflect the work actually done.",
+          "label": "Remove her name from the project. Credit should strictly reflect work completed.",
           "tag": "Strict fairness",
           "effects": { "fairness": 8, "responsibility": 6, "integrity": 4, "compassion": -10, "awareness": -2 },
-          "consequence": "The submission is technically accurate. Your teammate sees the updated cover page from a hospital corridor at midnight. The project survives. Something else does not."
+          "consequence": "The submission is technically accurate, but your teammate feels abandoned during a family crisis, causing lasting damage to team trust."
         },
         {
           "id": "B",
-          "label": "Give her full credit anyway \u2014 she would have contributed if not for the emergency.",
+          "label": "Give her full credit anyway without mentioning the missing section.",
           "tag": "Blanket kindness",
           "effects": { "compassion": 10, "fairness": -8, "integrity": -8, "responsibility": -2 },
-          "consequence": "The report goes in with both names and one phantom section. It gets the highest mark of your semester. Your teammate finds out, and is mortified \u2014 the grade now sits on her conscience like a debt she never agreed to."
+          "consequence": "The project receives full marks, but your teammate carries the guilt of receiving unearned academic credit on a shared assignment."
         },
         {
           "id": "C",
-          "label": "Give partial credit, tell the professor the situation honestly, and rebuild the timeline with her.",
+          "label": "Explain the situation honestly to the instructor and request a short extension for her section.",
           "tag": "Honest middle",
           "effects": { "fairness": 9, "compassion": 8, "integrity": 7, "awareness": 5, "strategy": 3, "responsibility": 2 },
-          "consequence": "You email the professor the facts and a fair split \u2014 analysis section marked incomplete, extension requested or credit adjusted. The professor, human after all, agrees to let her submit her section late for partial marks. Your teammate catches the next train home lighter than she boarded it."
+          "consequence": "The professor appreciates the honesty and grants a fair partial extension, protecting both academic standards and personal compassion."
         },
         {
           "id": "D",
-          "label": "Say nothing, submit as is, sort it out later.",
+          "label": "Submit the project as is without saying anything and decide later if asked.",
           "tag": "Avoidance",
           "effects": { "responsibility": -8, "awareness": -6, "strategy": -4, "compassion": -2, "integrity": -3 },
-          "consequence": "It works \u2014 technically. The grade posts a week later and the group chat develops a silence with a shape to it. The unspoken thing grows teeth."
+          "consequence": "The submission passes without questions for now, but team members harbor unspoken resentment about unequal contributions."
         }
       ],
       "insight": {
-        "principle": "Most real dilemmas are solved at the honest middle, negotiated in daylight \u2014 not at the poles.",
-        "source": "Krishna's statecraft: before choosing between two bad options, widen the options."
+        "principle": "Most difficult dilemmas are solved through open communication and balanced compromise rather than rigid extremes.",
+        "source": "Strategic counsel: When facing two flawed options, create a third path that balances fairness with compassion."
       },
       "next": "mod_integrity"
     },
@@ -55,46 +59,50 @@
       "category": "Academic Integrity",
       "title": "The Purchased Essay",
       "icon": "book",
+      "summary": "Your close friend admits that he bought his final term paper online in a curve-graded course.",
       "situation": [
-        "You discover \u2014 because he told you, laughing with relief at a party \u2014 that your closest friend bought his final term paper online. The course is graded on a curve.",
-        "The professor suspects nothing. Your friend is not a bad person; he was drowning in four deadlines and a part-time job, and he took the exit ramp that was offered to him by an anonymous website.",
-        "Your own grade rises or falls with his, and with everyone else's."
+        "Your closest friend admits he purchased his final term paper from an online website because he was overwhelmed by work and deadlines.",
+        "The professor suspects nothing. However, the course is graded on a strict curve.",
+        "His unearned high grade will directly lower the final marks of other students in the class."
       ],
-      "prompt": "What do you do about your friend's purchased paper?",
-      "freeText": { "enabled": true, "prompt": "Write your own decision here." },
+      "prompt": "What should you do about your friend's purchased paper?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Write your decision here:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Report him to the professor. A curve is a shared resource.",
+          "label": "Report the cheating to the professor immediately to protect grading fairness.",
           "tag": "Rules first",
           "effects": { "fairness": 10, "integrity": 6, "responsibility": 5, "compassion": -9 },
-          "consequence": "The inquiry is quiet and quick. He is failed on the paper \u2014 and suspended from the program for a term. The curve is clean. So is the seat where your friend used to sit in the front row."
+          "consequence": "The professor investigates and fails your friend. The grading curve is protected, but your friendship ends permanently."
         },
         {
           "id": "B",
-          "label": "Confront him privately and push him to withdraw the paper and resubmit his own work.",
+          "label": "Confront your friend privately and convince him to withdraw the paper and submit his own draft.",
           "tag": "Honest middle",
           "effects": { "integrity": 9, "compassion": 8, "fairness": 6, "responsibility": 5, "strategy": 2, "awareness": 3 },
-          "consequence": "He goes pale, then furious, then \u2014 two days later \u2014 grateful. He withdraws the purchased file and turns in his own rough draft with a note to the professor about the delay. He loses ten points. He keeps his degree, his integrity, and his friend."
+          "consequence": "Your friend is shaken, but agrees to withdraw the file and submit his own work late, preserving his integrity and your friendship."
         },
         {
           "id": "C",
-          "label": "Say nothing. His paper, his risk, his conscience.",
+          "label": "Stay silent. His academic choices and ethical risks are his own responsibility.",
           "tag": "Non-interference",
           "effects": { "responsibility": -6, "awareness": -4, "fairness": -5, "compassion": 2, "integrity": -2 },
-          "consequence": "You keep the friendship and lose the argument with yourself. Every curve-graded exam this term, a small voice asks what your silence was worth \u2014 and you find you already know the exchange rate."
+          "consequence": "You avoid immediate confrontation, but you carry the quiet discomfort of knowing honest classmates were penalized on the curve."
         },
         {
           "id": "D",
-          "label": "Send an anonymous tip to the professor.",
+          "label": "Send an anonymous tip to the professor without giving your name.",
           "tag": "Anonymous hand",
           "effects": { "fairness": 6, "integrity": -2, "compassion": -4, "responsibility": -3, "strategy": 3 },
-          "consequence": "The inquiry happens without your name attached. He never learns who tipped the professor \u2014 but he stops telling you things, having somehow guessed. Justice was served, and the friendship was billed for it quietly."
+          "consequence": "The inquiry happens without your name attached, but your friend suspects his inner circle and becomes distrustful of everyone."
         }
       ],
       "insight": {
-        "principle": "Truth has costs, and still outranks convenience \u2014 but how you tell it is a moral choice of its own.",
-        "source": "Yudhishthira: the man who never lied, asked to spend his truth like coin."
+        "principle": "Truth and honesty matter, but how you confront wrongdoing requires courage, empathy, and personal responsibility.",
+        "source": "The trial of Yudhishthira: Moral courage means standing for truth directly rather than hiding behind silence."
       },
       "next": "mod_social"
     },
@@ -103,46 +111,50 @@
       "category": "Social Media",
       "title": "The Viral Jest",
       "icon": "globe",
+      "summary": "A humiliating meme targeting a quiet classmate's speech difficulty is spreading across college group chats.",
       "situation": [
-        "Someone in your class made a meme mocking a quiet classmate's stutter. It is funny in the way that makes your stomach drop while you laugh. It is now in three group chats and climbing.",
-        "The classmate has not seen it \u2014 as far as anyone knows. The person who made it is popular, funny, and \u2014 this is the part that complicates it \u2014 someone who once stood up for you when it counted.",
-        "Three people have already shared it. One of them just asked you: \u201cyour turn.\u201d"
+        "A meme mocking a quiet classmate's stutter is spreading rapidly across student group chats.",
+        "The student who created it is popular and previously helped you when you needed support.",
+        "Classmates are asking you to forward the post to your feed."
       ],
-      "prompt": "The post is one share away from your feed. What do you do?",
-      "freeText": { "enabled": true, "prompt": "Type what you would do." },
+      "prompt": "How do you respond when asked to forward the mocking post?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Type what you would do:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Share it. Refusing will just make me the next meme.",
+          "label": "Share it to fit in with the group and avoid becoming a social target.",
           "tag": "The crowd",
           "effects": { "responsibility": -10, "compassion": -10, "integrity": -8, "awareness": -4 },
-          "consequence": "You tap share. The meme reaches two hundred more screens by night, and one of them, finally, is his. He stops raising his hand in class \u2014 and you learn that silence and participation invoice separately, but they both bill."
+          "consequence": "The post reaches hundreds more students. The targeted classmate feels humiliated and stops participating in class discussions."
         },
         {
           "id": "B",
-          "label": "Refuse to share \u2014 and message the maker privately: this one crosses a line, take it down.",
+          "label": "Refuse to share it and privately message the creator asking them to take it down.",
           "tag": "Private counsel",
           "effects": { "integrity": 8, "compassion": 9, "awareness": 6, "responsibility": 4, "strategy": 3, "fairness": 2 },
-          "consequence": "\u201cRelax, it's a joke,\u201d he replies. But an hour later the meme quietly disappears from the chats where it started. The classmate never knows how close it came. Sometimes the win is invisible, and is a win anyway."
+          "consequence": "The creator realizes the harm and quietly deletes the post from the main chats, stopping the spread before further damage occurs."
         },
         {
           "id": "C",
-          "label": "Call it out publicly in the group: \u2018this is bullying, and you know it.\u2019",
+          "label": "Call out the post publicly in the group chat as unacceptable harassment.",
           "tag": "Public stand",
           "effects": { "fairness": 9, "responsibility": 8, "integrity": 7, "compassion": 5, "strategy": -3, "awareness": 2 },
-          "consequence": "The chat splits \u2014 two people agree with you, three mock you, the meme-maker goes cold. The post dies by evening. Your name is now \u2018too serious\u2019 for a month. The classmate hears about the argument \u2014 and about who stood in it."
+          "consequence": "The chat splits into a heated debate. The meme is removed, but social tensions linger between friend groups for weeks."
         },
         {
           "id": "D",
-          "label": "Report the post silently and stay out of the social crossfire.",
+          "label": "Report the post silently through the platform and stay out of the discussion.",
           "tag": "Quiet exit",
           "effects": { "responsibility": 2, "compassion": 3, "integrity": -1, "strategy": 2, "awareness": -2 },
-          "consequence": "The platform removes it in two days \u2014 after two more hundred views. You kept your hands clean and your weekends social. The classmate's stutter got two more days of material."
+          "consequence": "The platform takes days to review and remove the post, during which many more students continue to view and share it."
         }
       ],
       "insight": {
-        "principle": "A word spoken in a hall stays in the hall; a post speaks to ten thousand halls. Scale changes the ethics.",
-        "source": "The dice hall at Hastinapura: humiliation staged before a crowd is a wound that does not close."
+        "principle": "Online platforms amplify humiliation. True moral judgment requires refusing to participate in the casual cruelty of crowds.",
+        "source": "The lesson of Hastinapura: Public humiliation before a crowd creates deep wounds that words alone cannot heal."
       },
       "next": "mod_leadership"
     },
@@ -151,46 +163,50 @@
       "category": "Leadership",
       "title": "The Missed Milestone",
       "icon": "crown",
+      "summary": "A major project feature is incomplete before a client demo due to your own scheduling miscalculation.",
       "situation": [
-        "The client demo was scheduled for Friday. It is Friday, 9 a.m., and the feature is not ready \u2014 because of a scheduling error you made three weeks ago, quietly, when you moved two critical reviews into the same week as the fest.",
-        "Nobody knows the error was yours. The team thinks the delay was the API team. The client sponsor has asked for a call at noon: \u2018Walk me through what happened.\u2019",
-        "Your junior, Priya, is already drafting a slide that shows the API team's timeline in red."
+        "Your project team's demonstration is scheduled for noon, but the main feature is broken and incomplete.",
+        "The delay was caused by a scheduling mistake you made three weeks ago. No one else knows it was your fault.",
+        "Your junior team member is preparing a presentation slide that places the entire blame on the partner engineering team."
       ],
-      "prompt": "The sponsor asks what happened. What do you tell them?",
-      "freeText": { "enabled": true, "prompt": "Your answer, in your own words." },
+      "prompt": "How do you explain the project delay to the client sponsor?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Your answer in your own words:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Let the API timeline speak. Their delay, their names on the slide.",
+          "label": "Let the slide stand and allow the partner team to take the blame.",
           "tag": "Scapegoat",
           "effects": { "responsibility": -12, "integrity": -10, "fairness": -8, "strategy": 2 },
-          "consequence": "The call goes smoothly. The API team's lead, blindsided, spends a week repairing relations you spent. Priya watches you let a false slide stand \u2014 and quietly updates her notes on what kind of leader you are."
+          "consequence": "You avoid immediate blame, but your team realizes you let an innocent group take the fall, destroying their trust in your leadership."
         },
         {
           "id": "B",
-          "label": "Own it fully: the error was mine, here is the recovery plan and the safeguard so it never repeats.",
+          "label": "Take full ownership of the scheduling error and present a concrete recovery plan.",
           "tag": "Full ownership",
           "effects": { "integrity": 10, "responsibility": 10, "awareness": 6, "fairness": 5, "strategy": 3, "compassion": 2 },
-          "consequence": "You present the miss and the mistake in one breath \u2014 yours \u2014 then a two-week recovery plan with checkpoints. The sponsor's respect visibly rises; trust, it turns out, compounds on admissions. Your team stops sliding blame around the room and starts shipping."
+          "consequence": "The client respects your direct honesty and accepts the revised timeline with renewed confidence in your accountability."
         },
         {
           "id": "C",
-          "label": "Describe the external factors honestly but vaguely \u2014 \u2018a scheduling conflict\u2019 \u2014 without naming yourself.",
+          "label": "Explain the delay as an unexpected scheduling conflict without naming yourself.",
           "tag": "Shaded truth",
           "effects": { "integrity": -4, "responsibility": -3, "awareness": 3, "strategy": 2, "fairness": 1 },
-          "consequence": "\u2018A scheduling conflict\u2019 is true the way a shadow is shaped like its object. The sponsor accepts it. The phrase costs you nothing today and a little of you every day after \u2014 you now maintain two versions of the story, and stories multiply."
+          "consequence": "The client accepts the explanation, but your team notices your reluctance to take clear personal responsibility."
         },
         {
           "id": "D",
-          "label": "Minimize: \u2018we're basically on track, just a small bump\u2019 \u2014 and push the demo a week.",
+          "label": "Downplay the problem as a minor bump and ask for a one-week extension.",
           "tag": "Soothsaying",
           "effects": { "responsibility": -5, "integrity": -5, "awareness": -4, "strategy": -2 },
-          "consequence": "The sponsor smiles and agrees to a week. Three weeks later the second demo slips too, and the word \u2018basically\u2019 has become a running joke in their office. Optimism without a ledger reads, eventually, as evasion."
+          "consequence": "You buy temporary time, but when the second deadline slips as well, the client's confidence is severely shaken."
         }
       ],
       "insight": {
-        "principle": "A leader's confession is the team's permission to be honest.",
-        "source": "Yudhishthira refused to blame the dice, the hall, or fate \u2014 he owned the stake he chose to raise."
+        "principle": "True leadership begins with taking responsibility for errors rather than deflecting blame onto others.",
+        "source": "The duty of the sovereign: A leader protects the team and earns loyalty through transparency and accountability."
       },
       "next": "mod_workplace"
     },
@@ -199,46 +215,50 @@
       "category": "Workplace",
       "title": "The Inflated Invoice",
       "icon": "briefcase",
+      "summary": "You discover systematic overbilling on client invoices approved by the manager who hired and mentored you.",
       "situation": [
-        "You are three months into your first job. Reconciling the month's invoices, you notice the client billing has been padded \u2014 hours that were not worked, licenses that were never bought. Small amounts, systematically. Your manager approved every line.",
-        "The manager who hired you. The manager who defended your raise last month. The manager everyone else says is \u2018carrying the whole team on his back.\u2019",
-        "The company handbook has a compliance hotline. The hotline reports to a department your manager lunchs with."
+        "While reviewing monthly billing records, you discover that unworked hours and phantom fees are being billed to clients.",
+        "Your manager approved every line. He is the person who hired you and defended your recent promotion.",
+        "The internal compliance hotline reports to an executive who is close personal friends with your manager."
       ],
-      "prompt": "What do you do about the inflated invoices?",
-      "freeText": { "enabled": true, "prompt": "What is your move?" },
+      "prompt": "What action do you take regarding the inflated billing?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "What is your move?"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Report to compliance, in writing, with the ledger attached.",
+          "label": "Report the billing discrepancy formally in writing to the compliance department.",
           "tag": "Formal route",
           "effects": { "integrity": 10, "fairness": 8, "responsibility": 7, "compassion": -4, "strategy": 1, "awareness": 3 },
-          "consequence": "The audit runs for six quiet weeks. The padding stops; your manager is \u2018reassigned\u2019; the office learns a new fact about you. The numbers were right. The cost was real. Both things stay true."
+          "consequence": "An internal audit investigates and corrects the billing practices. The workplace environment becomes tense, but the fraud is stopped."
         },
         {
           "id": "B",
-          "label": "Talk to him first \u2014 one private conversation: \u2018this has to stop, and I have to be able to say it did.\u2019",
+          "label": "Talk to your manager privately and ask that the billing records be corrected.",
           "tag": "Direct counsel",
           "effects": { "compassion": 8, "integrity": 7, "strategy": 6, "awareness": 5, "responsibility": 4, "fairness": 2 },
-          "consequence": "He listens, goes very still, and says \u2018leave it with me.\u2019 The next invoice is clean, and so are the two after it. Whether that was correction or concealment, you cannot prove \u2014 and you carry the question like a stone in your shoe."
+          "consequence": "Your manager corrects the current records, though the confrontation leaves an uncomfortable tension between you."
         },
         {
           "id": "C",
-          "label": "Ignore it. It is above your pay grade, and the client has not complained.",
+          "label": "Ignore it. The billing practice was established above your pay grade.",
           "tag": "Not my desk",
           "effects": { "responsibility": -9, "integrity": -7, "awareness": -5, "fairness": -3 },
-          "consequence": "You stop reconciling invoices so carefully. Two years later the scheme is a scandal with a newspaper, and the audit trail runs straight through the months you noticed and said nothing. \u2018Junior\u2019, the timeline notes, \u2018but not blind.\u2019"
+          "consequence": "You avoid workplace friction, but when the financial misconduct is uncovered in a future audit, your silence is questioned."
         },
         {
           "id": "D",
-          "label": "Document everything quietly, tell no one, and wait for a safer moment.",
+          "label": "Document the discrepancies quietly in personal files and wait for a safer time.",
           "tag": "The drawer file",
           "effects": { "awareness": 6, "strategy": 4, "responsibility": -2, "integrity": -2, "fairness": -1 },
-          "consequence": "Your folder grows: screenshots, dates, amounts. You tell yourself it is preparation, not complicity, and some months that is even true. The folder is powerful. So is the habit of watching a slow wrong while taking notes."
+          "consequence": "You build a detailed personal record, but the unethical billing continues unchecked in the meantime."
         }
       ],
       "insight": {
-        "principle": "Silence in the presence of a slow wrong is a slow yes.",
-        "source": "Bhishma in the dice hall: the epic's greatest study of what respectable silence costs."
+        "principle": "Silence in the presence of continuous wrongdoing slowly turns into complicity.",
+        "source": "The tragedy of Bhishma: High stature and personal loyalty cannot justify remaining silent during ethical breaches."
       },
       "next": "mod_friendship"
     },
@@ -247,46 +267,50 @@
       "category": "Friendship",
       "title": "The Confession Call",
       "icon": "heart",
+      "summary": "Your best friend lied to his parents about passing a critical exam, and his mother calls you asking to confirm the celebration.",
       "situation": [
-        "Your best friend failed a crucial exam \u2014 the one his parents moved cities for. He told them he passed. He told you the truth the same night, shaking.",
-        "Three weeks later his mother calls you, voice bright with relief: \u201cYou were with him after the results, no? Tell me again \u2014 how did he take the good news?\u201d She wants to hear it from the friend she trusts.",
-        "Retaking the exam is possible in six months. The lie unravels the day results are posted publicly."
+        "Your best friend failed a critical competitive entrance exam and lied to his parents, telling them he passed.",
+        "His mother calls you with joy, asking you to confirm how happy he was when the results arrived.",
+        "Official merit lists will be published publicly next week, which will expose the truth."
       ],
-      "prompt": "His mother is waiting on the line. What do you say?",
-      "freeText": { "enabled": true, "prompt": "What comes out of your mouth?" },
+      "prompt": "How do you respond to his mother on the phone?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "What do you say?"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Play along \u2014 \u2018he was so happy.\u2019 A loyal friend covers first, fixes later.",
+          "label": "Confirm the lie to protect your friend's immediate peace and deal with fallout later.",
           "tag": "The cover",
           "effects": { "compassion": 5, "integrity": -10, "responsibility": -5, "awareness": -3 },
-          "consequence": "She laughs with relief and thanks the gods and you. Your voice on that call becomes one more brick in a wall that falls on her in six months \u2014 now with your name in the rubble. Loyalty, it turns out, can be spent on the wrong side of a lie."
+          "consequence": "His mother is happy today, but devastated next week when the truth emerges publicly with your name tied to the deception."
         },
         {
           "id": "B",
-          "label": "Tell her gently: \u2018Aunty, he didn't pass \u2014 and he's already planning the retake. Please let him tell you the rest.\u2019",
+          "label": "Tell her gently that he did not pass and is already preparing for the retake exam.",
           "tag": "Gentle truth",
           "effects": { "integrity": 9, "responsibility": 6, "awareness": 5, "compassion": 4, "fairness": 3, "strategy": -2 },
-          "consequence": "The line goes silent, then very quiet. She says \u2018thank you for telling me\u2019 in a voice that means the opposite of thank you. But by evening the house is dealing with the real problem instead of the real lie \u2014 and your friend, furious at first, sleeps without the weight for the first time in weeks."
+          "consequence": "The truth is painful immediately, but the family begins supporting him constructively instead of living in a false reality."
         },
         {
           "id": "C",
-          "label": "Deflect: \u2018I think his results are his to share, Aunty \u2014 talk to him tonight.\u2019",
+          "label": "Deflect the question and tell her that his exam results are for him to share directly tonight.",
           "tag": "The deflection",
           "effects": { "integrity": 3, "compassion": 3, "awareness": 4, "responsibility": -2, "strategy": 2 },
-          "consequence": "You neither lie nor betray \u2014 you hand the hot iron back to the two people who must hold it eventually. She hangs up puzzled. The conversation that night is harder than the one your friend rehearsed for, and maybe more honest than either of you planned."
+          "consequence": "You avoid lying while placing the responsibility squarely back on your friend to confess to his parents himself."
         },
         {
           "id": "D",
-          "label": "Tell her you'll call back \u2014 then give him one hour to confess himself, or you will.",
+          "label": "Tell your friend he has one hour to confess himself, or you will call his mother back with the truth.",
           "tag": "The deadline",
           "effects": { "integrity": 7, "responsibility": 7, "compassion": -2, "strategy": 4, "awareness": 3, "fairness": 1 },
-          "consequence": "He confesses in forty minutes \u2014 furious, terrified, and on his own feet. His mother hears it from her son instead of a phone tree. You get a two-week silence and, at the end of it, a friend who knows exactly what you will and will not carry for him."
+          "consequence": "Your friend confesses under pressure. The lie ends, but he resents your rigid ultimatum for months."
         }
       ],
       "insight": {
-        "principle": "Loyalty that requires your dishonesty is spending your dharma to protect another's secret.",
-        "source": "Karna and Duryodhana: friendship at its fiercest, and its most expensive."
+        "principle": "Loyalty that requires dishonesty spends your own integrity to maintain someone else's falsehood.",
+        "source": "The friendship of Karna and Duryodhana: Unquestioning loyalty that enables harmful deception carries severe consequences."
       },
       "next": "mod_crisis"
     },
@@ -295,46 +319,50 @@
       "category": "Crisis Management",
       "title": "The Storm Call",
       "icon": "alert",
+      "summary": "You must decide whether to cancel an outdoor campus festival as a dangerous monsoon storm approaches.",
       "situation": [
-        "You are the student coordinator of the college cultural fest. Three hundred tickets sold. Doors open tomorrow at 9 a.m.",
-        "The 8 p.m. weather update just moved the storm from \u2018possible\u2019 to \u2018likely, evening, with gusts.\u2019 The main stage is an open ground. The covered hall fits 120 people and has terrible acoustics.",
-        "The organizing committee is split down the middle: \u2018cancel, safety first\u2019 versus \u2018we bet the forecast is wrong, we cannot refund 300 tickets.\u2019 Everyone is looking at you."
+        "You are the student coordinator for an outdoor campus festival with 300 ticket holders scheduled for tomorrow.",
+        "A weather radar bulletin upgrades an approaching monsoon storm to severe with dangerous wind gusts for open-air stage equipment.",
+        "Canceling will consume the entire budget in refunds, while continuing risks serious safety liabilities on open ground."
       ],
-      "prompt": "The committee needs your call tonight. What do you decide?",
-      "freeText": { "enabled": true, "prompt": "Give your call and your reasoning." },
+      "prompt": "What decision do you make regarding the festival schedule tonight?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Give your decision and reasoning:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Cancel outright. Refund everyone. Safety is the whole event.",
+          "label": "Cancel the outdoor festival entirely and issue full ticket refunds to guarantee student safety.",
           "tag": "The abort",
           "effects": { "responsibility": 9, "compassion": 6, "awareness": 5, "strategy": -3, "integrity": 3 },
-          "consequence": "The refunds cost the fest its entire year's budget, and two sponsors grumble publicly. The storm, for the record, arrives at 6 p.m. and folds a stage truss onto the empty ground. Nobody died. The committee ages a year. The math holds."
+          "consequence": "The budget is lost, but when severe winds collapse stage rigging the next evening, not a single student is in harm's way."
         },
         {
           "id": "B",
-          "label": "Go ahead \u2014 but restructure: indoor capacity plan, staggered entry, live-streamed main acts, storm protocol with marshals.",
+          "label": "Restructure the event: move key acts into the indoor hall and livestream the rest with safety marshals.",
           "tag": "The restructure",
           "effects": { "strategy": 10, "responsibility": 8, "awareness": 7, "integrity": 3, "compassion": 2, "fairness": 2 },
-          "consequence": "The fest runs at half comfort and full preparation. The storm arrives; the marshals move 300 people through a plan they rehearsed at midnight. Two acts stream from the hall to the half-empty ground. It is not the fest you planned \u2014 it is the one that survives it."
+          "consequence": "The festival runs in a modified format with prioritized safety. Attendees appreciate the organized contingency planning."
         },
         {
           "id": "C",
-          "label": "Wait for the 5 a.m. update and decide then \u2014 with both contingency plans drafted tonight.",
+          "label": "Wait for early morning weather updates before making a final cancellation call.",
           "tag": "The informed wait",
           "effects": { "awareness": 8, "strategy": 6, "responsibility": 3, "compassion": 1, "integrity": 1 },
-          "consequence": "You sleep three hours and decide at dawn against clearer data. The delay costs you the morning logistics, and the vendors charge for the chaos. But the call you make at 5:40 a.m. is the right call, made with one more satellite pass of evidence."
+          "consequence": "You receive clearer satellite data, but last-minute changes create confusion for vendors and ticket holders."
         },
         {
           "id": "D",
-          "label": "Put it to a vote of the ticket-holders \u2014 let the crowd own the risk.",
+          "label": "Put the decision to an online poll of ticket holders and let the crowd decide the risk.",
           "tag": "Referendum",
           "effects": { "fairness": 4, "responsibility": -8, "awareness": -3, "strategy": -4 },
-          "consequence": "Sixty percent vote \u2018go ahead\u2019 \u2014 of course they do; they are not the ones holding the liability. You now have a mandate and no captain. When the gusts arrive, three hundred people discover simultaneously that democracy is not a shelter plan."
+          "consequence": "The crowd votes to continue, but when heavy squalls hit, lack of decisive leadership leaves attendees scrambling in the storm."
         }
       ],
       "insight": {
-        "principle": "In crisis, a decent plan now beats a perfect plan after the storm \u2014 and owning the call matters more than the odds.",
-        "source": "The war councils of Kurukshetra: decide under uncertainty, then carry the decision publicly."
+        "principle": "In a crisis, clear decision-making based on safety and preparation outweighs financial convenience or popularity.",
+        "source": "The war councils of Kurukshetra: A leader must make decisive calls under uncertainty and stand by public safety."
       },
       "next": "mod_college"
     },
@@ -343,46 +371,50 @@
       "category": "College",
       "title": "The Senior Tradition",
       "icon": "grad",
+      "summary": "Seniors are subjecting a nervous first-year student to an uncomfortable initiation activity in the dormitory.",
       "situation": [
-        "It is 11 p.m. in the second-year corridor. The first-years are being run through the \u2018welcome tradition\u2019 \u2014 reciting slogans, doing squats, one boy being made to apologize to a senior's shoes.",
-        "Most are laughing the way people laugh on boats: holding the rail. One boy \u2014 you know him from the library; he barely talks to anyone \u2014 is not laughing at all.",
-        "If you intervene alone, you become the target. If it is reported, nobody will say who did. The seniors running it include your project partner and your hostel floor-mate."
+        "Late at night in the dormitory corridor, seniors are forcing a nervous first-year student to perform humiliating initiation tasks.",
+        "The first-year student is clearly distressed and unable to stand up against the group.",
+        "The seniors running the activity include your own project partner and floor-mates."
       ],
-      "prompt": "The corridor is watching. What do you do?",
-      "freeText": { "enabled": true, "prompt": "Your decision \u2014 in your own words." },
+      "prompt": "How do you respond to the initiation pressure in the corridor?",
+      "freeText": {
+        "enabled": true,
+        "prompt": "Your decision in your own words:"
+      },
       "choices": [
         {
           "id": "A",
-          "label": "Step in now, alone: \u2018Enough. Let him sit down.\u2019",
+          "label": "Step in immediately and firmly tell the seniors to stop the initiation.",
           "tag": "The lone step",
           "effects": { "responsibility": 10, "integrity": 9, "compassion": 7, "fairness": 5, "strategy": -5 },
-          "consequence": "The corridor goes quiet. \u2018Relax,\u2019 someone says, and you do not. The tradition limps to a close early; the boy from the library disappears to his room \u2014 leaving, you notice later, a thank-you note under your door. You are \u2018the funny one's project\u2019 for a week. It was worth it."
+          "consequence": "The initiation stops immediately. The first-year student safely returns to his room, and your intervention sets a clear boundary."
         },
         {
           "id": "B",
-          "label": "Report it to the anti-ragging committee tonight, anonymously, with names.",
+          "label": "Report the incident immediately to the anti-ragging committee with names.",
           "tag": "The report",
           "effects": { "fairness": 8, "responsibility": 6, "integrity": 5, "compassion": 4, "strategy": 2, "awareness": 2 },
-          "consequence": "A notice appears on the department board; two seniors are summoned; the tradition dies by paperwork. It is less dramatic than a corridor confrontation and more permanent. The first-years never learn which quiet classmate ended it \u2014 which was the point."
+          "consequence": "Campus authorities issue formal warnings, putting an institutional end to the hazing tradition in the dormitory."
         },
         {
           "id": "C",
-          "label": "Quietly gather three others tonight, then confront the seniors as a group tomorrow.",
+          "label": "Gather other reasonable students on the floor tonight and confront the seniors together tomorrow.",
           "tag": "The alliance",
           "effects": { "strategy": 8, "fairness": 7, "responsibility": 5, "awareness": 4, "compassion": 3, "integrity": 2 },
-          "consequence": "Four of you meet the seniors at tea, all politeness and steel: the tradition ends, or the committee gets the names. Numbers change the arithmetic of courage. The tradition ends quietly by Friday \u2014 and you have built a coalition that will outlast this one corridor."
+          "consequence": "A united student group presents a firm stance, defusing the intimidation permanently through collective peer leadership."
         },
         {
           "id": "D",
-          "label": "Walk past. Everyone went through it; the system self-corrects.",
+          "label": "Walk past and ignore it, rationalizing that everyone went through the same tradition.",
           "tag": "The corridor pass",
           "effects": { "responsibility": -9, "compassion": -8, "integrity": -6, "awareness": -3 },
-          "consequence": "You walk past, and the corridor keeps its noise. The boy from the library stops coming to the library. \u2018Everyone went through it\u2019 turns out to be a sentence said by everyone who walked past \u2014 the tradition corrects nothing, it recruits."
+          "consequence": "You avoid peer conflict, but the culture of intimidation continues unchecked, targeting more junior students in the future."
         }
       ],
       "insight": {
-        "principle": "Tradition is just a decision that stopped admitting it was one.",
-        "source": "Yudhishthira at the dice game: \u2018it is the rule\u2019 is the oldest excuse in the epic \u2014 and the costliest."
+        "principle": "Unfair traditions only survive when bystanders stay silent. Ethical leadership requires breaking cycles of peer intimidation.",
+        "source": "The cost of tradition: Unquestioned rules must be evaluated by whether they cause harm or uphold justice."
       }
     }
   ]
